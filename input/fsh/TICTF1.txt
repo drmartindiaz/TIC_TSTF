@@ -1,0 +1,21 @@
+    title Tele-interconsulta asincronica MVP
+
+participant "HIS origen" as A
+participant "HIS receptor" as B
+
+    A->>B:Envia Solicitud tele-IC (ServiceRequest)
+    B-->>A: Evalúa información, rechaza o acepta tele-IC (Task)
+    activate B
+
+    opt requiere mas informacion
+        B->>A: Pide más información (Task)
+        activate A
+        A-->>B: Envía más información (Task)
+        deactivate A
+    end
+
+
+    B->>A: Envia informe tele-IC (Task)
+    deactivate B
+
+
