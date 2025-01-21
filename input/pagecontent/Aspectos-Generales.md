@@ -18,7 +18,7 @@ Al revisar un perfil nos encontramos con la posibilidad de ver múltiples vistas
 Esta vista permite ver un resumen del Perfil como de que recurso proviene elementos *mandatorios*, *eliminados* y que deben ser *soportados*. Además, resume las *extensiones* y *slices* generados en el diseño.
 <br>
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="Stactics-Reference.png"> 
+  <img  style="border: 1px solid; color: black;" src="StatisticsReferences.png"> 
   <p>Visión Resumen de un Perfil</p>
 </div>
 <br>
@@ -31,7 +31,7 @@ Esta vista permite observar todos aquellos elementos de un recurso que han sido 
 
 <br>
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="Diferencial.png"> 
+  <img  style="border: 1px solid; color: black;" src="Diferential.png"> 
   <p>Vista Diferencial de un Perfil</p>
 </div>
 <br>
@@ -42,7 +42,7 @@ En la vista de la **Snapshot Table**, todos los elementos obligatorios definidos
 
 <br>
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="Snap.png"> 
+  <img  style="border: 1px solid; color: black;" src="snap.png"> 
   <p>Vista Snapshot Table de un perfil</p>
 </div>
 <br>
@@ -53,7 +53,7 @@ En la vista **Key Elements Table**, todos los elementos presentados en la vista 
 
 <br>
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="SnapMS.png"> 
+  <img  style="border: 1px solid; color: black;" src="keyelements.png"> 
   <p>Vista Key Elements de un perfil</p>
 </div>
 
@@ -105,17 +105,7 @@ POST [base]/Patient En el Body, un recurso paciente compatible con el/los perfil
 
 ### Vocabularios
 
-_Definición de Medicamentos:_ Se utiliza la Terminología de Fármacos Chilena (TFC), expuesta por medio de un servicio de terminología Local o desde MINSAL.
 
-_Profesionales de la Salud:_ desplegados a través de la Super Intendencia y el sistema Midas, este registro se expone por medio del recurso  FHIR Practitioner, y la especialidad por medio del recurso PractitionerRole.
-
-_Establecimientos de Salud:_ utiliza su identificación por medio de código DEIS, y su registro se expone a través de los recursos FHIR Location y Organization, según corresponda.
-
-_Farmacias:_ utiliza el registro de farmacias Farmanet y se expone como como los recursos FHIR Location y Organization.
-
-_Pacientes:_ Se identifican por medio de su número identificador que pude ser cualquier tipo de documento especificado en las tablas de HL7 V3 relacionados con identificadores de personas.
-
-_Tablas Maestras específicas:_ se incluyen las de comunas, provincias y regiones, entre otras pertenecientes a la normativa Nacional que son expuestas en la GI y que deben ser en muchos casos levantadas a nivel local.
 
 
 ### Cardinalidad
@@ -175,267 +165,3 @@ Además, cada ejemplo viene descrito en 4 formatos:
 * Código en XML
 * Código en Representación TTL
 <br>
-
-~~~
-{
-  "resourceType": "Patient",
-  "id": "PacienteCL",
-  "meta": {
-    "profile": [
-      "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl"
-    ]
-  },
-  "name": [
-    {
-      "use": "official",
-      "family": "Rosales",
-      "_family": {
-        "extension": [
-          {
-            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
-            "valueString": "Bosh"
-          }
-        ]
-      },
-      "given": [
-        "Marietta",
-        "María",
-        "Ximena"
-      ]
-    },
-    {
-      "use": "usual",
-      "given": [
-        "Xime"
-      ]
-    }
-  ],
-  "contact": [
-    {
-      "name": {
-        "use": "official",
-        "family": "Calleja",
-        "_family": {
-          "extension": [
-            {
-              "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
-              "valueString": "Morales"
-            }
-          ]
-        },
-        "given": [
-          "Juana",
-          "Josefa"
-        ]
-      },
-      "extension": [
-        {
-          "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto",
-          "extension": [
-            {
-              "url": "tutId",
-              "valueIdentifier": {
-                "type": {
-                  "coding": [
-                    {
-                      "code": "NNCHL",
-                      "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI",
-                      "display": "Chile"
-                    }
-                  ]
-                },
-                "system": "http://regcivil.cl/Validacion/RUN",
-                "value": "8987321-7"
-              }
-            },
-            {
-              "url": "docProc",
-              "valueCodeableConcept": {
-                "coding": [
-                  {
-                    "code": "152",
-                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
-                    "display": "Chile"
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      ],
-      "relationship": [
-        {
-          "coding": [
-            {
-              "code": "N",
-              "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
-              "display": "Next-of-Kin"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "extension": [
-    {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "1",
-            "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero",
-            "display": "Masculino"
-          }
-        ]
-      }
-    },
-    {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "male",
-            "system": "http://hl7.org/fhir/administrative-gender",
-            "display": "Male"
-          }
-        ]
-      }
-    }
-  ],
-  "identifier": [
-    {
-      "use": "official",
-      "type": {
-        "extension": [
-          {
-            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "152",
-                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
-                  "display": "Chile"
-                }
-              ]
-            }
-          }
-        ],
-        "coding": [
-          {
-            "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI",
-            "code": "NNCHL",
-            "display": "Chile"
-          }
-        ]
-      },
-      "system": "http://regcivil.cl/Validacion/RUN",
-      "value": "15.236.327-k"
-    }
-  ],
-  "active": true,
-  "telecom": [
-    {
-      "system": "phone",
-      "use": "mobile",
-      "value": "943561833"
-    },
-    {
-      "system": "email",
-      "use": "work",
-      "value": "mariRosal@mimail.com"
-    }
-  ],
-  "gender": "female",
-  "birthDate": "1983-03-24",
-  "address": [
-    {
-      "use": "home",
-      "line": [
-        "Av Los Chirimoyos, 32, casa 4"
-      ],
-      "_city": {
-        "extension": [
-          {
-            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "05602",
-                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
-                  "display": "Algarrobo"
-                }
-              ]
-            }
-          }
-        ]
-      },
-      "_district": {
-        "extension": [
-          {
-            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "056",
-                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL",
-                  "display": "San Antonio"
-                }
-              ]
-            }
-          }
-        ]
-      },
-      "_state": {
-        "extension": [
-          {
-            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "05",
-                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
-                  "display": "Valparaíso"
-                }
-              ]
-            }
-          }
-        ]
-      },
-      "_country": {
-        "extension": [
-          {
-            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "152",
-                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
-                  "display": "Chile"
-                }
-              ]
-            }
-          }
-        ]
-      }
-    }
-  ],
-  "communication": [
-    {
-      "language": {
-        "coding": [
-          {
-            "code": "es-CL",
-            "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje",
-            "display": "Spanish"
-          }
-        ]
-      }
-    }
-  ],
-  "generalPractitioner": [
-    {
-      "reference": "Organization/OrganizacionClEjemplo1"
-    }
-  ]
-}
-~~~

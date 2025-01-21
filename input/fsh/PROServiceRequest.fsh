@@ -1,7 +1,7 @@
 Profile: TICTF_ServiceRquest
 Parent: ServiceRequest
 Id: TICF-ServiceRequest
-Title: "Service Request de inicio apra Tele IncerConsulta TransFronterizqServiceRequestuest"
+Title: "Service Request de inicio para Tele IncerConsulta TransFronteriza"
 Description: "SeviceRequest para TICTF"
 * identifier 1..1 
 * status 1..1 
