@@ -4,7 +4,7 @@ Id: SolicitudTICTF
 Title: "Solicitud TICTF"
 Description: "Nodelo Lógico para la solicitud de un Tele Interconsulta Transfornteriza"
 * identificador 1..1 Identifier "Identificador unico de la solicitud"
-* estado 1..1 CodeableConcept "Estod e la solicitud"
+* estado 1..1 CodeableConcept "Estado de la solicitud"
 * paisOrigen 1..1 CodeableConcept "País que origina la TITF"
 * paciente 1..1 Reference(Patient) "Paciente sujeto de la teleinterconsulta"
   * identificadorNacional 1..1 Identifier "Identificador nacional del paciente"

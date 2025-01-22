@@ -4,18 +4,16 @@ participant "HIS origen" as A
 participant "HIS receptor" as B
 
     A->>B:Envia Solicitud tele-IC (ServiceRequest)
-    B-->>A: Evalúa información, rechaza o acepta tele-IC (Task)
+    B-->>A: Evalúa información y acepta tele-IC (MainTask)
     activate B
 
     opt requiere mas informacion
-        B->>A: Pide más información (Task)
+        B->>A: Pide más información (SubTask)
         activate A
-        A-->>B: Envía más información (Task)
+        A-->>B: Envía más información (SubTask)
         deactivate A
     end
 
 
-    B->>A: Envia informe tele-IC (Task)
+    B-->>A: Envia informe tele-IC (MainTask)
     deactivate B
-
-
