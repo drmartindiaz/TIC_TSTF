@@ -4,6 +4,7 @@ Id: TICTFServiceRequest
 Title: "Service Request de inicio para Tele IncerConsulta TransFronteriza"
 Description: "SeviceRequest para TICTF"
 * identifier 1..1 
+* identifier ^short = "Identiicador único de la TICTF - nanoID"
 * status 1..1 
 * intent 1..1 MS // Intención de la solicitud
 * subject 1..1 
@@ -16,5 +17,5 @@ Description: "SeviceRequest para TICTF"
 * reasonReference only Reference(TICTF_Observation) // Razón de la consulta o diagnóstico preliminar
 * supportingInfo 0..* 
 * supportingInfo only Reference(DiagnosticReport or ImagingStudy) // Información adicional (ej. estudios diagnósticos)
-* extension contains http://racsel.org/TIC-TSTF/StructureDefinition/pais-origen named PaisOrigen  1..1
+//* extension contains http://racsel.org/TIC-TSTF/StructureDefinition/pais-origen named PaisOrigen  1..1
 

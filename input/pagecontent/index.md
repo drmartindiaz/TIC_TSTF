@@ -11,8 +11,8 @@ Esta Guía sigue un formato especificado para **FHIR R4**, y se divide en varias
 
 * [Home](index.html): Provee la introducción acerca de esta guía.
 * [Generalidades](Aspectos-Generales.html): Se especifican algunos conceptos importantes para poder comprender la lectura de los artefactos con el fin de hacer uso de la guía con objetivos de implementación.
-* Operaciones: Define las operaciones más usadas para el intercambio, manejo, consulta, actualización, etc. de Recursos Generados en un servidor.
-* Artefactos: Estas páginas proveen descripciones detalladas y definiciones formales para los artefactos FHIR definidos en la guía.
+* [Operaciones](operaciones.html): Define las operaciones más usadas para el intercambio, manejo, consulta, actualización, etc. de Recursos Generados en un servidor.
+* [Artefactos](artifacts.html): Estas páginas proveen descripciones detalladas y definiciones formales para los artefactos FHIR definidos en la guía.
 <br>
 
 ### Perfiles de la Guía

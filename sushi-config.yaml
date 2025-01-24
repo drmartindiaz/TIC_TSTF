@@ -49,6 +49,8 @@ pages:
     title: Inicio
   Aspectos-Generales.md:
     title: Generalidades
+  operaciones.md:
+    title: Operaciones
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -75,6 +77,7 @@ pages:
 menu:
   Inicio: index.html
   Generalidades: Aspectos-Generales.html
+  Operaciones: operaciones.html
   Artefactos: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

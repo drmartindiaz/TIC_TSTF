@@ -1,19 +1,18 @@
-    title Tele-interconsulta asincronica MVP
+title Tele-interconsulta asincronica MVP
 
 participant "HIS origen" as A
 participant "HIS receptor" as B
-
     A->>B:Envia Solicitud tele-IC (ServiceRequest)
-    B-->>A: Evalúa información y acepta tele-IC (MainTask)
+    B-->>A:Evalúa información y acepta tele-IC (Crea MainTask)
     activate B
 
     opt requiere mas informacion
-        B->>A: Pide más información (SubTask)
+        B->>A:Pide más información (Crea SubTask)
         activate A
-        A-->>B: Envía más información (SubTask)
+        A-->>B:Envía más información (Actualiza SubTask)
         deactivate A
     end
 
 
-    B-->>A: Envia informe tele-IC (MainTask)
+    B-->>A:Envia informe tele-IC (Actualiza MainTask)
     deactivate B
