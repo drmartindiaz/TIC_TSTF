@@ -22,7 +22,7 @@ Description: "Perfil para la gestión de la tarea PRINCIPAL en teleconsulta asin
 * input 0..* // Información adicional proporcionada (ej. notas o datos complementarios)
   * type MS 
 * output 0..* // Respuesta o resultados de la tarea
-  * type MS 
+  * type MS // Agregar Observation
 
 Profile: TICTF_SubTask
 Parent: Task

@@ -12,4 +12,4 @@ Description: "Observation para narrativa de la solicitud de IC transfronteriza"
   * display = "Consultation request (narrative)"
 * subject 1..1
 * subject only Reference(Patient)
-* note 1..1 //Narrativa de la solicitud de interconsulta
+* valueString 1..1 //Narrativa de la solicitud de interconsulta
