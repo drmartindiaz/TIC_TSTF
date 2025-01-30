@@ -1,8 +1,8 @@
 Profile: TICTF_MainTask
 Parent: Task
 Id: tictf-maintask
-Title: "Tarea PRINCIPAL de Teleconsulta Interconsulta"
-Description: "Perfil para la gestión de la tarea PRINCIPAL en teleconsulta asincrónica"
+Title: "TICTF Tarea PRINCIPAL"
+Description: "Tarea PRINCIPAL en TeleInterconsulta Transfronteriza"
 
 * status 1..1 MS // Estado de la tarea: requested, in-progress, on-hold, completed, etc.
 * intent 1..1 MS 
@@ -15,19 +15,33 @@ Description: "Perfil para la gestión de la tarea PRINCIPAL en teleconsulta asin
 * for only Reference(Patient) // Paciente relacionado con la tarea
 * requester 1..1 MS 
 * requester only Reference(TICTF_PractitionerRole) // Solicitante de la tarea
-// Aca iría el profesional a mi entender pero deberíamos extender para Institucion solicitante, HIS? como hacemos con Pais?
 * owner 0..1 
 * owner only Reference(TICTF_PractitionerRole) // Responsable de ejecutar la tarea
-// Mismo comentario que para requester
-* input 0..* // Información adicional proporcionada (ej. notas o datos complementarios)
-  * type MS 
-* output 0..* // Respuesta o resultados de la tarea
-  * type MS // Agregar Observation
+
+// 🔹 Definir correctamente el slicing en output
+* output ^slicing.discriminator.type = #value
+* output ^slicing.discriminator.path = "type"
+* output ^slicing.rules = #closed
+
+// 🔹 Aplicar ValueSet en output.type después de definir el slicing
+* output.type from TipoRespuestaVS
+
+// 🔹 Agregar los slices de OBS y DOC con las definiciones correctas
+* output contains 
+    OBS 0..1 MS and 
+    DOC 0..1 MS
+
+* output[OBS].type = TipoOutputTaskCS#Obs 
+* output[OBS].value[x] only Reference(TICTF_ObsRespuesta)  
+
+* output[DOC].type = TipoOutputTaskCS#Doc
+* output[DOC].value[x] only Reference(DocumentReference) 
+
 
 Profile: TICTF_SubTask
 Parent: Task
 Id: tictf-subtask
-Title: "SUBtarea Teleconsulta Interconsulta"
+Title: "TICTF SUBtarea"
 Description: "Perfil para la gestión de SUBtareas en teleconsulta asincrónica"
 
 * status 1..1 MS // Estado de la tarea: requested, in-progress, on-hold, completed, etc.

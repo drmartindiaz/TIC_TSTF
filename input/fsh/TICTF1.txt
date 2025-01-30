@@ -16,3 +16,10 @@ participant "HIS receptor" as B
 
     B-->>A:Envia informe tele-IC (Actualiza MainTask)
     deactivate B
+
+
+    Tareas pendientes:
+    Perfilar input y ouptpu de SubTask
+    Chequear nombres de recursos
+    Perfilar Observtion para respuesta
+    Hacer diagrama de camino no feliz con rechazo de IC

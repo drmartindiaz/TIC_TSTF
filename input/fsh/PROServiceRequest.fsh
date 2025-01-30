@@ -1,8 +1,8 @@
 Profile: TICTF_ServiceRquest
 Parent: ServiceRequest
 Id: TICTFServiceRequest
-Title: "Service Request de inicio para Tele IncerConsulta TransFronteriza"
-Description: "SeviceRequest para TICTF"
+Title: "TICTF Solictud Solicitud inicial"
+Description: "Solictud Solicitud inicial de TeleInterconsulta Transfronteriza"
 * identifier 1..1 
 * identifier ^short = "Identiicador único de la TICTF - nanoID"
 * status 1..1 
@@ -16,7 +16,7 @@ Description: "SeviceRequest para TICTF"
 * performer  0..1 
 * performer  only Reference(TICTF_PractitionerRole) // Responsable de la respuesta
 * reasonReference 1..* MS 
-* reasonReference only Reference(TICTF_Observation) // Razón de la consulta o diagnóstico preliminar
+* reasonReference only Reference(TICTF_ObsSolicitud) // Razón de la consulta o diagnóstico preliminar
 
 * supportingInfo ^slicing.discriminator.type = #profile
 * supportingInfo ^slicing.discriminator.path = "reference"
@@ -34,7 +34,7 @@ Description: "SeviceRequest para TICTF"
 * supportingInfo[ResumenDeHistoriaClinica] only Reference(DocumentReference or Composition)
 * supportingInfo[ResumenDeHistoriaClinica].reference 1..1
 
-* supportingInfo[OtrosEstudios] only Reference(Observation or DiagnosticReport)
+* supportingInfo[OtrosEstudios] only Reference(TICTF_ObsGral or DiagnosticReport)
 * supportingInfo[OtrosEstudios].reference 1..1
 // * supportingInfo 0..* 
 // * supportingInfo only Reference(DiagnosticReport or ImagingStudy) // Información adicional (ej. estudios diagnósticos)
