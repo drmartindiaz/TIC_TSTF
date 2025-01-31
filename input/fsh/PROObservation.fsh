@@ -1,8 +1,8 @@
-Profile: TICTF_ObsGral
+Profile: TICTFObsGral
 Parent: Observation
 Id: TICTFObsGral
 Title: "TICTF Nota Narrativa General"
-Description: "Observation para nota narrativa de la solicitud de IC transfronteriza"
+Description: "Observation para nota narrativa general"
 * basedOn 1..1 
 * basedOn ^short = "Solicitud de TICTF de referencia para esta nota narrativa"
 * basedOn only Reference(TICTFServiceRequest)
@@ -17,7 +17,7 @@ Description: "Observation para nota narrativa de la solicitud de IC transfronter
 * valueString 1..1  
 * valueString ^short = "Contenido de la Nota Narrativa" //Narrativa de la solicitud de interconsulta
 
-Profile: TICTF_ObsSolicitud
+Profile: TICTFObsSolicitud
 Parent: Observation
 Id: TICTFObsSolicitud
 Title: "TICTF Narrativa de Solicitud"
@@ -36,14 +36,14 @@ Description: "Observation para narrativa de la solicitud de IC transfronteriza"
 * valueString 1..1  
 * valueString ^short = "Contenido de la Nota Narrativa" //Narrativa de la solicitud de interconsulta
 
-Profile: TICTF_ObsRespuesta
+Profile: TICTFObsRespuesta
 Parent: Observation
 Id: TICTFObsRespuesta
 Title: "TICTF Narrativa de Respuesta"
 Description: "Observation para narrativa de la solicitud de IC transfronteriza"
 // * basedOn 1..1  
 // * basedOn ^short = "Tarea de TICTF de referencia para esta nota narrativa"
-// * basedOn only Reference(TICTF_MainTask)
+// * basedOn only Reference(TICTFMainTask)
 * status = #registered
 * code.coding   
   * system = LOINC
@@ -54,3 +54,42 @@ Description: "Observation para narrativa de la solicitud de IC transfronteriza"
 * subject only Reference(Patient)
 * valueString 1..1  
 * valueString ^short = "Contenido de la Nota Narrativa" //Narrativa de la solicitud de interconsulta
+
+
+// Instancia de Observación para la razón de la consulta
+Instance: TICTFObsSolicitud1
+InstanceOf: TICTFObsSolicitud
+Title: "Narrativa de la Solicitud de Interconsulta"
+Description: "Narrativa de la solicitud de interconsulta transfronteriza"
+* basedOn = Reference(TICTFServiceRequest1)
+* status = #registered
+* code.coding.system = "http://loinc.org"
+* code.coding.code = #11487-6
+* code.coding.display = "Consultation request (narrative)"
+* subject = Reference(Paciente1)
+* valueString = "El paciente presenta síntomas de dificultad respiratoria desde hace dos semanas. Se requiere evaluación especializada."
+
+// Instancia de Observación para la respuesta de la consulta
+Instance: TICTFObsRespuesta1
+InstanceOf: TICTFObsRespuesta
+Title: "Narrativa de la Respuesta a la Interconsulta"
+Description: "Narrativa de la respuesta a la solicitud de interconsulta transfronteriza"
+* status = #registered
+* code.coding.system = "http://loinc.org"
+* code.coding.code = #34764-0
+* code.coding.display = "Consultation note (narrative)"
+* subject = Reference(Paciente1)
+* valueString = "Se recomienda realizar pruebas complementarias para descartar infección pulmonar."
+
+// Instancia de Observación General
+Instance: TICTFObsGral1
+InstanceOf: TICTFObsGral
+Title: "Nota Narrativa General"
+Description: "Nota narrativa general sobre el estado del paciente"
+* basedOn = Reference(TICTFServiceRequest1)
+* status = #registered
+* code.coding.system = "http://loinc.org"
+* code.coding.code = #11506-3
+* code.coding.display = "Provider-unspecified note (narrative)"
+* subject = Reference(Paciente1)
+* valueString = "El paciente ha respondido bien al tratamiento inicial, pero sigue en observación."

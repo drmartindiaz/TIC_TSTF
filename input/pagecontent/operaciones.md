@@ -14,7 +14,7 @@ Asímismo el siguiente diagrama ilustra el caso en el cual la TeleInterconsulta 
 
 <br>
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="TICTF_NO.png"> 
+  <img  style="border: 1px solid; color: black;" src="TICTFNO.png"> 
   <p>Diagrama de Secuencia TICTF rechazada</p>
 </div>
 <br>
