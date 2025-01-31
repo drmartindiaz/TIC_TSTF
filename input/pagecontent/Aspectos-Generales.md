@@ -1,9 +1,9 @@
 ### Aspectos a Considerar
 <br>
 
-Esta sección describe definiciones, interpretaciones y requisitos importantes comunes a todos los actores del clcore, utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
+Esta sección describe definiciones, interpretaciones y requisitos importantes aplciables a todos los actores, utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
 <br>
-### Definiciones Para comprender la Guía
+### definiciones Para comprender la Guía
 
 Los perfiles contienen ciertos elementos que son importantes de comprender a la hora de usarlos para implementación
 <br>
@@ -11,15 +11,15 @@ Los perfiles contienen ciertos elementos que son importantes de comprender a la 
 #### Vistas de los perfiles
 <br>
 
-Al revisar un perfil nos encontramos con la posibilidad de ver múltiples vistas de este.
+Al revisar un perfil tenemos la opción de visualizarlo desde múltiples perspectivas.
 
 ##### Statistics/References
 
-Esta vista permite ver un resumen del Perfil como de que recurso proviene elementos *mandatorios*, *eliminados* y que deben ser *soportados*. Además, resume las *extensiones* y *slices* generados en el diseño.
+Esta vista ofrece un resumen del perfil, incluyendo el origen del recurso los elementos <em>mandatorios</em>, <em>eliminados</em> y que deben ser <em>soportados</em>. Además, resume las <em>extensiones</em> y <em>slices</em> generados en el diseño.
 <br>
 <div align="center" >
   <img  style="border: 1px solid; color: black;" src="StatisticsReferences.png"> 
-  <p>Visión Resumen de un Perfil</p>
+  <p>Visión resumen de un Perfil</p>
 </div>
 <br>
 

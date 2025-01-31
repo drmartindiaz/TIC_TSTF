@@ -21,9 +21,6 @@ Cada perfil define los elementos obligatorios mínimos, extensiones y requerimie
 
 También se presenta una tabla jerárquica con una vista lógica del contenido como *Snapshot* y *Differential*. Para cada perfil también expresamos el conjunto de interacciones FHIR Restful asociadas (búsquedas, operaciones u otras interacciones)
 
-* [Requerimiento de Interconsulta TF](StructureDefinition-TICF-ServiceRequest.html)
-* [Respuesta de Interconsutla TF](StructureDefinition-tictf-task.html)
-
 ### Requerimientos de Conformidad
 
 Los requerimientos de conformidad describen las expectativas sobre la funcionalidad de las aplicaciones servidor/cliente, identificando los perfiles específicos y las interacciones que deben implementar. Los perfiles individuales identifican los requerimientos estructurales y terminológicos. Las definiciones de parámetros de búsqueda y operaciones especifican cómo son implementados por los servidores.

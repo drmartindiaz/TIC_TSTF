@@ -1,8 +1,8 @@
 Profile: PROOrganizationTICTF
 Parent: Organization
 Id: PROOrganizationTICTF
-Title: "Organizacion solicitante de TICTF"
-Description: "Organizacion solicitante de TICTF"
+Title: "TICTF Organización"
+Description: "Organización solicitante o respondedora de TICTF"
 * address 1..1
 * address.country 1..1
 * address.country from Country2 (required)

@@ -6,13 +6,13 @@ Description: "Paises de la ISO 3166"
 
 CodeSystem: TipoOutputTaskCS
 Id: TipoOutputTaskCS
-Title: "TICTF Tipo de respuesta" 
-Description: "Set de valores para Tipo Output Task"
+Title: "TICTF Tipo de respuesta CS" 
+Description: "CodeSystem para tipo Output Task TICTF"
 * #Obs "Observacion narrativa"
 * #Doc "Documento"
  
-ValueSet: TipoRespuestaVS    
-Id: TipoRespuestaVS
-Title: "TICTF Tipo de respuesta"
-Description: "CodeSystem de Códigos tipo de respuesta TSTF"
+ValueSet: TipoOutputTaskVS    
+Id: TipoOutputTaskVS
+Title: "TICTF Tipo de respuesta VS"
+Description: "Set de valores para tipo Output Task TICTF"
 * codes from system TipoOutputTaskCS

@@ -2,7 +2,7 @@ Logical: MLSolicitudTICTF
 Parent: Base
 Id: SolicitudTICTF
 Title: "Modelo Lógico Solicitud TICTF"
-Description: "Modelo Lógico para la solicitud de un Tele Interconsulta Transfornteriza Asincrónica"
+Description: "Modelo Lógico para la solicitud de un Tele Interconsulta Transfrrnteriza Asincrónica"
 * identificador 1..1 Identifier "Identificador unico de la solicitud"
 * estado 1..1 CodeableConcept "Estado de la solicitud"
 * paciente 1..1 Reference(Patient) "Paciente sujeto de la teleinterconsulta"

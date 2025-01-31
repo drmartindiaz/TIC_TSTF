@@ -2,7 +2,7 @@ Logical: MLRespuestaTICTF
 Parent: Base
 Id: RespuestaTICTF
 Title: "Modelo Lógico Respuesta TICTF"
-Description: "Modelo Lógico para la respuesta de un Tele Interconsulta Transfornteriza"
+Description: "Modelo Lógico para la respuesta de un Tele Interconsulta Transfronteriza"
 * identificador 1..1 Identifier "Identificador unico de la respuesta"
 * estado 1..1 CodeableConcept "Estado de la respuesta"
 * paciente 1..1 Reference(Patient) "Paciente sujeto de la teleinterconsulta"
@@ -15,7 +15,7 @@ Description: "Modelo Lógico para la respuesta de un Tele Interconsulta Transfor
 * entidadRespondedora 1..1 Reference(PractitionerRole) "Responsables que responden la TICTF"
   * profesionalRespondedor 1..1 Reference(Practitioner) "Profesional que responden la TICTF"
   * institucionRespondedora 1..1 Reference(Organization) "Institución que responden la TICTF"
-  * paisDestino 1..1 Reference(Location) "País que origina la TITF"
+  * paisDestino 1..1 Reference(Location) "País que recibe la TITF"
 * enRespuestaASolicitud 1..1 Reference(ServiceRequest) "Solicitud original"
 * consentimientoInformado 1..1 Reference(Consent) "Consentimiento informado firmado por el paciente"
 * respuestaTICTF 1..1 BackboneElement "Respuesta final de la interconsulta"
