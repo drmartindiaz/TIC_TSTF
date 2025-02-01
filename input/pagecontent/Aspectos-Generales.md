@@ -1,7 +1,7 @@
 ### Aspectos a Considerar
 <br>
 
-Esta sección describe definiciones, interpretaciones y requisitos importantes aplciables a todos los actores, utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
+Esta sección describe definiciones, interpretaciones y requisitos importantes aplicables a todos los actores utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
 <br>
 ### definiciones Para comprender la Guía
 

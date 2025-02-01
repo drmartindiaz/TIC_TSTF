@@ -10,7 +10,7 @@ Description: "Observation para nota narrativa general"
 * code.coding   
   * system = LOINC
   * code = #11506-3
-  * display = "Provider-unspecified note (narrative)"
+  * display = "Progress note"
 * subject 1..1  
 * subject ^short = "Pacente sujeto de esta nota narrativa"
 * subject only Reference(Patient)
@@ -47,8 +47,8 @@ Description: "Observation para narrativa de la solicitud de IC transfronteriza"
 * status = #registered
 * code.coding   
   * system = LOINC
-  * code = #34764-0
-  * display = "Consultation note (narrative)"
+  * code = #11488-4
+  * display = "Consult note"
 * subject 1..1  
 * subject ^short = "Pacente sujeto de esta nota narrativa"
 * subject only Reference(Patient)
@@ -76,8 +76,8 @@ Title: "Narrativa de la Respuesta a la Interconsulta"
 Description: "Narrativa de la respuesta a la solicitud de interconsulta transfronteriza"
 * status = #registered
 * code.coding.system = "http://loinc.org"
-* code.coding.code = #34764-0
-* code.coding.display = "Consultation note (narrative)"
+* code.coding.code = #11488-4
+* code.coding.display = "Consult note"
 * subject = Reference(Paciente1)
 * valueString = "Se recomienda realizar pruebas complementarias para descartar infección pulmonar."
 
@@ -90,6 +90,6 @@ Description: "Nota narrativa general sobre el estado del paciente"
 * status = #registered
 * code.coding.system = "http://loinc.org"
 * code.coding.code = #11506-3
-* code.coding.display = "Provider-unspecified note (narrative)"
+* code.coding.display = "Progress note"
 * subject = Reference(Paciente1)
 * valueString = "El paciente ha respondido bien al tratamiento inicial, pero sigue en observación."
