@@ -48,7 +48,6 @@ Description: "SUBtareas en TeleInterconsulta Transfronteriza"
 * input ^short = "Información adicional proporcionada (ej. notas o datos complementarios)"
   * type MS 
   * value[x] only Reference(TICTFObsRespuesta or DocumentReference)
-
 * output 0..* // Respuesta de la SUBtarea, contiene la respuesta final a la interconsulta
 * output ^short = "Respuesta de la SUBtarea, contiene la respuesta final a la interconsulta"
   * type MS 

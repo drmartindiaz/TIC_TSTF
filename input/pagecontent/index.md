@@ -55,7 +55,7 @@ Los requerimientos de conformidad describen las expectativas sobre la funcionali
 
 [HL7 Internacional](http://hl7.org)
 
-[FHIR R4](http://hl7.org/fhir/)
+[FHIR R4](http://hl7.org/fhir/R4)
 
 [FHIR Shorthand Documentation](https://build.fhir.org/ig/HL7/fhir-shorthand) 
 

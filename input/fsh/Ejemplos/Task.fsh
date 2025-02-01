@@ -1,0 +1,32 @@
+Instance: TICTFMainTask1
+InstanceOf: TICTFMainTask
+Title: "Tarea Principal de TeleInterconsulta"
+Description: "Ejemplo de una tarea principal en una TeleInterconsulta Transfronteriza."
+
+* status = #in-progress
+* intent = #order
+* basedOn = Reference(TICTFServiceRequest1) // Referencia a la solicitud de interconsulta
+* focus = Reference(DiagnosticReport1) // Un informe diagnóstico como foco de la tarea
+* for = Reference(Paciente1) // Paciente involucrado en la interconsulta
+* requester = Reference(TICTFPractitionerRole1) // Solicitante de la tarea
+* owner = Reference(TICTFPractitionerRole2) // Responsable de la ejecución de la tarea
+* output.type = http://terminology.hl7.org/CodeSystem/task-output-type#documentation
+* output.valueReference = Reference(DocumentReference1) // Documento generado como resultado
+
+Instance: TICTFSubTask1
+InstanceOf: TICTFSubTask
+Title: "Subtarea de TeleInterconsulta"
+Description: "Ejemplo de una subtarea dentro de una TeleInterconsulta Transfronteriza."
+
+* status = #completed
+* intent = #order
+* basedOn = Reference(TICTFMainTask1) // Relación con la tarea principal
+* focus = Reference(ImagingStudy1) // Estudio de imágenes relacionado
+* for = Reference(Paciente1) // Paciente involucrado en la interconsulta
+* requester = Reference(TICTFPractitionerRole1) // Solicitante de la subtarea
+* owner = Reference(TICTFPractitionerRole3) // Responsable de ejecutar la subtarea
+* input.type = http://terminology.hl7.org/CodeSystem/task-input-type#clinical-note
+* input.valueReference = Reference(DocumentReference2) // Documento clínico de entrada
+* output.type = http://terminology.hl7.org/CodeSystem/task-output-type#report
+* output.valueReference = Reference(TICTFObsRespuesta1) // Respuesta generada por la subtarea
+

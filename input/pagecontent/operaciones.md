@@ -18,3 +18,8 @@ Asímismo el siguiente diagrama ilustra el caso en el cual la TeleInterconsulta 
   <p>Diagrama de Secuencia TICTF rechazada</p>
 </div>
 <br>
+
+#### Actores
+
+Se entiende por *HIS Origen* a el sistema de información sanitario que genera la solicitud de teleinterconsulta transfronteriza. Asimismo, se entiende por *HIS Receptor* al sistema de información sanitario que recibe y responde la solicitud de teleinterconsulta trasnfronteriza.
+En este ejemplo simple no incluimos a un eventual sistema coordinador de teleinterconsutlas transfronterizas que podría actuar como mediador o ehub en estas operaciones.
