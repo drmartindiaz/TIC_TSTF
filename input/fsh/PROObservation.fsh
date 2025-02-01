@@ -40,7 +40,7 @@ Profile: TICTFObsRespuesta
 Parent: Observation
 Id: TICTFObsRespuesta
 Title: "TICTF Narrativa de Respuesta"
-Description: "Observation para narrativa de la solicitud de IC transfronteriza"
+Description: "Observation para narrativa de la respuesta de IC transfronteriza"
 // * basedOn 1..1  
 // * basedOn ^short = "Tarea de TICTF de referencia para esta nota narrativa"
 // * basedOn only Reference(TICTFMainTask)
@@ -65,7 +65,7 @@ Description: "Narrativa de la solicitud de interconsulta transfronteriza"
 * status = #registered
 * code.coding.system = "http://loinc.org"
 * code.coding.code = #11487-6
-* code.coding.display = "Consultation request (narrative)"
+// * code.coding.display = "Consultation request (narrative)"
 * subject = Reference(Paciente1)
 * valueString = "El paciente presenta síntomas de dificultad respiratoria desde hace dos semanas. Se requiere evaluación especializada."
 
@@ -77,7 +77,7 @@ Description: "Narrativa de la respuesta a la solicitud de interconsulta transfro
 * status = #registered
 * code.coding.system = "http://loinc.org"
 * code.coding.code = #34764-0
-* code.coding.display = "Consultation note (narrative)"
+// * code.coding.display = "Consultation note (narrative)"
 * subject = Reference(Paciente1)
 * valueString = "Se recomienda realizar pruebas complementarias para descartar infección pulmonar."
 
@@ -90,6 +90,6 @@ Description: "Nota narrativa general sobre el estado del paciente"
 * status = #registered
 * code.coding.system = "http://loinc.org"
 * code.coding.code = #11506-3
-* code.coding.display = "Provider-unspecified note (narrative)"
+// * code.coding.display = "Provider-unspecified note (narrative)"
 * subject = Reference(Paciente1)
 * valueString = "El paciente ha respondido bien al tratamiento inicial, pero sigue en observación."

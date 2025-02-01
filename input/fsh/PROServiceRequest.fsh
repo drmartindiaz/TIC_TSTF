@@ -1,8 +1,8 @@
 Profile: TICTFServiceRquest
 Parent: ServiceRequest
 Id: TICTFServiceRequest
-Title: "TICTF Solicitud Solicitud inicial"
-Description: "Solicitud Solicitud inicial de TeleInterconsulta Transfronteriza"
+Title: "TICTF Solicitud"
+Description: "Solicitud de TeleInterconsulta Transfronteriza"
 * identifier 1..1 
 * identifier ^short = "Identiicador único de la TICTF - nanoID"
 * status 1..1 
