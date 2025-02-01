@@ -1,8 +1,8 @@
 Profile: TICTFServiceRquest
 Parent: ServiceRequest
 Id: TICTFServiceRequest
-Title: "TICTF Solicitud Solicitud inicial"
-Description: "Solicitud Solicitud inicial de TeleInterconsulta Transfronteriza"
+Title: "TICTF Solicitud TeleInterconsulta Transfronteriza"
+Description: "Solicitud TeleInterconsulta Transfronteriza"
 * identifier 1..1 
 * identifier ^short = "Identiicador único de la TICTF - nanoID"
 * status 1..1 
@@ -10,35 +10,46 @@ Description: "Solicitud Solicitud inicial de TeleInterconsulta Transfronteriza"
 * subject 1..1 
 * subject only Reference(Patient) // Paciente relacionado con la interconsulta
 * code 1..1 
-* code = #868184008 //|Telemedicine consultation with provider (procedure)|
+* code = SCT#868184008 //|Telemedicine consultation with provider (procedure)|
 * requester  1..1 MS 
 * requester only Reference(TICTFPractitionerRole) // Solicitante de la interconsulta
 * performer  0..1 
 * performer  only Reference(TICTFPractitionerRole) // Responsable de la respuesta
 * reasonReference 1..* MS 
 * reasonReference only Reference(TICTFObsSolicitud) // Razón de la consulta o diagnóstico preliminar
+* supportingInfo 1..*
+//* supportingInfo ^slicing.discriminator.type = #profile
+//* supportingInfo ^slicing.discriminator.path = "reference"
 
-* supportingInfo ^slicing.discriminator.type = #profile
-* supportingInfo ^slicing.discriminator.path = "reference"
+//* supportingInfo ^slicing.discriminator.type = #profile
+//* supportingInfo ^slicing.discriminator.path = "$this"
+
+* supportingInfo ^slicing.discriminator.type = #type
+* supportingInfo ^slicing.discriminator.path = "resolve()"
 * supportingInfo ^slicing.rules = #open
-* supportingInfo ^slicing.description = "Slices para Consentimiento Informado, Resumen de Historia Clínica y Otros Estudios"
+* supportingInfo ^slicing.description = "Slices para Consentimiento Informado, Resumen de Historia Clínica y Estudios"
 
 * supportingInfo contains
     ConsentimientoInformado 1..1 and
-    ResumenDeHistoriaClinica 0..1 and
-    OtrosEstudios 0..*
+    ResumenHistoriaClinicaIPS 0..1 and
+    InformesEstudios 0..* and
+    OtrosDocumentos 0..*
+    //ObservacionesNarrativas 0..*
 
 * supportingInfo[ConsentimientoInformado] only Reference(Consent)
 * supportingInfo[ConsentimientoInformado].reference 1..1
 
-* supportingInfo[ResumenDeHistoriaClinica] only Reference(DocumentReference or Composition)
-* supportingInfo[ResumenDeHistoriaClinica].reference 1..1
+* supportingInfo[ResumenHistoriaClinicaIPS] only Reference(Composition) //o debería ser ref a bundle IPS?
+* supportingInfo[ResumenHistoriaClinicaIPS].reference 1..1
 
-* supportingInfo[OtrosEstudios] only Reference(TICTFObsGral or DiagnosticReport)
-* supportingInfo[OtrosEstudios].reference 1..1
-// * supportingInfo 0..* 
-// * supportingInfo only Reference(DiagnosticReport or ImagingStudy) // Información adicional (ej. estudios diagnósticos)
+* supportingInfo[InformesEstudios] only Reference(DiagnosticReport)
+* supportingInfo[InformesEstudios].reference 1..1
 
+* supportingInfo[OtrosDocumentos] only Reference(DocumentReference)
+* supportingInfo[OtrosDocumentos].reference 1..1
+
+//* supportingInfo[ObservacionesNarrativas] only Reference(TICTFObsGral)
+//* supportingInfo[ObservacionesNarrativas].reference 1..1
 
 Instance: TICTFServiceRequest1
 InstanceOf: TICTFServiceRequest
@@ -58,7 +69,7 @@ Description: "Ejemplo de una solicitud de interconsulta transfronteriza en FHIR 
 * subject = Reference(Paciente1)
 
 // Código fijo para teleconsulta
-* code = #868184008 // Telemedicine consultation with provider
+* code = SCT#868184008 // Telemedicine consultation with provider
 
 // Solicitante y responsable de la interconsulta
 * requester = Reference(TICTFPractitionerRole1)
@@ -68,9 +79,10 @@ Description: "Ejemplo de una solicitud de interconsulta transfronteriza en FHIR 
 * reasonReference = Reference(TICTFObsSolicitud1)
 
 // Información de apoyo con slicing definido en el perfil
-* supportingInfo[ConsentimientoInformado] = Reference(Consent1)
-* supportingInfo[ResumenDeHistoriaClinica] = Reference(DocumentReference1)
-* supportingInfo[OtrosEstudios] = Reference(DiagnosticReport1)
+* supportingInfo[0] = Reference(Consent1)
+* supportingInfo[+] = Reference(DocumentReference1)
+* supportingInfo[+] = Reference(DiagnosticReport1)
+* supportingInfo[+] = Reference(TICTFObsGral1)
 
 Instance: Consent1
 InstanceOf: Consent
