@@ -1,8 +1,9 @@
-ValueSet: Paises    
+/*ValueSet: Paises    
 Id: Paises
 Title: "TICTF Paises"
 Description: "Paises de la ISO 3166"
 * codes from system urn:iso:std:iso:3166
+*/
 
 // CodeSystem: TipoOutputTaskCS
 // Id: TipoOutputTaskCS
