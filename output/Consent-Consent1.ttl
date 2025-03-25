@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://racsel.org/TIC-TSTF/Consent/Consent1> a fhir:Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Consent1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Consent Consent1</b></p><a name=\"Consent1\"> </a><a name=\"hcConsent1\"> </a><a name=\"Consent1-en-US\"> </a><p><b>status</b>: Active</p><p><b>scope</b>: <span title=\"Codes:\">patient-privacy</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 59284-0}\">Consent Document</span></p><p><b>patient</b>: <a href=\"Patient-Paciente1.html\">Juan Perez  Male, DoB: 1980-05-15</a></p><p><b>policyRule</b>: <span title=\"Codes:\">Consentimiento para TICTF</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:code [ fhir:v "patient-privacy" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:59284-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59284-0" ]
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <http://racsel.org/TIC-TSTF/Patient/Paciente1> ;
+     fhir:reference [ fhir:v "Patient/Paciente1" ]
+  ] ; # 
+  fhir:policyRule [
+     fhir:text [ fhir:v "Consentimiento para TICTF" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

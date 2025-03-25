@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://racsel.org/TIC-TSTF/CodeSystem/TipoOutputTaskCS",
+      "version" : "0.2.1",
+      "status" : "draft",
+      "name" : "TipoOutputTaskCS",
+      "title" : "TICTF Tipo de respuesta",
+      "description" : "Set de valores para Tipo Output Task"
+    }
+  ]
+}

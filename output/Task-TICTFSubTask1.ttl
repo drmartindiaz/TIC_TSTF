@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://racsel.org/TIC-TSTF/Task/TICTFSubTask1> a fhir:Task ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TICTFSubTask1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://racsel.org/TIC-TSTF/StructureDefinition/tictf-subtask"^^xsd:anyURI ;
+       fhir:link <http://racsel.org/TIC-TSTF/StructureDefinition/tictf-subtask>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task TICTFSubTask1</b></p><a name=\"TICTFSubTask1\"> </a><a name=\"hcTICTFSubTask1\"> </a><a name=\"TICTFSubTask1-en-US\"> </a><p><b>basedOn</b>: <a href=\"Task-TICTFMainTask1.html\">Task: status = in-progress; intent = order</a></p><p><b>status</b>: Completed</p><p><b>intent</b>: order</p><p><b>focus</b>: <a href=\"ImagingStudy-ImagingStudy1.html\">ImagingStudy: status = available; description = Tomografía computarizada de tórax</a></p><p><b>for</b>: <a href=\"Patient-Paciente1.html\">Juan Perez  Male, DoB: 1980-05-15</a></p><p><b>requester</b>: <a href=\"PractitionerRole-TICTFPractitionerRole1.html\">PractitionerRole</a></p><p><b>owner</b>: <a href=\"PractitionerRole-TICTFPractitionerRole3.html\">PractitionerRole</a></p><h3>Inputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/task-input-type clinical-note}\">clinical-note</span></td><td><a href=\"DocumentReference-DocumentReference2.html\">DocumentReference: status = current; type = </a></td></tr></table><h3>Outputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/task-output-type report}\">report</span></td><td><a href=\"Observation-TICTFObsRespuesta1.html\">Observation Consult note</a></td></tr></table></div>"
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:link <http://racsel.org/TIC-TSTF/Task/TICTFMainTask1> ;
+     fhir:reference [ fhir:v "Task/TICTFMainTask1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:focus [
+     fhir:link <http://racsel.org/TIC-TSTF/ImagingStudy/ImagingStudy1> ;
+     fhir:reference [ fhir:v "ImagingStudy/ImagingStudy1" ]
+  ] ; # 
+  fhir:for [
+     fhir:link <http://racsel.org/TIC-TSTF/Patient/Paciente1> ;
+     fhir:reference [ fhir:v "Patient/Paciente1" ]
+  ] ; # 
+  fhir:requester [
+     fhir:link <http://racsel.org/TIC-TSTF/PractitionerRole/TICTFPractitionerRole1> ;
+     fhir:reference [ fhir:v "PractitionerRole/TICTFPractitionerRole1" ]
+  ] ; # 
+  fhir:owner [
+     fhir:link <http://racsel.org/TIC-TSTF/PractitionerRole/TICTFPractitionerRole3> ;
+     fhir:reference [ fhir:v "PractitionerRole/TICTFPractitionerRole3" ]
+  ] ; # 
+  fhir:input ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/task-input-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "clinical-note" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://racsel.org/TIC-TSTF/DocumentReference/DocumentReference2> ;
+       fhir:reference [ fhir:v "DocumentReference/DocumentReference2" ]
+     ]
+  ] ) ; # 
+  fhir:output ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/task-output-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "report" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://racsel.org/TIC-TSTF/Observation/TICTFObsRespuesta1> ;
+       fhir:reference [ fhir:v "Observation/TICTFObsRespuesta1" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

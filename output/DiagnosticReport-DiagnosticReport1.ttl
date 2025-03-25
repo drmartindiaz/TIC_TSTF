@@ -1,0 +1,25 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://racsel.org/TIC-TSTF/DiagnosticReport/DiagnosticReport1> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DiagnosticReport1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport DiagnosticReport1</b></p><a name=\"DiagnosticReport1\"> </a><a name=\"hcDiagnosticReport1\"> </a><a name=\"DiagnosticReport1-en-US\"> </a><h2><span title=\"Codes:\">Radiografía de tórax</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Juan Perez  Male, DoB: 1980-05-15</td></tr></table><p><b>Report Details</b></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Radiografía de tórax" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://racsel.org/TIC-TSTF/Patient/Paciente1> ;
+     fhir:reference [ fhir:v "Patient/Paciente1" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

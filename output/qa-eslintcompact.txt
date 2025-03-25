@@ -1,0 +1,18 @@
+TICTSTF
+=========================================
+
+Generic: line 0, col 0, Warning - The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters (BUSINESSRULE)
+C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Consent-Consent1.json: line 18, col 4, Warning - !!El Coding no tiene sistema - no puede ser validado (INVALID)
+C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsGral1.json: line 1, col 2, Warning - !!Todos los recursos Observation deben tener un elemento performer (INVALID)
+C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsGral1.json: line 1, col 2, Warning - !!Todos los recursos Observation deben tener un elemento effectiveDateTime o effectivePeriod (INVALID)
+C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsRespuesta1.json: line 1, col 2, Warning - !!Todos los recursos Observation deben tener un elemento performer (INVALID)
+C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsRespuesta1.json: line 1, col 2, Warning - !!Todos los recursos Observation deben tener un elemento effectiveDateTime o effectivePeriod (INVALID)
+C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsSolicitud1.json: line 1, col 2, Warning - !!Todos los recursos Observation deben tener un elemento performer (INVALID)
+C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsSolicitud1.json: line 1, col 2, Warning - !!Todos los recursos Observation deben tener un elemento effectiveDateTime o effectivePeriod (INVALID)
+C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\ServiceRequest-TICTFServiceRequest1.json: line 46, col 6, Info - !!Este elemento no coincide con ninguna partición conocida defined in the profile http://racsel.org/TIC-TSTF/StructureDefinition/TICTFServiceRequest|0.2.1 (INFORMATIONAL)
+C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFMainTask2.json: line 16, col 8, Warning - A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/task-output-type' could not be found, so the code cannot be validated (NOTFOUND)
+C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFSubTask1.json: line 16, col 8, Warning - A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/task-input-type' could not be found, so the code cannot be validated (NOTFOUND)
+C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFSubTask1.json: line 31, col 8, Warning - A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/task-output-type' could not be found, so the code cannot be validated (NOTFOUND)
+
+err = 0, warn = 11, info = 1
+IG Publisher Version: 1.8.10

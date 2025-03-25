@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImagingStudy xmlns="http://hl7.org/fhir">
+  <id value="ImagingStudy1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImagingStudy ImagingStudy1</b></p><a name="ImagingStudy1"> </a><a name="hcImagingStudy1"> </a><a name="ImagingStudy1-en-US"> </a><p><b>status</b>: Available</p><p><b>subject</b>: <a href="Patient-Paciente1.html">Juan Perez  Male, DoB: 1980-05-15</a></p><p><b>description</b>: Tomografía computarizada de tórax</p></div>
+  </text>
+  <status value="available"/>
+  <subject>
+    <reference value="Patient/Paciente1"/>
+  </subject>
+  <description value="Tomografía computarizada de tórax"/>
+</ImagingStudy>

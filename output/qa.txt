@@ -1,0 +1,85 @@
+TICTSTF : Validation Results
+=========================================
+
+err = 0, warn = 11, info = 1
+IG Publisher Version: 1.8.10
+Generated Mon Feb 03 10:58:20 ART 2025. FHIR version 4.0.1 for fhir.TIC-TSTF#0.2.1 (canonical = http://racsel.org/TIC-TSTF)
+ Build Errors : 0 / 1 / 0
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Consent-Consent1 : 0 / 1 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\DiagnosticReport-DiagnosticReport1 : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\DocumentReference-DocumentReference1 : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\DocumentReference-DocumentReference2 : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\ImagingStudy-ImagingStudy1 : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\ImplementationGuide-fhir.TIC-TSTF : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsGral1 : 0 / 2 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsRespuesta1 : 0 / 2 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsSolicitud1 : 0 / 2 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Organization-TICTFOrganization1 : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Organization-TICTFOrganization2 : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Patient-Paciente1 : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Practitioner-Practitioner1 : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Practitioner-Practitioner2 : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Practitioner-Practitioner3 : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\PractitionerRole-TICTFPractitionerRole1 : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\PractitionerRole-TICTFPractitionerRole2 : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\PractitionerRole-TICTFPractitionerRole3 : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\ServiceRequest-TICTFServiceRequest1 : 0 / 0 / 2
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-PROOrganizationTICTF : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-RespuestaTICTF : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-SolicitudTICTF : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFObsGral : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFObsRespuesta : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFObsSolicitud : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFPractitionerRole : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFServiceRequest : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-tictf-maintask : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-tictf-subtask : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFMainTask1 : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFMainTask2 : 0 / 1 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFSubTask1 : 0 / 2 / 1
+</table>
+== n/a ==
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated\resources\Consent-Consent1.json ==
+WARNING: Consent/Consent1: Consent.scope.coding[0]: !!El Coding no tiene sistema - no puede ser validado
+== fsh-generated\resources\DiagnosticReport-DiagnosticReport1.json ==
+== fsh-generated\resources\DocumentReference-DocumentReference1.json ==
+== fsh-generated\resources\DocumentReference-DocumentReference2.json ==
+== fsh-generated\resources\ImagingStudy-ImagingStudy1.json ==
+== fsh-generated\resources\ImplementationGuide-fhir.TIC-TSTF.json ==
+== fsh-generated\resources\Observation-TICTFObsGral1.json ==
+WARNING: Observation/TICTFObsGral1: Observation: !!Todos los recursos Observation deben tener un elemento performer
+WARNING: Observation/TICTFObsGral1: Observation: !!Todos los recursos Observation deben tener un elemento effectiveDateTime o effectivePeriod
+== fsh-generated\resources\Observation-TICTFObsRespuesta1.json ==
+WARNING: Observation/TICTFObsRespuesta1: Observation: !!Todos los recursos Observation deben tener un elemento performer
+WARNING: Observation/TICTFObsRespuesta1: Observation: !!Todos los recursos Observation deben tener un elemento effectiveDateTime o effectivePeriod
+== fsh-generated\resources\Observation-TICTFObsSolicitud1.json ==
+WARNING: Observation/TICTFObsSolicitud1: Observation: !!Todos los recursos Observation deben tener un elemento performer
+WARNING: Observation/TICTFObsSolicitud1: Observation: !!Todos los recursos Observation deben tener un elemento effectiveDateTime o effectivePeriod
+== fsh-generated\resources\Organization-TICTFOrganization1.json ==
+== fsh-generated\resources\Organization-TICTFOrganization2.json ==
+== fsh-generated\resources\Patient-Paciente1.json ==
+== fsh-generated\resources\Practitioner-Practitioner1.json ==
+== fsh-generated\resources\Practitioner-Practitioner2.json ==
+== fsh-generated\resources\Practitioner-Practitioner3.json ==
+== fsh-generated\resources\PractitionerRole-TICTFPractitionerRole1.json ==
+== fsh-generated\resources\PractitionerRole-TICTFPractitionerRole2.json ==
+== fsh-generated\resources\PractitionerRole-TICTFPractitionerRole3.json ==
+== fsh-generated\resources\ServiceRequest-TICTFServiceRequest1.json ==
+INFORMATION: ServiceRequest/TICTFServiceRequest1: ServiceRequest.supportingInfo[3]: !!Este elemento no coincide con ninguna partición conocida defined in the profile http://racsel.org/TIC-TSTF/StructureDefinition/TICTFServiceRequest|0.2.1
+== fsh-generated\resources\StructureDefinition-PROOrganizationTICTF.json ==
+== fsh-generated\resources\StructureDefinition-RespuestaTICTF.json ==
+== fsh-generated\resources\StructureDefinition-SolicitudTICTF.json ==
+== fsh-generated\resources\StructureDefinition-TICTFObsGral.json ==
+== fsh-generated\resources\StructureDefinition-TICTFObsRespuesta.json ==
+== fsh-generated\resources\StructureDefinition-TICTFObsSolicitud.json ==
+== fsh-generated\resources\StructureDefinition-TICTFPractitionerRole.json ==
+== fsh-generated\resources\StructureDefinition-TICTFServiceRequest.json ==
+== fsh-generated\resources\StructureDefinition-tictf-maintask.json ==
+== fsh-generated\resources\StructureDefinition-tictf-subtask.json ==
+== fsh-generated\resources\Task-TICTFMainTask1.json ==
+== fsh-generated\resources\Task-TICTFMainTask2.json ==
+WARNING: Task/TICTFMainTask2: Task.output[0].type.coding[0]: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/task-output-type' could not be found, so the code cannot be validated
+== fsh-generated\resources\Task-TICTFSubTask1.json ==
+WARNING: Task/TICTFSubTask1: Task.input[0].type.coding[0]: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/task-input-type' could not be found, so the code cannot be validated
+WARNING: Task/TICTFSubTask1: Task.output[0].type.coding[0]: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/task-output-type' could not be found, so the code cannot be validated

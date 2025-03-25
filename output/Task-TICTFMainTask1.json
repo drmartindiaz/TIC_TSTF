@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Task",
+  "id" : "TICTFMainTask1",
+  "meta" : {
+    "profile" : ["http://racsel.org/TIC-TSTF/StructureDefinition/tictf-maintask"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task TICTFMainTask1</b></p><a name=\"TICTFMainTask1\"> </a><a name=\"hcTICTFMainTask1\"> </a><a name=\"TICTFMainTask1-en-US\"> </a><p><b>basedOn</b>: <a href=\"ServiceRequest-TICTFServiceRequest1.html\">ServiceRequest Telemedicine consultation with provider (procedure)</a></p><p><b>status</b>: In Progress</p><p><b>intent</b>: order</p><p><b>focus</b>: <a href=\"DiagnosticReport-DiagnosticReport1.html\">Diagnostic Report for '' for '-&gt;Juan Perez  Male, DoB: 1980-05-15'</a></p><p><b>for</b>: <a href=\"Patient-Paciente1.html\">Juan Perez  Male, DoB: 1980-05-15</a></p><p><b>requester</b>: <a href=\"PractitionerRole-TICTFPractitionerRole1.html\">PractitionerRole</a></p><p><b>owner</b>: <a href=\"PractitionerRole-TICTFPractitionerRole2.html\">PractitionerRole</a></p></div>"
+  },
+  "basedOn" : [{
+    "reference" : "ServiceRequest/TICTFServiceRequest1"
+  }],
+  "status" : "in-progress",
+  "intent" : "order",
+  "focus" : {
+    "reference" : "DiagnosticReport/DiagnosticReport1"
+  },
+  "for" : {
+    "reference" : "Patient/Paciente1"
+  },
+  "requester" : {
+    "reference" : "PractitionerRole/TICTFPractitionerRole1"
+  },
+  "owner" : {
+    "reference" : "PractitionerRole/TICTFPractitionerRole2"
+  }
+}

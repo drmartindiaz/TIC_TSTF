@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="TICTFPractitionerRole2"/>
+  <meta>
+    <profile value="http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPractitionerRole"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole TICTFPractitionerRole2</b></p><a name="TICTFPractitionerRole2"> </a><a name="hcTICTFPractitionerRole2"> </a><a name="TICTFPractitionerRole2-en-US"> </a><p><b>practitioner</b>: <a href="Practitioner-Practitioner2.html">Practitioner Luis Fernandez </a></p><p><b>organization</b>: <a href="Organization-TICTFOrganization2.html">Organization Hospital Otro</a></p></div>
+  </text>
+  <practitioner>
+    <reference value="Practitioner/Practitioner2"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/TICTFOrganization2"/>
+  </organization>
+</PractitionerRole>

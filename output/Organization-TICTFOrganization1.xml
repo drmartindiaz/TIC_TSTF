@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="TICTFOrganization1"/>
+  <meta>
+    <profile value="http://racsel.org/TIC-TSTF/StructureDefinition/PROOrganizationTICTF"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization TICTFOrganization1</b></p><a name="TICTFOrganization1"> </a><a name="hcTICTFOrganization1"> </a><a name="TICTFOrganization1-en-US"> </a><p><b>name</b>: Hospital Central</p><p><b>address</b>: AR </p></div>
+  </text>
+  <name value="Hospital Central"/>
+  <address>
+    <country value="AR"/>
+  </address>
+</Organization>

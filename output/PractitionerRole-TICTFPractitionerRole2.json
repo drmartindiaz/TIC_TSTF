@@ -1,0 +1,17 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "TICTFPractitionerRole2",
+  "meta" : {
+    "profile" : ["http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPractitionerRole"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole TICTFPractitionerRole2</b></p><a name=\"TICTFPractitionerRole2\"> </a><a name=\"hcTICTFPractitionerRole2\"> </a><a name=\"TICTFPractitionerRole2-en-US\"> </a><p><b>practitioner</b>: <a href=\"Practitioner-Practitioner2.html\">Practitioner Luis Fernandez </a></p><p><b>organization</b>: <a href=\"Organization-TICTFOrganization2.html\">Organization Hospital Otro</a></p></div>"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/Practitioner2"
+  },
+  "organization" : {
+    "reference" : "Organization/TICTFOrganization2"
+  }
+}

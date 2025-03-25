@@ -1,0 +1,30 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://racsel.org/TIC-TSTF/DocumentReference/DocumentReference1> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DocumentReference1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReference1</b></p><a name=\"DocumentReference1\"> </a><a name=\"hcDocumentReference1\"> </a><a name=\"DocumentReference1-en-US\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:\">Resumen Clínico</span></p><p><b>subject</b>: <a href=\"Patient-Paciente1.html\">Juan Perez  Male, DoB: 1980-05-15</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://HIS.PaisDeOrigen.gov/tictf/DocumentReference1\">http://HIS.PaisDeOrigen.gov/tictf/DocumentReference1</a></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Resumen Clínico" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://racsel.org/TIC-TSTF/Patient/Paciente1> ;
+     fhir:reference [ fhir:v "Patient/Paciente1" ]
+  ] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:url [ fhir:v "http://HIS.PaisDeOrigen.gov/tictf/DocumentReference1"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

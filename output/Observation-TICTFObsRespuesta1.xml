@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="TICTFObsRespuesta1"/>
+  <meta>
+    <profile value="http://racsel.org/TIC-TSTF/StructureDefinition/TICTFObsRespuesta"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation TICTFObsRespuesta1</b></p><a name="TICTFObsRespuesta1"> </a><a name="hcTICTFObsRespuesta1"> </a><a name="TICTFObsRespuesta1-en-US"> </a><p><b>status</b>: Registered</p><p><b>code</b>: <span title="Codes:{http://loinc.org 11488-4}">Consult note</span></p><p><b>subject</b>: <a href="Patient-Paciente1.html">Juan Perez  Male, DoB: 1980-05-15</a></p><p><b>value</b>: Se recomienda realizar pruebas complementarias para descartar infección pulmonar.</p></div>
+  </text>
+  <status value="registered"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11488-4"/>
+      <display value="Consult note"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Paciente1"/>
+  </subject>
+  <valueString value="Se recomienda realizar pruebas complementarias para descartar infección pulmonar."/>
+</Observation>

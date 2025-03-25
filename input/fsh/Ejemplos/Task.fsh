@@ -1,7 +1,7 @@
 Instance: TICTFMainTask1
 InstanceOf: TICTFMainTask
-Title: "Tarea Principal de TeleInterconsulta"
-Description: "Ejemplo de una tarea principal en una TeleInterconsulta Transfronteriza."
+Title: "Tarea Principal de TeleInterconsulta en progreso"
+Description: "Ejemplo de una tarea principal en una TeleInterconsulta Transfronteriza recibida y en progreso."
 
 * status = #in-progress
 * intent = #order
@@ -10,8 +10,21 @@ Description: "Ejemplo de una tarea principal en una TeleInterconsulta Transfront
 * for = Reference(Paciente1) // Paciente involucrado en la interconsulta
 * requester = Reference(TICTFPractitionerRole1) // Solicitante de la tarea
 * owner = Reference(TICTFPractitionerRole2) // Responsable de la ejecución de la tarea
+
+Instance: TICTFMainTask2
+InstanceOf: TICTFMainTask
+Title: "Tarea Principal de TeleInterconsulta Completada"
+Description: "Ejemplo de una tarea principal en una TeleInterconsulta Transfronteriza completada como respuesta."
+
+* status = #completed
+* intent = #order
+* basedOn = Reference(TICTFServiceRequest1) // Referencia a la solicitud de interconsulta
+* focus = Reference(DiagnosticReport1) // Un informe diagnóstico como foco de la tarea
+* for = Reference(Paciente1) // Paciente involucrado en la interconsulta
+* requester = Reference(TICTFPractitionerRole1) // Solicitante de la tarea
+* owner = Reference(TICTFPractitionerRole2) // Responsable de la ejecución de la tarea
 * output.type = http://terminology.hl7.org/CodeSystem/task-output-type#documentation
-* output.valueReference = Reference(DocumentReference1) // Documento generado como resultado
+* output.valueReference = Reference(TICTFObsRespuesta1) // Observacion narrativa generada como resultado
 
 Instance: TICTFSubTask1
 InstanceOf: TICTFSubTask

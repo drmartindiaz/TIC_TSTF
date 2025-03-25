@@ -1,0 +1,31 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://racsel.org/TIC-TSTF/PractitionerRole/TICTFPractitionerRole3> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TICTFPractitionerRole3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPractitionerRole"^^xsd:anyURI ;
+       fhir:link <http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPractitionerRole>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole TICTFPractitionerRole3</b></p><a name=\"TICTFPractitionerRole3\"> </a><a name=\"hcTICTFPractitionerRole3\"> </a><a name=\"TICTFPractitionerRole3-en-US\"> </a><p><b>practitioner</b>: <a href=\"Practitioner-Practitioner3.html\">Practitioner Lucía Gutierrrez </a></p><p><b>organization</b>: <a href=\"Organization-TICTFOrganization1.html\">Organization Hospital Central</a></p></div>"
+  ] ; # 
+  fhir:practitioner [
+     fhir:link <http://racsel.org/TIC-TSTF/Practitioner/Practitioner3> ;
+     fhir:reference [ fhir:v "Practitioner/Practitioner3" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://racsel.org/TIC-TSTF/Organization/TICTFOrganization1> ;
+     fhir:reference [ fhir:v "Organization/TICTFOrganization1" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

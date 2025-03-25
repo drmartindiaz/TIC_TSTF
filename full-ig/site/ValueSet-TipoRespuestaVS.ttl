@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://racsel.org/TIC-TSTF/ValueSet/TipoRespuestaVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TipoRespuestaVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet TipoRespuestaVS</b></p><a name=\"TipoRespuestaVS\"> </a><a name=\"hcTipoRespuestaVS\"> </a><a name=\"TipoRespuestaVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-TipoOutputTaskCS.html\"><code>http://racsel.org/TIC-TSTF/CodeSystem/TipoOutputTaskCS</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://racsel.org/TIC-TSTF/ValueSet/TipoRespuestaVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:name [ fhir:v "TipoRespuestaVS"] ; # 
+  fhir:title [ fhir:v "TICTF Tipo de respuesta"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-01-30T19:16:54-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "RACSEL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "RACSEL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://racsel.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem de Códigos tipo de respuesta TSTF"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://racsel.org/TIC-TSTF/CodeSystem/TipoOutputTaskCS"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,15 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "DiagnosticReport1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport DiagnosticReport1</b></p><a name=\"DiagnosticReport1\"> </a><a name=\"hcDiagnosticReport1\"> </a><a name=\"DiagnosticReport1-en-US\"> </a><h2><span title=\"Codes:\">Radiografía de tórax</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Juan Perez  Male, DoB: 1980-05-15</td></tr></table><p><b>Report Details</b></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "text" : "Radiografía de tórax"
+  },
+  "subject" : {
+    "reference" : "Patient/Paciente1"
+  }
+}

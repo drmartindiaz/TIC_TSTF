@@ -1,0 +1,15 @@
+{
+  "resourceType" : "Organization",
+  "id" : "TICTFOrganization1",
+  "meta" : {
+    "profile" : ["http://racsel.org/TIC-TSTF/StructureDefinition/PROOrganizationTICTF"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization TICTFOrganization1</b></p><a name=\"TICTFOrganization1\"> </a><a name=\"hcTICTFOrganization1\"> </a><a name=\"TICTFOrganization1-en-US\"> </a><p><b>name</b>: Hospital Central</p><p><b>address</b>: AR </p></div>"
+  },
+  "name" : "Hospital Central",
+  "address" : [{
+    "country" : "AR"
+  }]
+}
