@@ -1,6 +1,6 @@
 {
   "package": "fhir.TIC-TSTF",
-  "version": "0.2.1",
+  "version": "0.6.2",
   "fhirVersion": "4.0.1",
   "jurisdiction": "419",
   "extensions": [],
@@ -23,6 +23,12 @@
       {
         "url": "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFObsSolicitud",
         "title": "TICTF Narrativa de Solicitud"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient",
+        "title": "TICTFPatient"
       }
     ],
     "PractitionerRole": [

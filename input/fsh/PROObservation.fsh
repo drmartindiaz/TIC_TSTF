@@ -13,7 +13,7 @@ Description: "Observation para nota narrativa general"
   * display = "Progress note"
 * subject 1..1  
 * subject ^short = "Pacente sujeto de esta nota narrativa"
-* subject only Reference(Patient)
+* subject only Reference(TICTFPatient)
 * valueString 1..1  
 * valueString ^short = "Contenido de la Nota Narrativa" //Narrativa de la solicitud de interconsulta
 
@@ -32,7 +32,7 @@ Description: "Observation para narrativa de la solicitud de IC transfronteriza"
   * display = "Consultation request (narrative)"
 * subject 1..1  
 * subject ^short = "Pacente sujeto de esta nota narrativa"
-* subject only Reference(Patient)
+* subject only Reference(TICTFPatient)
 * valueString 1..1  
 * valueString ^short = "Contenido de la Nota Narrativa" //Narrativa de la solicitud de interconsulta
 
@@ -51,6 +51,6 @@ Description: "Observation para narrativa de la respuesta de IC transfronteriza"
   * display = "Consult note"
 * subject 1..1  
 * subject ^short = "Pacente sujeto de esta nota narrativa"
-* subject only Reference(Patient)
+* subject only Reference(TICTFPatient)
 * valueString 1..1  
 * valueString ^short = "Contenido de la Nota Narrativa" //Narrativa de la solicitud de interconsulta

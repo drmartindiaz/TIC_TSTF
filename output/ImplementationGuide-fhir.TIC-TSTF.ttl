@@ -13,10 +13,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.TIC-TSTF</b></p><a name=\"fhir.TIC-TSTF\"> </a><a name=\"hcfhir.TIC-TSTF\"> </a><a name=\"fhir.TIC-TSTF-en-US\"> </a><h2>TICTSTF</h2><p>The official URL for this implementation guide is: </p><pre>http://racsel.org/TIC-TSTF/ImplementationGuide/fhir.TIC-TSTF</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "http://racsel.org/TIC-TSTF/ImplementationGuide/fhir.TIC-TSTF"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:version [ fhir:v "0.6.2"] ; # 
   fhir:name [ fhir:v "TICTSTF"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-02-03T10:56:01-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-21T18:29:32-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "RACSEL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "RACSEL" ] ;
@@ -46,7 +46,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.2.0" ]
+     fhir:version [ fhir:v "6.4.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -58,7 +58,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "5.1.0" ]
+     fhir:version [ fhir:v "5.2.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -688,7 +688,10 @@
        ] ;
        fhir:name [ fhir:v "Paciente Ejemplo" ] ;
        fhir:description [ fhir:v "Ejemplo de paciente para la solicitud de interconsulta" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
+       fhir:example [
+         fhir:v "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient"^^xsd:anyURI ;
+         fhir:link <http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -923,6 +926,18 @@
        fhir:name [ fhir:v "TICTF Tarea PRINCIPAL" ] ;
        fhir:description [ fhir:v "Tarea PRINCIPAL en TeleInterconsulta Transfronteriza" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient> ;
+         fhir:reference [ fhir:v "StructureDefinition/TICTFPatient" ]
+       ] ;
+       fhir:name [ fhir:v "TICTFPatient" ] ;
+       fhir:description [ fhir:v "Paciente para la guia de Teleinterconsulta transfronteriza basado en paciente LACPAss" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
@@ -947,6 +962,14 @@
          ] ) ;
          fhir:name [ fhir:v "Aspectos-Generales.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Generalidades" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "CasosDeUso.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "CasosDeUso.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Casos de Uso" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

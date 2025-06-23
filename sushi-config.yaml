@@ -9,7 +9,7 @@ name: TIC-TSTF
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
-version: 0.2.1
+version: 0.6.2
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -55,6 +55,8 @@ pages:
     title: Inicio
   Aspectos-Generales.md:
     title: Generalidades
+  CasosDeUso.md:
+    title: Casos de Uso
   operaciones.md:
     title: Operaciones
 #
@@ -83,6 +85,7 @@ pages:
 menu:
   Inicio: index.html
   Generalidades: Aspectos-Generales.html
+  Casos de uso: CasosDeUso.html
   Operaciones: operaciones.html
   Artefactos: artifacts.html
 

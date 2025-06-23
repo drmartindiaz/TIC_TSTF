@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Generalidades -  v0.2.1</title>
+    <title>Generalidades -  v0.6.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.2.1 - ci-build
+            <span style="display:inline-block;">0.6.2 - ci-build
 
 
 
@@ -88,6 +88,9 @@
   </li>
   <li>
     <a href="Aspectos-Generales.html">Generalidades</a>
+  </li>
+  <li>
+    <a href="CasosDeUso.html">Casos de uso</a>
   </li>
   <li>
     <a href="operaciones.html">Operaciones</a>
@@ -127,7 +130,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TICTSTF - Local Development build (v0.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://racsel.org/TIC-TSTF/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TICTSTF - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://racsel.org/TIC-TSTF/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Generalidades</h2>
   
 
@@ -145,6 +148,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#límites-y-condiciones-de-solicitudes-de-interconsulta" id="markdown-toc-límites-y-condiciones-de-solicitudes-de-interconsulta">Límites y Condiciones de Solicitudes de Interconsulta</a></li>
+  <li><a href="#normativas-aplicables-y-restricciones" id="markdown-toc-normativas-aplicables-y-restricciones">Normativas Aplicables y Restricciones</a></li>
+  <li><a href="#alineación-regional-con-marcos-existentes" id="markdown-toc-alineación-regional-con-marcos-existentes">Alineación regional con marcos existentes</a></li>
   <li><a href="#aspectos-a-considerar" id="markdown-toc-aspectos-a-considerar">Aspectos a Considerar</a></li>
   <li><a href="#definiciones-para-comprender-la-guía" id="markdown-toc-definiciones-para-comprender-la-guía">Definiciones Para comprender la Guía</a></li>
   <li><a href="#definición-del-conjunto-mínimo-de-datos" id="markdown-toc-definición-del-conjunto-mínimo-de-datos">Definición del Conjunto Mínimo de Datos</a></li>
@@ -157,10 +163,106 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<h3 id="aspectos-a-considerar">Aspectos a Considerar</h3>
-<p><br /></p>
+<h3 id="límites-y-condiciones-de-solicitudes-de-interconsulta">Límites y Condiciones de Solicitudes de Interconsulta</h3>
 
-<p>Esta sección describe definiciones, interpretaciones y requisitos importantes aplicables a todos los actores utilizados en esta guía. Los verbos de conformidad - <strong>SHALL</strong> <em>(Debe)</em>, <strong>SHOULD</strong> <em>(Debería Si Condición)</em>, <strong>MAY</strong> <em>(Podría)</em> - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
+<ol>
+  <li><strong>Definición de límites y condiciones:</strong>
+    <ul>
+      <li>Es necesario especificar bajo qué escenarios el sistema de información en salud (HIS) solicitará una interconsulta a profesionales no validados localmente. Estos límites deben considerar:
+        <ul>
+          <li><strong>La necesidad de la consulta:</strong> Establecer si la interconsulta es requerida por falta de especialistas locales o por la necesidad de conocimientos especializad</li>
+          <li><strong>El perfil del profesional externo:</strong> Definir los criterios específicos (ejemplo: certificaciones o licencias internacionales) que permitan aceptar la participación del profesional en el proceso de interconsulta.</li>
+          <li><strong>La temporalidad:</strong> Determinar si estas consultas se limitan a casos de emergencia o si forman parte de servicios regulares.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Responsabilidad del HIS:</strong></p>
+
+    <ul>
+      <li>El HIS debe ser responsable de validar que el profesional externo cuenta con los requisitos mínimos necesarios establecidos en los acuerdos legales transfronterizos.</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="normativas-aplicables-y-restricciones">Normativas Aplicables y Restricciones</h3>
+
+<ol>
+  <li>
+    <p><strong>Normativas sobre emisión de recetas:</strong></p>
+
+    <ul>
+      <li>
+        <p>Los marcos regulatorios nacionales deberán especificar:</p>
+
+        <ul>
+          <li>
+            <p>Quiénes tienen la autoridad para emitir recetas dentro del territorio.</p>
+          </li>
+          <li>
+            <p>Si las recetas emitidas por un profesional extranjero tendrán validez o si deben ser validadas por un profesional local registrado.</p>
+          </li>
+          <li>
+            <p>Qué tipo de medicamentos pueden ser recetados bajo este esquema.</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Restricciones aplicables:</strong></p>
+
+    <ul>
+      <li>
+        <p>Los profesionales no reconocidos oficialmente en el país receptor podrán tener restricciones como:</p>
+
+        <ul>
+          <li>
+            <p>Limitación en la emisión de recetas controladas.</p>
+          </li>
+          <li>
+            <p>Necesidad de acompañar los informes médicos con una firma digital certificada internacionalmente.</p>
+          </li>
+          <li>
+            <p>Prohibición de realizar ciertos procedimientos clínicos de manera remota.</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Alineación con acuerdos transfronterizos:</strong></p>
+
+    <ul>
+      <li>
+        <p>Estos elementos deben ser coherentes con las disposiciones planteadas en el documento “Propuesta de acuerdo transfronterizo entre países”. Dicho documento establece un marco de colaboración donde:</p>
+
+        <ul>
+          <li>
+            <p>Las responsabilidades legales entre países quedan claramente definidas.</p>
+          </li>
+          <li>
+            <p>Se prioriza la interoperabilidad entre sistemas de información en salud para facilitar un flujo de información seguro y confiable.</p>
+          </li>
+          <li>
+            <p>Se consideran las barreras legales y culturales que podrían influir en la práctica de telesalud.</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="alineación-regional-con-marcos-existentes">Alineación regional con marcos existentes</h3>
+<p><br />
+Esta guía de implementación para teleconsulta transfronteriza se ha diseñado considerando los marcos técnicos y semánticos de interoperabilidad promovidos en la región de América Latina y el Caribe. En particular, se ha tomado como referencia la <a href="https://lacpass.racsel.org/index.html">Guía de Implementación de LACPass</a>, impulsada por la Organización Panamericana de la Salud (OPS), con el objetivo de promover la compatibilidad con otras soluciones regionales y facilitar la integración de sistemas.</p>
+
+<p>LACPass define un conjunto mínimo de perfiles y extensiones FHIR para representar conceptos fundacionales como <code class="language-plaintext highlighter-rouge">Patient</code>,  <code class="language-plaintext highlighter-rouge">Organization</code>, <code class="language-plaintext highlighter-rouge">Immunization</code> entre otros. Esta guía busca mantener alineación con dichas definiciones cuando es pertinente para asegurar la interoperabilidad técnica, semántica y organizacional entre países.</p>
+
+<h3 id="aspectos-a-considerar">Aspectos a Considerar</h3>
+<p><br />
+Esta sección describe definiciones, interpretaciones y requisitos importantes aplicables a todos los actores utilizados en esta guía. Los verbos de conformidad - <strong>SHALL</strong> <em>(Debe)</em>, <strong>SHOULD</strong> <em>(Debería Si Condición)</em>, <strong>MAY</strong> <em>(Podría)</em> - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
 <br /></p>
 <h3 id="definiciones-para-comprender-la-guía">Definiciones Para comprender la Guía</h3>
 
@@ -367,7 +469,7 @@ Además, cada ejemplo viene descrito en 4 formatos:
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://racsel.org/">RACSEL</a>.  Package fhir.TIC-TSTF#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 3, 2025 10:56-0300">2025-02-03</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://racsel.org/">RACSEL</a>.  Package fhir.TIC-TSTF#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jun 21, 2025 18:29-0300">2025-06-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

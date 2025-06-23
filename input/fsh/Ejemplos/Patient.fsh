@@ -1,5 +1,5 @@
 Instance: Paciente1
-InstanceOf: Patient
+InstanceOf: TICTFPatient
 Title: "Paciente Ejemplo"
 Description: "Ejemplo de paciente para la solicitud de interconsulta"
 * id = "Paciente1"

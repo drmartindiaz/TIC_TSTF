@@ -6,10 +6,10 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide fhir.TIC-TSTF</b></p><a name="fhir.TIC-TSTF"> </a><a name="hcfhir.TIC-TSTF"> </a><a name="fhir.TIC-TSTF-en-US"> </a><h2>TICTSTF</h2><p>The official URL for this implementation guide is: </p><pre>http://racsel.org/TIC-TSTF/ImplementationGuide/fhir.TIC-TSTF</pre></div>
   </text>
   <url value="http://racsel.org/TIC-TSTF/ImplementationGuide/fhir.TIC-TSTF"/>
-  <version value="0.2.1"/>
+  <version value="0.6.2"/>
   <name value="TICTSTF"/>
   <status value="draft"/>
-  <date value="2025-02-03T10:56:01-03:00"/>
+  <date value="2025-06-21T18:29:32-03:00"/>
   <publisher value="RACSEL"/>
   <contact>
     <name value="RACSEL"/>
@@ -34,7 +34,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.2.0"/>
+    <version value="6.4.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -42,7 +42,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.1.0"/>
+    <version value="5.2.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -589,7 +589,7 @@
       </reference>
       <name value="Paciente Ejemplo"/>
       <description value="Ejemplo de paciente para la solicitud de interconsulta"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -789,6 +789,17 @@
       <description value="Tarea PRINCIPAL en TeleInterconsulta Transfronteriza"/>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/TICTFPatient"/>
+      </reference>
+      <name value="TICTFPatient"/>
+      <description value="Paciente para la guia de Teleinterconsulta transfronteriza basado en paciente LACPAss"/>
+      <exampleBoolean value="false"/>
+    </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
         <valueUrl value="toc.html"/>
@@ -810,6 +821,14 @@
         </extension>
         <nameUrl value="Aspectos-Generales.html"/>
         <title value="Generalidades"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="CasosDeUso.html"/>
+        </extension>
+        <nameUrl value="CasosDeUso.html"/>
+        <title value="Casos de Uso"/>
         <generation value="markdown"/>
       </page>
       <page>

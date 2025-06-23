@@ -9,10 +9,11 @@ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TIC
 C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsRespuesta1.json: line 1, col 2, Warning - !!Todos los recursos Observation deben tener un elemento effectiveDateTime o effectivePeriod (INVALID)
 C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsSolicitud1.json: line 1, col 2, Warning - !!Todos los recursos Observation deben tener un elemento performer (INVALID)
 C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsSolicitud1.json: line 1, col 2, Warning - !!Todos los recursos Observation deben tener un elemento effectiveDateTime o effectivePeriod (INVALID)
-C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\ServiceRequest-TICTFServiceRequest1.json: line 46, col 6, Info - !!Este elemento no coincide con ninguna partición conocida defined in the profile http://racsel.org/TIC-TSTF/StructureDefinition/TICTFServiceRequest|0.2.1 (INFORMATIONAL)
+C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\ServiceRequest-TICTFServiceRequest1.json: line 46, col 6, Info - !!Este elemento no coincide con ninguna partición conocida defined in the profile http://racsel.org/TIC-TSTF/StructureDefinition/TICTFServiceRequest|0.6.2 (INFORMATIONAL)
+C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-PROOrganizationTICTF.json: line 1, col 19129, Info - The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated (BUSINESSRULE)
 C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFMainTask2.json: line 16, col 8, Warning - A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/task-output-type' could not be found, so the code cannot be validated (NOTFOUND)
 C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFSubTask1.json: line 16, col 8, Warning - A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/task-input-type' could not be found, so the code cannot be validated (NOTFOUND)
 C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFSubTask1.json: line 31, col 8, Warning - A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/task-output-type' could not be found, so the code cannot be validated (NOTFOUND)
 
-err = 0, warn = 11, info = 1
+err = 0, warn = 11, info = 2
 IG Publisher Version: 1.8.10

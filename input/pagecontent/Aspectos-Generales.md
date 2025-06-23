@@ -1,6 +1,57 @@
+### Límites y Condiciones de Solicitudes de Interconsulta
+
+1. **Definición de límites y condiciones:**
+   *   Es necesario especificar bajo qué escenarios el sistema de información en salud (HIS) solicitará una interconsulta a profesionales no validados localmente. Estos límites deben considerar:
+       * **La necesidad de la consulta:** Establecer si la interconsulta es requerida por falta de especialistas locales o por la necesidad de conocimientos especializad
+       * **El perfil del profesional externo:** Definir los criterios específicos (ejemplo: certificaciones o licencias internacionales) que permitan aceptar la participación del profesional en el proceso de interconsulta.          
+       * **La temporalidad:** Determinar si estas consultas se limitan a casos de emergencia o si forman parte de servicios regulares.
+            
+2. **Responsabilidad del HIS:**
+    
+    *   El HIS debe ser responsable de validar que el profesional externo cuenta con los requisitos mínimos necesarios establecidos en los acuerdos legales transfronterizos.
+        
+
+### Normativas Aplicables y Restricciones ###
+
+1.  **Normativas sobre emisión de recetas:**
+    
+    *   Los marcos regulatorios nacionales deberán especificar:
+        
+        *   Quiénes tienen la autoridad para emitir recetas dentro del territorio.
+            
+        *   Si las recetas emitidas por un profesional extranjero tendrán validez o si deben ser validadas por un profesional local registrado.
+            
+        *   Qué tipo de medicamentos pueden ser recetados bajo este esquema.
+            
+2.  **Restricciones aplicables:**
+    
+    *   Los profesionales no reconocidos oficialmente en el país receptor podrán tener restricciones como:
+        
+        *   Limitación en la emisión de recetas controladas.
+            
+        *   Necesidad de acompañar los informes médicos con una firma digital certificada internacionalmente.
+            
+        *   Prohibición de realizar ciertos procedimientos clínicos de manera remota.
+            
+3.  **Alineación con acuerdos transfronterizos:**
+    
+    *   Estos elementos deben ser coherentes con las disposiciones planteadas en el documento “Propuesta de acuerdo transfronterizo entre países”. Dicho documento establece un marco de colaboración donde:
+        
+        *   Las responsabilidades legales entre países quedan claramente definidas.
+            
+        *   Se prioriza la interoperabilidad entre sistemas de información en salud para facilitar un flujo de información seguro y confiable.
+            
+        *   Se consideran las barreras legales y culturales que podrían influir en la práctica de telesalud.
+  
+### Alineación regional con marcos existentes
+<br>
+Esta guía de implementación para teleconsulta transfronteriza se ha diseñado considerando los marcos técnicos y semánticos de interoperabilidad promovidos en la región de América Latina y el Caribe. En particular, se ha tomado como referencia la [Guía de Implementación de LACPass](https://lacpass.racsel.org/index.html), impulsada por la Organización Panamericana de la Salud (OPS), con el objetivo de promover la compatibilidad con otras soluciones regionales y facilitar la integración de sistemas.
+
+LACPass define un conjunto mínimo de perfiles y extensiones FHIR para representar conceptos fundacionales como `Patient`,  `Organization`, `Immunization` entre otros. Esta guía busca mantener alineación con dichas definiciones cuando es pertinente para asegurar la interoperabilidad técnica, semántica y organizacional entre países.
+
+
 ### Aspectos a Considerar
 <br>
-
 Esta sección describe definiciones, interpretaciones y requisitos importantes aplicables a todos los actores utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
 <br>
 ### Definiciones Para comprender la Guía

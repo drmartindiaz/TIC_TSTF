@@ -8,7 +8,7 @@ Description: "Solicitud TeleInterconsulta Transfronteriza"
 * status 1..1 
 * intent 1..1 MS // Intención de la solicitud
 * subject 1..1 
-* subject only Reference(Patient) // Paciente relacionado con la interconsulta
+* subject only Reference(TICTFPatient) // Paciente relacionado con la interconsulta
 * code 1..1 
 * code = SCT#868184008 //|Telemedicine consultation with provider (procedure)|
 * orderDetail 1..1 MS 

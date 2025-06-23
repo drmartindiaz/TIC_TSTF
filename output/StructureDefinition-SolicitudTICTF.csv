@@ -5,7 +5,7 @@
 ","Identificador unico de la solicitud","Identificador unico de la solicitud","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.identificador",1,1,"",""
 "SolicitudTICTF.estado","SolicitudTICTF.estado","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Estado de la solicitud","Estado de la solicitud","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.estado",1,1,"",""
-"SolicitudTICTF.paciente","SolicitudTICTF.paciente","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+"SolicitudTICTF.paciente","SolicitudTICTF.paciente","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient]]}
 ","Paciente sujeto de la teleinterconsulta","Paciente sujeto de la teleinterconsulta","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.paciente",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
 "SolicitudTICTF.paciente.id","SolicitudTICTF.paciente.id","","","",0,1,"","","","string {[]} {[]}

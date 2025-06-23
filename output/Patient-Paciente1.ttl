@@ -8,6 +8,12 @@
 <http://racsel.org/TIC-TSTF/Patient/Paciente1> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "Paciente1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient"^^xsd:anyURI ;
+       fhir:link <http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient>
+     ] )
+  ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient Paciente1</b></p><a name=\"Paciente1\"> </a><a name=\"hcPaciente1\"> </a><a name=\"Paciente1-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Juan Perez  Male, DoB: 1980-05-15</p><hr/></div>"

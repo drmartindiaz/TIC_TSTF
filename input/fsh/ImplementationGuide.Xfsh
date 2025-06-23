@@ -1,0 +1,18 @@
+Instance: patient-page
+InstanceOf: ImplementationGuidePage
+Usage: #definition
+Title: "Patient"
+//Name: "Patient"
+Source: "patient.md"
+
+Instance: teleconsulta-guide
+InstanceOf: ImplementationGuide
+Title: "Guía FHIR para Teleconsulta Transfronteriza"
+Description: "Implementación FHIR adaptada a RACSEL para interoperabilidad regional"
+Usage: #definition
+* name = "TeleconsultaGuide"
+* status = #draft
+* experimental = true
+* date = "2025-06-21"
+* publisher = "RACSEL / OPS"
+* page = patient-page

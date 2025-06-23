@@ -1,9 +1,9 @@
 TICTSTF : Validation Results
 =========================================
 
-err = 0, warn = 11, info = 1
-IG Publisher Version: 1.8.10
-Generated Mon Feb 03 10:58:20 ART 2025. FHIR version 4.0.1 for fhir.TIC-TSTF#0.2.1 (canonical = http://racsel.org/TIC-TSTF)
+err = 0, warn = 11, info = 2
+IG Publisher Version: 1.8.10 Out of date - current version is 2.0.7
+Generated Sat Jun 21 18:31:13 ART 2025. FHIR version 4.0.1 for fhir.TIC-TSTF#0.6.2 (canonical = http://racsel.org/TIC-TSTF)
  Build Errors : 0 / 1 / 0
  C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Consent-Consent1 : 0 / 1 / 1
  C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\DiagnosticReport-DiagnosticReport1 : 0 / 0 / 1
@@ -24,12 +24,13 @@ Generated Mon Feb 03 10:58:20 ART 2025. FHIR version 4.0.1 for fhir.TIC-TSTF#0.2
  C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\PractitionerRole-TICTFPractitionerRole2 : 0 / 0 / 1
  C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\PractitionerRole-TICTFPractitionerRole3 : 0 / 0 / 1
  C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\ServiceRequest-TICTFServiceRequest1 : 0 / 0 / 2
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-PROOrganizationTICTF : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-PROOrganizationTICTF : 0 / 0 / 2
  C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-RespuestaTICTF : 0 / 0 / 1
  C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-SolicitudTICTF : 0 / 0 / 1
  C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFObsGral : 0 / 0 / 1
  C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFObsRespuesta : 0 / 0 / 1
  C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFObsSolicitud : 0 / 0 / 1
+ C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFPatient : 0 / 0 / 1
  C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFPractitionerRole : 0 / 0 / 1
  C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFServiceRequest : 0 / 0 / 1
  C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-tictf-maintask : 0 / 0 / 1
@@ -66,13 +67,15 @@ WARNING: Observation/TICTFObsSolicitud1: Observation: !!Todos los recursos Obser
 == fsh-generated\resources\PractitionerRole-TICTFPractitionerRole2.json ==
 == fsh-generated\resources\PractitionerRole-TICTFPractitionerRole3.json ==
 == fsh-generated\resources\ServiceRequest-TICTFServiceRequest1.json ==
-INFORMATION: ServiceRequest/TICTFServiceRequest1: ServiceRequest.supportingInfo[3]: !!Este elemento no coincide con ninguna partición conocida defined in the profile http://racsel.org/TIC-TSTF/StructureDefinition/TICTFServiceRequest|0.2.1
+INFORMATION: ServiceRequest/TICTFServiceRequest1: ServiceRequest.supportingInfo[3]: !!Este elemento no coincide con ninguna partición conocida defined in the profile http://racsel.org/TIC-TSTF/StructureDefinition/TICTFServiceRequest|0.6.2
 == fsh-generated\resources\StructureDefinition-PROOrganizationTICTF.json ==
+INFORMATION: StructureDefinition/PROOrganizationTICTF: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 == fsh-generated\resources\StructureDefinition-RespuestaTICTF.json ==
 == fsh-generated\resources\StructureDefinition-SolicitudTICTF.json ==
 == fsh-generated\resources\StructureDefinition-TICTFObsGral.json ==
 == fsh-generated\resources\StructureDefinition-TICTFObsRespuesta.json ==
 == fsh-generated\resources\StructureDefinition-TICTFObsSolicitud.json ==
+== fsh-generated\resources\StructureDefinition-TICTFPatient.json ==
 == fsh-generated\resources\StructureDefinition-TICTFPractitionerRole.json ==
 == fsh-generated\resources\StructureDefinition-TICTFServiceRequest.json ==
 == fsh-generated\resources\StructureDefinition-tictf-maintask.json ==

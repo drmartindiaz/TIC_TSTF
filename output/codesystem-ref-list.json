@@ -22,7 +22,7 @@
       "oids" : ["1.0.3166.1"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.2.0/ValueSet-v3-Country2.html" : "Country2"
+      "http://terminology.hl7.org/6.4.0/ValueSet-v3-Country2.html" : "Country2"
     }
   ]
 }

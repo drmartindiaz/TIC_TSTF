@@ -12,7 +12,7 @@ Description: "Tarea PRINCIPAL en TeleInterconsulta Transfronteriza"
 * focus 0..1 
 * focus only Reference(DiagnosticReport or ImagingStudy or CarePlan) // Datos relacionados con la tarea
 * for 1..1 MS 
-* for only Reference(Patient) // Paciente relacionado con la tarea
+* for only Reference(TICTFPatient) // Paciente relacionado con la tarea
 * requester 1..1 MS 
 * requester only Reference(TICTFPractitionerRole) // Solicitante de la tarea
 * owner 0..1 
@@ -37,7 +37,7 @@ Description: "SUBtareas en TeleInterconsulta Transfronteriza"
 * focus 0..1 
 * focus only Reference(DiagnosticReport or ImagingStudy or CarePlan) // Datos relacionados con la tarea
 * for 1..1 MS 
-* for only Reference(Patient) // Paciente relacionado con la tarea
+* for only Reference(TICTFPatient) // Paciente relacionado con la tarea
 * requester 1..1 MS 
 * requester only Reference(TICTFPractitionerRole) // Solicitante de la tarea
 // Aca iría el profesional a mi entender pero deberíamos extender para Institucion solicitante, HIS? como hacemos con Pais?
