@@ -2,7 +2,7 @@
 
 1. **Definición de límites y condiciones:**
    *   Es necesario especificar bajo qué escenarios el sistema de información en salud (HIS) solicitará una interconsulta a profesionales no validados localmente. Estos límites deben considerar:
-       * **La necesidad de la consulta:** Establecer si la interconsulta es requerida por falta de especialistas locales o por la necesidad de conocimientos especializad
+       * **La necesidad de la consulta:** Establecer si la interconsulta es requerida por falta de especialistas locales o por la necesidad de conocimientos especializados.
        * **El perfil del profesional externo:** Definir los criterios específicos (ejemplo: certificaciones o licencias internacionales) que permitan aceptar la participación del profesional en el proceso de interconsulta.          
        * **La temporalidad:** Determinar si estas consultas se limitan a casos de emergencia o si forman parte de servicios regulares.
             
@@ -50,17 +50,16 @@ Esta guía de implementación para teleconsulta transfronteriza se ha diseñado 
 LACPass define un conjunto mínimo de perfiles y extensiones FHIR para representar conceptos fundacionales como `Patient`,  `Organization`, `Immunization` entre otros. Esta guía busca mantener alineación con dichas definiciones cuando es pertinente para asegurar la interoperabilidad técnica, semántica y organizacional entre países.
 
 
-### Aspectos a Considerar
+### Aspectos a considerar para comprender la Guía
 <br>
-Esta sección describe definiciones, interpretaciones y requisitos importantes aplicables a todos los actores utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
-<br>
-### Definiciones Para comprender la Guía
+Las siguientes secciones describen definiciones, interpretaciones y requisitos importantes aplicables a todos los artefactos utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
+
+### Perfiles
 
 Los perfiles contienen ciertos elementos que son importantes de comprender a la hora de usarlos para implementación
-<br>
+
 
 #### Vistas de los perfiles
-<br>
 
 Al revisar un perfil tenemos la opción de visualizarlo desde múltiples perspectivas.
 
@@ -108,12 +107,38 @@ En la vista **Key Elements Table**, todos los elementos presentados en la vista 
   <p>Vista Key Elements de un perfil</p>
 </div>
 
+### Cardinalidad
+<br>
+
+La cardinalidad define dos aspectos de un elemento dentro de un perfil: 
+
+* Cantidad de veces que un elemento se **Puede** repetir.
+* La mínima cantidad de veces que un elemento **Debe** ser descrito al generar un recurso.
+
+De esta forma nos encontramos con varias situaciones.
+
+~~~
+ 
+ {0..1}: El elemento puede no estar presente en el recurso (valor 0 inicial), pero si se utiliza, debe ser desarrollado solo una vez (valor 1 final).
+ {1..1} : El elemento es obligatorio pero solo se puede desplegar 1 sola vez.
+ {0..3} : Elemento no obligatorio que se puede repetir hasta 3 veces.
+ {1..3} : Elemento obligatorio que puede repetirse hasta 3 veces.
+ {1..*} : Elemento obligatorio que se puede repetir infinitas veces.
+
+
+~~~
+
+
 ### Definición del Conjunto Mínimo de Datos
 <br>
 
-El CMD definido para cada recurso se deja caracterizado por la bandera **MS** que significa *Must Support*. Este indicador determina que el sistema que recibe ese elemento de un recurso **DEBE** soportar el poder procesarlo y almacenarlo.
+El CMD definido para cada recurso se deja caracterizado por los elementos obligatorios y por la bandera **S** que significa *Must Support*. 
 
-La existencia de un elemento o ruta con **MS** no determina la obligatoriedad de que un recurso generado contenga el dato. Esto se define mediante la obligatoriedad del dato lo cual **DEBE** estar especificado en la cardinalidad.
+Los elementos obligatorios se especifican en la cardinalidad (valor mínimo o inicial 1). 
+
+La existencia de un elemento o ruta marcada con **S** no determina la obligatoriedad de que un recurso generado contenga el elemento, pero define que los sistemas que producen o consumen el recurso **DEBEN** soportar el elemento, es decir, deben poder almacenarlo y procesarlo si el dato está presente.
+
+
 <br>
 
 <div align="center" >
@@ -154,31 +179,30 @@ Lo anterior es aplicable para un recurso ya creado, el cual se almacena con una 
 
 POST [base]/Patient En el Body, un recurso paciente compatible con el/los perfiles definidos core definido en el clcore (para este caso sería el perfil Paciente-Cl).
 
-### Vocabularios
+### Vocabularios y uso de códigos
 
+Vocabularios o terminología refiere a los valores codificados que se utilizan en varios elementos. 
 
+Un conjunto de valores (ValueSet) establece un conjunto de códigos tomados de uno o más sistemas de codificación (CodeSystem).
 
+El *binding* especifica la vinculación de un elemento con determinado ValueSet.
 
-### Cardinalidad
-<br>
+Como patrón general, para un valor codificable se esperan tres o cuatro elementos: sistema (URI del CodeSystem), código, display y la versión del sistema toda vez que resulte relevante.
+Para los elementos de tipo code se utiliza el código solamente ya que el sistema está implicito (definido en el elemento).
 
-La cardinalidad define dos aspectos de un elemento dentro de un perfil: 
+Este ejemplo es un CodeableConcept que contiene un elemento Coding. El ejemplo muestra el sistema LOINC, el código y el display asignado por LOINC:
+```
+"code" : {
+    "coding" : [
+      {
+        "system" : "http://loinc.org",
+        "code" : "11488-4",
+        "display" : "Consult note"
+      }
+    ]
+  }
+```
 
-* Cantidad de veces que un elemento se **Puede** repetir.
-* La mínima cantidad de veces que un elemento **Debe** ser descrito al generar un recurso.
-
-De esta forma nos encontramos con varias situaciones.
-
-~~~
- 
- {0..1}: El elemento puede no estar presente en el recurso (valor 0 inicial), pero si se utiliza, debe ser desarrollado solo una vez (valor 1 final).
- {1..1} : El elemento es obligatorio pero solo se puede desplegar 1 sola vez.
- {0..3} : Elemento no obligatorio que se puede repetir hasta 3 veces.
- {1..3} : Elemento obligatorio que puede repetirse hasta 3 veces.
- {1..*} : Elemento obligatorio que se puede repetir infinitas veces.
-
-
-~~~
 
 ### Bindings
 <br>
