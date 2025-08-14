@@ -19,8 +19,8 @@ Description: "Tarea PRINCIPAL en TeleInterconsulta Transfronteriza"
 * owner only Reference(TICTFPractitionerRole) // Responsable de ejecutar la tarea
 
 * output 0..* // Respuesta de la tarea PRINCIPAL, contiene la respuesta final a la interconsulta
-  * type MS 
-  * value[x] only Reference(TICTFObsRespuesta or DocumentReference)
+  * type from TipoTaskVS
+  * value[x] only Reference(TICTFObsRespuesta or DocumentReference or TICTFDiagRep)
 
 
 Profile: TICTFSubTask
@@ -46,9 +46,9 @@ Description: "SUBtareas en TeleInterconsulta Transfronteriza"
 // Mismo comentario
 * input 0..* // Información adicional proporcionada (ej. notas o datos complementarios)
 * input ^short = "Información adicional proporcionada (ej. notas o datos complementarios)"
-  * type MS 
+  * type from TipoTaskVS
   * value[x] only Reference(TICTFObsRespuesta or DocumentReference)
 * output 0..* // Respuesta de la SUBtarea, contiene la respuesta final a la interconsulta
 * output ^short = "Respuesta de la SUBtarea, contiene la respuesta final a la interconsulta"
-  * type MS 
-  * value[x] only Reference(TICTFObsRespuesta or DocumentReference)
+  * type from TipoTaskVS
+  * value[x] only Reference(TICTFObsRespuesta or DocumentReference or TICTFDocRta)

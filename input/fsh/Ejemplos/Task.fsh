@@ -23,7 +23,7 @@ Description: "Ejemplo de una tarea principal en una TeleInterconsulta Transfront
 * for = Reference(Paciente1) // Paciente involucrado en la interconsulta
 * requester = Reference(TICTFPractitionerRole1) // Solicitante de la tarea
 * owner = Reference(TICTFPractitionerRole2) // Responsable de la ejecución de la tarea
-* output.type = http://terminology.hl7.org/CodeSystem/task-output-type#documentation
+* output.type = TipoTaskCS#Doc
 * output.valueReference = Reference(TICTFObsRespuesta1) // Observacion narrativa generada como resultado
 
 Instance: TICTFSubTask1
@@ -38,8 +38,8 @@ Description: "Ejemplo de una subtarea dentro de una TeleInterconsulta Transfront
 * for = Reference(Paciente1) // Paciente involucrado en la interconsulta
 * requester = Reference(TICTFPractitionerRole1) // Solicitante de la subtarea
 * owner = Reference(TICTFPractitionerRole3) // Responsable de ejecutar la subtarea
-* input.type = http://terminology.hl7.org/CodeSystem/task-input-type#clinical-note
+* input.type = TipoTaskCS#Obs
 * input.valueReference = Reference(DocumentReference2) // Documento clínico de entrada
-* output.type = http://terminology.hl7.org/CodeSystem/task-output-type#report
+* output.type = TipoTaskCS#Rep
 * output.valueReference = Reference(TICTFObsRespuesta1) // Respuesta generada por la subtarea
 
