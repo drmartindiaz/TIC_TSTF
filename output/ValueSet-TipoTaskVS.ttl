@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://racsel.org/TIC-TSTF/ValueSet/TipoTaskVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TipoTaskVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConjuntoValores / ConjuntoDeValores TipoTaskVS</b></p><a name=\"TipoTaskVS\"> </a><a name=\"hcTipoTaskVS\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-TipoTaskCS.html\"><code>http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS</code></a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://racsel.org/TIC-TSTF/ValueSet/TipoTaskVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.6.2"] ; # 
+  fhir:name [ fhir:v "TipoTaskVS"] ; # 
+  fhir:title [ fhir:v "TICTF Tipo de respuesta VS"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-08-17T12:30:07-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "RACSEL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "RACSEL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://racsel.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Set de valores para tipo Output Task TICTF"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "419" ] ;
+       fhir:display [ fhir:v "Latin America and the Caribbean" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

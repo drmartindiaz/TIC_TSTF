@@ -1,0 +1,258 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "TICTFDocRta1",
+  "meta" : {
+    "profile" : ["http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDocRta"]
+  },
+  "identifier" : {
+    "system" : "http://HIS.PaisDeOrigen.gov/tictf/bundle",
+    "value" : "DOC-TICTF-2024-001"
+  },
+  "type" : "document",
+  "timestamp" : "2024-01-15T10:30:00Z",
+  "entry" : [{
+    "fullUrl" : "http://HIS.PaisDeOrigen.gov/tictf/Composition/TICTFComposition1",
+    "resource" : {
+      "resourceType" : "Composition",
+      "id" : "TICTFComposition1",
+      "meta" : {
+        "profile" : ["http://racsel.org/TIC-TSTF/StructureDefinition/TICTFComposition"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_TICTFComposition1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composición TICTFComposition1</b></p><a name=\"TICTFComposition1\"> </a><a name=\"hcTICTFComposition1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TICTFComposition.html\">Composición de Documento de Teleinterconsulta</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 81249-5}\">Teleconsultation note</span></p><p><b>date</b>: 2024-01-15 10:30:00+0000</p><p><b>author</b>: <a href=\"PractitionerRole-TICTFPractitionerRole2.html\">PractitionerRole</a></p><p><b>title</b>: Informe de Teleinterconsulta Transfronteriza</p><p><b>custodian</b>: <a href=\"Organization-TICTFOrganization2.html\">Organization Hospital Otro</a></p></div>"
+      },
+      "status" : "final",
+      "type" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "81249-5",
+          "display" : "Teleconsultation note"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/Paciente1"
+      },
+      "date" : "2024-01-15T10:30:00Z",
+      "author" : [{
+        "reference" : "PractitionerRole/TICTFPractitionerRole2"
+      }],
+      "title" : "Informe de Teleinterconsulta Transfronteriza",
+      "custodian" : {
+        "reference" : "Organization/TICTFOrganization2"
+      },
+      "section" : [{
+        "title" : "Datos del Paciente",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "60592-7",
+            "display" : "Patient summary"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Paciente: Juan Domingo Perez, masculino, nacido el 15/05/1980. Identificación nacional: CL/18922652-7</p></div>"
+        },
+        "entry" : [{
+          "reference" : "Patient/Paciente1"
+        }]
+      },
+      {
+        "title" : "Solicitud de Interconsulta",
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "81249-5",
+            "display" : "Teleconsultation note"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Solicitud de interconsulta especializada para evaluación de dificultad respiratoria. Especialidad solicitada: Neumología. Solicitante: Dra. Ana Gomez del Hospital Central.</p></div>"
+        },
+        "entry" : [{
+          "reference" : "ServiceRequest/TICTFServiceRequest1"
+        }]
+      },
+      {
+        "title" : "Respuesta de la Interconsulta",
+        "code" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "722421008",
+            "display" : "Report of teleconsultation (record artifact)"
+          }]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Respuesta del especialista: Dr. Luis Fernandez. Recomendación: Realizar pruebas complementarias para descartar infección pulmonar. Estado: Evaluación completada.</p></div>"
+        },
+        "entry" : [{
+          "reference" : "DiagnosticReport/TICTFDiagRep1"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://HIS.PaisDeOrigen.gov/tictf/Patient/Paciente1",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "Paciente1",
+      "meta" : {
+        "profile" : ["http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_Paciente1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Paciente Paciente1</b></p><a name=\"Paciente1\"> </a><a name=\"hcPaciente1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TICTFPatient.html\">TICTFPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Juan Domingo Perez  Male, DoB: 1980-05-15 ( Tax ID number)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Passport number/CL/F12-1234123-2\u00a0(use:\u00a0official,\u00a0)</td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PPN"
+          }]
+        },
+        "system" : "urn:oid.2.16.152",
+        "value" : "CL/F12-1234123-2"
+      },
+      {
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "TAX"
+          }]
+        },
+        "system" : "urn:oid.2.16.152",
+        "value" : "CL/18922652-7"
+      }],
+      "active" : true,
+      "name" : [{
+        "family" : "Perez",
+        "given" : ["Juan",
+        "Domingo"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1980-05-15"
+    }
+  },
+  {
+    "fullUrl" : "http://HIS.PaisDeOrigen.gov/tictf/ServiceRequest/TICTFServiceRequest1",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "TICTFServiceRequest1",
+      "meta" : {
+        "profile" : ["http://racsel.org/TIC-TSTF/StructureDefinition/TICTFServiceRequest"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_TICTFServiceRequest1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PeticiónServicio TICTFServiceRequest1</b></p><a name=\"TICTFServiceRequest1\"> </a><a name=\"hcTICTFServiceRequest1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TICTFServiceRequest.html\">TICTF Solicitud TeleInterconsulta Transfronteriza</a></p></div><p><b>identifier</b>: <code>http://HIS.PaisDeOrigen.gov/tictf/servicerequest</code>/PPBxmMR4EC-PBQzXpEBG7\u00a0(use:\u00a0official,\u00a0)</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 868184008}\">Telemedicine consultation with provider (procedure)</span></p><p><b>orderDetail</b>: <span title=\"Codes:{http://snomed.info/sct 418112009}\">Pulmonary medicine (qualifier value)</span></p><p><b>subject</b>: <a href=\"Patient-Paciente1.html\">Juan Domingo Perez  Male, DoB: 1980-05-15 ( Tax ID number)</a></p><p><b>requester</b>: <a href=\"PractitionerRole-TICTFPractitionerRole1.html\">PractitionerRole</a></p><p><b>performer</b>: <a href=\"PractitionerRole-TICTFPractitionerRole2.html\">PractitionerRole</a></p><p><b>reasonReference</b>: <a href=\"Observation-TICTFObsSolicitud1.html\">Observation pedido de interconsulta.total:hallazgo:punto en el tiempo:^paciente:Narrativo:</a></p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Consent-Consent1.html\">Consent: status = active; scope = patient-privacy; category = Consentimiento:{Configuración} :Punto temporal:Tipo:Documento:Patient; policyRule = </a></li><li><a href=\"DocumentReference-DocumentReference1.html\">DocumentReference: status = current; type = </a></li><li><a href=\"DiagnosticReport-DiagnosticReport1.html\">Diagnostic Report for '' for '-&gt;Juan Domingo Perez  Male, DoB: 1980-05-15 ( Tax ID number)'</a></li><li><a href=\"Observation-TICTFObsGral1.html\">Observation Progress note</a></li></ul></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "http://HIS.PaisDeOrigen.gov/tictf/servicerequest",
+        "value" : "PPBxmMR4EC-PBQzXpEBG7"
+      }],
+      "status" : "active",
+      "intent" : "order",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "868184008"
+        }]
+      },
+      "orderDetail" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "418112009"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/Paciente1"
+      },
+      "requester" : {
+        "reference" : "PractitionerRole/TICTFPractitionerRole1"
+      },
+      "performer" : [{
+        "reference" : "PractitionerRole/TICTFPractitionerRole2"
+      }],
+      "reasonReference" : [{
+        "reference" : "Observation/TICTFObsSolicitud1"
+      }],
+      "supportingInfo" : [{
+        "reference" : "Consent/Consent1"
+      },
+      {
+        "reference" : "DocumentReference/DocumentReference1"
+      },
+      {
+        "reference" : "DiagnosticReport/DiagnosticReport1"
+      },
+      {
+        "reference" : "Observation/TICTFObsGral1"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://HIS.PaisDeRespuesta.gov/tictf/DiagnosticReport/TICTFDiagRep1",
+    "resource" : {
+      "resourceType" : "DiagnosticReport",
+      "id" : "TICTFDiagRep1",
+      "meta" : {
+        "profile" : ["http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDiagRep"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_TICTFDiagRep1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: InformeDiagnostico TICTFDiagRep1</b></p><a name=\"TICTFDiagRep1\"> </a><a name=\"hcTICTFDiagRep1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TICTFDiagRep.html\">Respeusta de Teleinterconsulta</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 722421008}\">Report of teleconsultation (record artifact)</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 SP}\">Specialist</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Juan Domingo Perez  Male, DoB: 1980-05-15 ( Tax ID number)</td></tr><tr><td>When For</td><td>2024-01-15 10:30:00+0000</td></tr><tr><td>Reported</td><td>2024-01-15 10:30:00+0000</td></tr><tr><td>Performer</td><td> <a href=\"PractitionerRole-TICTFPractitionerRole2.html\">PractitionerRole</a></td></tr><tr><td>Identifier</td><td> <code>http://HIS.PaisDeDestino.gov/tictf/diagnosticreport</code>/DR-TICTF-2024-001</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td></tr><tr><td><a href=\"Observation-TICTFObsRespuesta1.html\"><span title=\"Codes:{http://loinc.org 11488-4}\">Consult note</span></a></td><td>Se recomienda realizar pruebas complementarias para descartar infección pulmonar.</td><td>Registered</td></tr></table><p>Basado en la evaluación clínica y los síntomas descritos, se recomienda realizar las siguientes pruebas complementarias: Radiografía de tórax PA y lateral, Hemograma completo con VSG, PCR. Considerar cultivo de esputo si persiste la sintomatología. Seguimiento en 7 días.</p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://snomed.info/sct 182840001}\">Drug treatment</span></li></ul></div>"
+      },
+      "identifier" : [{
+        "system" : "http://HIS.PaisDeDestino.gov/tictf/diagnosticreport",
+        "value" : "DR-TICTF-2024-001"
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/TICTFServiceRequest1"
+      }],
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code" : "SP",
+          "display" : "Specialist"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "722421008",
+          "display" : "Report of teleconsultation (record artifact)"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/Paciente1"
+      },
+      "effectiveDateTime" : "2024-01-15T10:30:00Z",
+      "issued" : "2024-01-15T10:30:00Z",
+      "performer" : [{
+        "reference" : "PractitionerRole/TICTFPractitionerRole2"
+      }],
+      "resultsInterpreter" : [{
+        "reference" : "PractitionerRole/TICTFPractitionerRole2"
+      }],
+      "result" : [{
+        "reference" : "Observation/TICTFObsRespuesta1"
+      }],
+      "imagingStudy" : [{
+        "reference" : "ImagingStudy/ImagingStudy1"
+      }],
+      "conclusion" : "Basado en la evaluación clínica y los síntomas descritos, se recomienda realizar las siguientes pruebas complementarias: Radiografía de tórax PA y lateral, Hemograma completo con VSG, PCR. Considerar cultivo de esputo si persiste la sintomatología. Seguimiento en 7 días.",
+      "conclusionCode" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "182840001",
+          "display" : "Drug treatment"
+        }]
+      }]
+    }
+  }]
+}
