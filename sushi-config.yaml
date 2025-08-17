@@ -20,6 +20,7 @@ publisher:
   name: RACSEL
   url: https://racsel.org/
   # email: test@example.org
+language: es
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -177,7 +178,6 @@ menu:
 # * date
 # * meta
 # * implicitRules
-# * language
 # * text
 # * contained
 # * extension
