@@ -30,10 +30,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -130,7 +130,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TICTSTF - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://racsel.org/TIC-TSTF/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TICTSTF - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://racsel.org/TIC-TSTF/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -148,7 +148,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#3">Example: Example Instances</a>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -177,7 +183,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/SolicitudTICTF">Modelo Lógico Solicitud TICTF</a>
             </td>
             <td>
-<p>Modelo Lógico para la solicitud de un Tele Interconsulta Transfrrnteriza Asincrónica</p>
+<p>Modelo Lógico para la solicitud de un Tele Interconsulta Transfronteriza Asincrónica</p>
 </td>
          </tr>
       </tbody>
@@ -188,6 +194,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-TICTFComposition.html"
+                  title="StructureDefinition/TICTFComposition">Composición de Documento de Teleinterconsulta</a>
+            </td>
+            <td>
+<p>Una Composition que sirve como índice para el Bundle de Teleinterconsulta.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-TICTFDocRta.html"
+                  title="StructureDefinition/TICTFDocRta">Documento de Respuesta de Teleinterconsulta</a>
+            </td>
+            <td>
+<p>Un Bundle de tipo 'document' que encapsula los recursos de una teleinterconsulta, incluyendo la solicitud, el paciente y la respuesta.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-TICTFDiagRep.html"
+                  title="StructureDefinition/TICTFDiagRep">Respeusta de Teleinterconsulta</a>
+            </td>
+            <td>
+<p>Diagnostic Report para respeusta de Teleinterconsulta Transfronteriza</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-TICTFObsRespuesta.html"
@@ -272,11 +305,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-TipoTaskVS.html" title="ValueSet/TipoTaskVS">TICTF Tipo de respuesta VS</a>
+            </td>
+            <td>
+<p>Set de valores para tipo Output Task TICTF</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-TipoTaskCS.html" title="CodeSystem/TipoTaskCS">TICTF Tipo de respuesta CS</a>
+            </td>
+            <td>
+<p>CodeSystem para tipo Output Task TICTF</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-TICTFComposition1.html"
+                  title="Composition/TICTFComposition1">Composición del Documento de Teleinterconsulta</a>
+            </td>
+            <td>
+<p>Composition que organiza el contenido del documento de respuesta de teleinterconsulta</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Consent-Consent1.html" title="Consent/Consent1">Consentimiento Informado</a>
@@ -292,6 +366,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Documento clínico proporcionado como entrada en la subtarea.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-TICTFDocRta1.html" title="Bundle/TICTFDocRta1">Documento de Respuesta de Teleinterconsulta Ejemplo</a>
+            </td>
+            <td>
+<p>Ejemplo completo de un documento de respuesta que incluye la composición, paciente, solicitud y respuesta de una teleinterconsulta transfronteriza</p>
 </td>
          </tr>
          <tr>
@@ -319,6 +401,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Ejemplo de un estudio de imágenes solicitado en la interconsulta.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-TICTFDiagRep1.html"
+                  title="DiagnosticReport/TICTFDiagRep1">Informe Diagnóstico de Respuesta TICTF</a>
+            </td>
+            <td>
+<p>Informe diagnóstico como respuesta a la solicitud de teleinterconsulta</p>
 </td>
          </tr>
          <tr>
@@ -480,7 +571,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://racsel.org/">RACSEL</a>.  Package fhir.TIC-TSTF#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jun 21, 2025 18:29-0300">2025-06-21</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://racsel.org/">RACSEL</a>.  Package fhir.TIC-TSTF#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 25, 2025 16:42-0300">2025-08-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

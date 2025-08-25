@@ -20,7 +20,7 @@
   fhir:name [ fhir:v "TICTFComposition"] ; # 
   fhir:title [ fhir:v "Composición de Documento de Teleinterconsulta"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-08-17T12:30:07-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-25T16:41:11-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "RACSEL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "RACSEL" ] ;

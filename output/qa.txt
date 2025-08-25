@@ -1,57 +1,127 @@
 TICTSTF : Validation Results
 =========================================
 
-err = 0, warn = 11, info = 2
-IG Publisher Version: 1.8.10 Out of date - current version is 2.0.7
-Generated Sat Jun 21 18:31:13 ART 2025. FHIR version 4.0.1 for fhir.TIC-TSTF#0.6.2 (canonical = http://racsel.org/TIC-TSTF)
- Build Errors : 0 / 1 / 0
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Consent-Consent1 : 0 / 1 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\DiagnosticReport-DiagnosticReport1 : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\DocumentReference-DocumentReference1 : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\DocumentReference-DocumentReference2 : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\ImagingStudy-ImagingStudy1 : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\ImplementationGuide-fhir.TIC-TSTF : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsGral1 : 0 / 2 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsRespuesta1 : 0 / 2 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsSolicitud1 : 0 / 2 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Organization-TICTFOrganization1 : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Organization-TICTFOrganization2 : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Patient-Paciente1 : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Practitioner-Practitioner1 : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Practitioner-Practitioner2 : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Practitioner-Practitioner3 : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\PractitionerRole-TICTFPractitionerRole1 : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\PractitionerRole-TICTFPractitionerRole2 : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\PractitionerRole-TICTFPractitionerRole3 : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\ServiceRequest-TICTFServiceRequest1 : 0 / 0 / 2
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-PROOrganizationTICTF : 0 / 0 / 2
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-RespuestaTICTF : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-SolicitudTICTF : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFObsGral : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFObsRespuesta : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFObsSolicitud : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFPatient : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFPractitionerRole : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFServiceRequest : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-tictf-maintask : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-tictf-subtask : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFMainTask1 : 0 / 0 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFMainTask2 : 0 / 1 / 1
- C:\Users\Admin\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFSubTask1 : 0 / 2 / 1
+err = 38, warn = 33, info = 26
+IG Publisher Version: 2.0.15
+Generated Mon Aug 25 16:46:13 ART 2025. FHIR version 4.0.1 for fhir.TIC-TSTF#0.6.2 (canonical = http://racsel.org/TIC-TSTF)
+ Build Errors : 0 / 0 / 0
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Bundle-TICTFDocRta1 : 18 / 8 / 30
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\CodeSystem-TipoTaskCS : 0 / 2 / 2
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Composition-TICTFComposition1 : 4 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Consent-Consent1 : 0 / 1 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\DiagnosticReport-DiagnosticReport1 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\DiagnosticReport-TICTFDiagRep1 : 3 / 1 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\DocumentReference-DocumentReference1 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\DocumentReference-DocumentReference2 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\ImagingStudy-ImagingStudy1 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\ImplementationGuide-fhir.TIC-TSTF : 0 / 0 / 4
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsGral1 : 1 / 2 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsRespuesta1 : 1 / 2 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Observation-TICTFObsSolicitud1 : 0 / 2 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Organization-TICTFOrganization1 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Organization-TICTFOrganization2 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Patient-Paciente1 : 1 / 2 / 2
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Practitioner-Practitioner1 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Practitioner-Practitioner2 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Practitioner-Practitioner3 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\PractitionerRole-TICTFPractitionerRole1 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\PractitionerRole-TICTFPractitionerRole2 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\PractitionerRole-TICTFPractitionerRole3 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\ServiceRequest-TICTFServiceRequest1 : 0 / 1 / 2
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-PROOrganizationTICTF : 0 / 0 / 2
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-RespuestaTICTF : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-SolicitudTICTF : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFComposition : 8 / 5 / 3
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFDiagRep : 2 / 1 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFDocRta : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFObsGral : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFObsRespuesta : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFObsSolicitud : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFPatient : 0 / 5 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFPractitionerRole : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-TICTFServiceRequest : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-tictf-maintask : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\StructureDefinition-tictf-subtask : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFMainTask1 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFMainTask2 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\Task-TICTFSubTask1 : 0 / 0 / 1
+ C:\Users\inesm\Documents\GitHub\TIC_TSTF\fsh-generated\resources\ValueSet-TipoTaskVS : 0 / 1 / 1
 </table>
 == n/a ==
-WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated\resources\Bundle-TICTFDocRta1.json ==
+WARNING: Bundle/TICTFDocRta1: Bundle.identifier.system: !!El valor URL 'http://HIS.PaisDeOrigen.gov/tictf/bundle' no puede resolverse
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[0].resource/*Composition/TICTFComposition1*/.type.coding[0].display: Wrong Display Name 'Teleconsultation note' for http://loinc.org#81249-5. Valid display is 'Sistema de codificación de secuencia de referencia genómica predeterminado: Paciente: Punto temporal: Tipo: Nominal:' (es-MX) (for the language(s) 'es')
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[0].resource/*Composition/TICTFComposition1*/.subject: !!No se puede encontrar una coincidencia para el perfil Patient/Paciente1 entre las opciones: http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient
+INFORMATION: Bundle/TICTFDocRta1: Bundle.entry[0].resource/*Composition/TICTFComposition1*/.subject: Detalles para Patient/Paciente1 coincidente con el perfil http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient|0.6.2
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[0].resource/*Composition/TICTFComposition1*/.section[0].code.coding[0].code: Unknown code '60592-7' in the CodeSystem 'http://loinc.org' version '2.80'
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[0].resource/*Composition/TICTFComposition1*/.section[0].entry[0]: !!No se puede encontrar una coincidencia para el perfil Patient/Paciente1 entre las opciones: http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient
+INFORMATION: Bundle/TICTFDocRta1: Bundle.entry[0].resource/*Composition/TICTFComposition1*/.section[0].entry[0]: Detalles para Patient/Paciente1 coincidente con el perfil http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient|0.6.2
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[0].resource/*Composition/TICTFComposition1*/.section[1].code.coding[0].display: Wrong Display Name 'Teleconsultation note' for http://loinc.org#81249-5. Valid display is 'Sistema de codificación de secuencia de referencia genómica predeterminado: Paciente: Punto temporal: Tipo: Nominal:' (es-MX) (for the language(s) 'es')
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[0].resource/*Composition/TICTFComposition1*/.section[1].entry[0]: !!No se puede encontrar una coincidencia para el perfil ServiceRequest/TICTFServiceRequest1 entre las opciones: http://racsel.org/TIC-TSTF/StructureDefinition/TICTFServiceRequest
+INFORMATION: Bundle/TICTFDocRta1: Bundle.entry[0].resource/*Composition/TICTFComposition1*/.section[1].entry[0]: Detalles para ServiceRequest/TICTFServiceRequest1 coincidente con el perfil http://racsel.org/TIC-TSTF/StructureDefinition/TICTFServiceRequest|0.6.2
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[0].resource/*Composition/TICTFComposition1*/.section[2].code.coding[0].code: Unknown code '722421008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/32506021000036107/version/20250731'
+WARNING: Bundle/TICTFDocRta1: Bundle.entry[0].resource/*Composition/TICTFComposition1*/.section[2].entry[0]: La Entry 3 coincide con la referencia DiagnosticReport/TICTFDiagRep1 por tipo e id pero su fullUrl http://HIS.PaisDeRespuesta.gov/tictf/DiagnosticReport/TICTFDiagRep1 no coincide el full Url del destino http://HIS.PaisDeOrigen.gov/tictf/DiagnosticReport/TICTFDiagRep1 por reglas de resolución de Bundle
+INFORMATION: Bundle/TICTFDocRta1: Bundle.entry[1].resource/*Patient/Paciente1*/.identifier[1]: !!Este elemento no coincide con ninguna partición conocida defined in the profile http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient|0.6.2
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[1].resource/*Patient/Paciente1*/: Slice 'Patient.identifier:national': a matching slice is required, but not found (from http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient|0.6.2). Note that other slices are allowed in addition to this required slice
+WARNING: Bundle/TICTFDocRta1: Bundle.entry[1].resource/*Patient/Paciente1*/.identifier[0].system: !!El valor URL 'urn:oid.2.16.152' no puede resolverse
+WARNING: Bundle/TICTFDocRta1: Bundle.entry[1].resource/*Patient/Paciente1*/.identifier[1].system: !!El valor URL 'urn:oid.2.16.152' no puede resolverse
+INFORMATION: Bundle/TICTFDocRta1: Bundle.entry[2].resource/*ServiceRequest/TICTFServiceRequest1*/.supportingInfo[3]: !!Este elemento no coincide con ninguna partición conocida defined in the profile http://racsel.org/TIC-TSTF/StructureDefinition/TICTFServiceRequest|0.6.2
+WARNING: Bundle/TICTFDocRta1: Bundle.entry[2].resource/*ServiceRequest/TICTFServiceRequest1*/.identifier[0].system: !!El valor URL 'http://HIS.PaisDeOrigen.gov/tictf/servicerequest' no puede resolverse
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[2].resource/*ServiceRequest/TICTFServiceRequest1*/.subject: !!No se puede encontrar una coincidencia para el perfil Patient/Paciente1 entre las opciones: http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient
+INFORMATION: Bundle/TICTFDocRta1: Bundle.entry[2].resource/*ServiceRequest/TICTFServiceRequest1*/.subject: Detalles para Patient/Paciente1 coincidente con el perfil http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient|0.6.2
+INFORMATION: Bundle/TICTFDocRta1: Bundle.entry[2].resource/*ServiceRequest/TICTFServiceRequest1*/.subject: Detalles para Patient/Paciente1 coincidente con el perfil http://hl7.org/fhir/StructureDefinition/Patient|4.0.1
+WARNING: Bundle/TICTFDocRta1: Bundle.entry[3].resource/*DiagnosticReport/TICTFDiagRep1*/.identifier[0].system: !!El valor URL 'http://HIS.PaisDeDestino.gov/tictf/diagnosticreport' no puede resolverse
+WARNING: Bundle/TICTFDocRta1: Bundle.entry[3].resource/*DiagnosticReport/TICTFDiagRep1*/.basedOn[0]: La Entry 2 coincide con la referencia ServiceRequest/TICTFServiceRequest1 por tipo e id pero su fullUrl http://HIS.PaisDeOrigen.gov/tictf/ServiceRequest/TICTFServiceRequest1 no coincide el full Url del destino http://HIS.PaisDeRespuesta.gov/tictf/ServiceRequest/TICTFServiceRequest1 por reglas de resolución de Bundle
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[3].resource/*DiagnosticReport/TICTFDiagRep1*/.category[0].coding[0].display: El nombre de display para http://terminology.hl7.org/CodeSystem/v2-0074#SP debe ser ''Surgical Pathology'', no 'Specialist'
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[3].resource/*DiagnosticReport/TICTFDiagRep1*/.code.coding[0].code: Unknown code '722421008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/32506021000036107/version/20250731'
+WARNING: Bundle/TICTFDocRta1: Bundle.entry[3].resource/*DiagnosticReport/TICTFDiagRep1*/.subject: La Entry 1 coincide con la referencia Patient/Paciente1 por tipo e id pero su fullUrl http://HIS.PaisDeOrigen.gov/tictf/Patient/Paciente1 no coincide el full Url del destino http://HIS.PaisDeRespuesta.gov/tictf/Patient/Paciente1 por reglas de resolución de Bundle
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[3].resource/*DiagnosticReport/TICTFDiagRep1*/.conclusionCode[0].coding[0].display: Wrong Display Name 'Drug treatment' for http://snomed.info/sct#182840001. There are no valid display names found for language(s) 'es'. Default display is 'Drug treatment stopped - medical advice'
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[1].resource.author[1]: Can't find 'PractitionerRole/TICTFPractitionerRole2' in the bundle (Composition.author)
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[1].resource.custodian: Can't find 'Organization/TICTFOrganization2' in the bundle (Composition.custodian)
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[1].resource.section[3].entry[1]: Can't find 'DiagnosticReport/TICTFDiagRep1' in the bundle (Section Entry). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be 'http://HIS.PaisDeOrigen.gov/tictf/DiagnosticReport/TICTFDiagRep1', but found 'http://HIS.PaisDeRespuesta.gov/tictf/DiagnosticReport/TICTFDiagRep1')
+INFORMATION: Bundle/TICTFDocRta1: Bundle: Can't find 'PractitionerRole/TICTFPractitionerRole1' in the bundle (Bundle.entry[2].resource.requester)
+INFORMATION: Bundle/TICTFDocRta1: Bundle: Can't find 'PractitionerRole/TICTFPractitionerRole2' in the bundle (Bundle.entry[2].resource.performer[0])
+INFORMATION: Bundle/TICTFDocRta1: Bundle: Can't find 'Observation/TICTFObsSolicitud1' in the bundle (Bundle.entry[2].resource.reasonReference[0])
+INFORMATION: Bundle/TICTFDocRta1: Bundle: Can't find 'Consent/Consent1' in the bundle (Bundle.entry[2].resource.supportingInfo[0])
+INFORMATION: Bundle/TICTFDocRta1: Bundle: Can't find 'DocumentReference/DocumentReference1' in the bundle (Bundle.entry[2].resource.supportingInfo[1])
+INFORMATION: Bundle/TICTFDocRta1: Bundle: Can't find 'DiagnosticReport/DiagnosticReport1' in the bundle (Bundle.entry[2].resource.supportingInfo[2])
+INFORMATION: Bundle/TICTFDocRta1: Bundle: Can't find 'Observation/TICTFObsGral1' in the bundle (Bundle.entry[2].resource.supportingInfo[3])
+ERROR: Bundle/TICTFDocRta1: Bundle: Can't find 'ServiceRequest/TICTFServiceRequest1' in the bundle (Bundle.entry[3].resource.basedOn[0]). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be 'http://HIS.PaisDeRespuesta.gov/tictf/ServiceRequest/TICTFServiceRequest1', but found 'http://HIS.PaisDeOrigen.gov/tictf/ServiceRequest/TICTFServiceRequest1')
+ERROR: Bundle/TICTFDocRta1: Bundle: Can't find 'Patient/Paciente1' in the bundle (Bundle.entry[3].resource.subject). Note that there is a resource in the bundle with the same type and id, but it does not match because of the fullUrl based rules around matching relative references (must be 'http://HIS.PaisDeRespuesta.gov/tictf/Patient/Paciente1', but found 'http://HIS.PaisDeOrigen.gov/tictf/Patient/Paciente1')
+INFORMATION: Bundle/TICTFDocRta1: Bundle: Can't find 'PractitionerRole/TICTFPractitionerRole2' in the bundle (Bundle.entry[3].resource.performer[0])
+INFORMATION: Bundle/TICTFDocRta1: Bundle: Can't find 'Observation/TICTFObsRespuesta1' in the bundle (Bundle.entry[3].resource.result[0])
+INFORMATION: Bundle/TICTFDocRta1: Bundle: Can't find 'ImagingStudy/ImagingStudy1' in the bundle (Bundle.entry[3].resource.imagingStudy[0])
+ERROR: Bundle/TICTFDocRta1: Bundle.entry[4]: Entry 'http://HIS.PaisDeRespuesta.gov/tictf/DiagnosticReport/TICTFDiagRep1' isn't reachable by traversing links (forward or backward) from the Composition
+== fsh-generated\resources\CodeSystem-TipoTaskCS.json ==
+INFORMATION: CodeSystem/TipoTaskCS: CodeSystem: Los CodeSystems no definidos por HL7 DEBERIAN tener un valor  definido para el elemento caseSensitive para que los usuarios conozcan el estado y significado del sistema de codificación claramente
+WARNING: CodeSystem/TipoTaskCS: CodeSystem: !!El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
+WARNING: CodeSystem/TipoTaskCS: CodeSystem: !!El perfil ShareableValueSet dice que el elemento caseSensitive es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet
+== fsh-generated\resources\Composition-TICTFComposition1.json ==
+ERROR: Composition/TICTFComposition1: Composition.type.coding[0].display: Wrong Display Name 'Teleconsultation note' for http://loinc.org#81249-5. Valid display is 'Sistema de codificación de secuencia de referencia genómica predeterminado: Paciente: Punto temporal: Tipo: Nominal:' (es-MX) (for the language(s) 'es')
+ERROR: Composition/TICTFComposition1: Composition.section[0].code.coding[0].code: Unknown code '60592-7' in the CodeSystem 'http://loinc.org' version '2.80'
+ERROR: Composition/TICTFComposition1: Composition.section[1].code.coding[0].display: Wrong Display Name 'Teleconsultation note' for http://loinc.org#81249-5. Valid display is 'Sistema de codificación de secuencia de referencia genómica predeterminado: Paciente: Punto temporal: Tipo: Nominal:' (es-MX) (for the language(s) 'es')
+ERROR: Composition/TICTFComposition1: Composition.section[2].code.coding[0].code: Unknown code '722421008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/32506021000036107/version/20250731'
 == fsh-generated\resources\Consent-Consent1.json ==
 WARNING: Consent/Consent1: Consent.scope.coding[0]: !!El Coding no tiene sistema - no puede ser validado
 == fsh-generated\resources\DiagnosticReport-DiagnosticReport1.json ==
+== fsh-generated\resources\DiagnosticReport-TICTFDiagRep1.json ==
+WARNING: DiagnosticReport/TICTFDiagRep1: DiagnosticReport.identifier[0].system: !!El valor URL 'http://HIS.PaisDeDestino.gov/tictf/diagnosticreport' no puede resolverse
+ERROR: DiagnosticReport/TICTFDiagRep1: DiagnosticReport.category[0].coding[0].display: El nombre de display para http://terminology.hl7.org/CodeSystem/v2-0074#SP debe ser ''Surgical Pathology'', no 'Specialist'
+ERROR: DiagnosticReport/TICTFDiagRep1: DiagnosticReport.code.coding[0].code: Unknown code '722421008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/32506021000036107/version/20250731'
+ERROR: DiagnosticReport/TICTFDiagRep1: DiagnosticReport.conclusionCode[0].coding[0].display: Wrong Display Name 'Drug treatment' for http://snomed.info/sct#182840001. There are no valid display names found for language(s) 'es'. Default display is 'Drug treatment stopped - medical advice'
 == fsh-generated\resources\DocumentReference-DocumentReference1.json ==
 == fsh-generated\resources\DocumentReference-DocumentReference2.json ==
 == fsh-generated\resources\ImagingStudy-ImagingStudy1.json ==
 == fsh-generated\resources\ImplementationGuide-fhir.TIC-TSTF.json ==
+INFORMATION: ImplementationGuide/fhir.TIC-TSTF: ImplementationGuide.language: Reference to draft CodeSystem urn:ietf:bcp:47|2018-05-14
+INFORMATION: ImplementationGuide/fhir.TIC-TSTF: ImplementationGuide.language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
+INFORMATION: ImplementationGuide/fhir.TIC-TSTF: ImplementationGuide.language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 == fsh-generated\resources\Observation-TICTFObsGral1.json ==
+ERROR: Observation/TICTFObsGral1: Observation.code.coding[0].display: Wrong Display Name 'Progress note' for http://loinc.org#11506-3. Valid display is 'Nota de progreso:{Configuración} :Punto temporal:Tipo:Documento:{Role}' (es-MX) (for the language(s) 'es')
 WARNING: Observation/TICTFObsGral1: Observation: !!Todos los recursos Observation deben tener un elemento performer
 WARNING: Observation/TICTFObsGral1: Observation: !!Todos los recursos Observation deben tener un elemento effectiveDateTime o effectivePeriod
 == fsh-generated\resources\Observation-TICTFObsRespuesta1.json ==
+ERROR: Observation/TICTFObsRespuesta1: Observation.code.coding[0].display: Wrong Display Name 'Consult note' for http://loinc.org#11488-4. Valid display is 'Nota de consulta:{Configuración} :Punto temporal:Tipo:Documento:{Role}' (es-MX) (for the language(s) 'es')
 WARNING: Observation/TICTFObsRespuesta1: Observation: !!Todos los recursos Observation deben tener un elemento performer
 WARNING: Observation/TICTFObsRespuesta1: Observation: !!Todos los recursos Observation deben tener un elemento effectiveDateTime o effectivePeriod
 == fsh-generated\resources\Observation-TICTFObsSolicitud1.json ==
@@ -60,6 +130,10 @@ WARNING: Observation/TICTFObsSolicitud1: Observation: !!Todos los recursos Obser
 == fsh-generated\resources\Organization-TICTFOrganization1.json ==
 == fsh-generated\resources\Organization-TICTFOrganization2.json ==
 == fsh-generated\resources\Patient-Paciente1.json ==
+INFORMATION: Patient/Paciente1: Patient.identifier[1]: !!Este elemento no coincide con ninguna partición conocida defined in the profile http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient|0.6.2
+ERROR: Patient/Paciente1: Patient: Slice 'Patient.identifier:national': a matching slice is required, but not found (from http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient|0.6.2). Note that other slices are allowed in addition to this required slice
+WARNING: Patient/Paciente1: Patient.identifier[0].system: !!El valor URL 'urn:oid.2.16.152' no puede resolverse
+WARNING: Patient/Paciente1: Patient.identifier[1].system: !!El valor URL 'urn:oid.2.16.152' no puede resolverse
 == fsh-generated\resources\Practitioner-Practitioner1.json ==
 == fsh-generated\resources\Practitioner-Practitioner2.json ==
 == fsh-generated\resources\Practitioner-Practitioner3.json ==
@@ -68,21 +142,47 @@ WARNING: Observation/TICTFObsSolicitud1: Observation: !!Todos los recursos Obser
 == fsh-generated\resources\PractitionerRole-TICTFPractitionerRole3.json ==
 == fsh-generated\resources\ServiceRequest-TICTFServiceRequest1.json ==
 INFORMATION: ServiceRequest/TICTFServiceRequest1: ServiceRequest.supportingInfo[3]: !!Este elemento no coincide con ninguna partición conocida defined in the profile http://racsel.org/TIC-TSTF/StructureDefinition/TICTFServiceRequest|0.6.2
+WARNING: ServiceRequest/TICTFServiceRequest1: ServiceRequest.identifier[0].system: !!El valor URL 'http://HIS.PaisDeOrigen.gov/tictf/servicerequest' no puede resolverse
 == fsh-generated\resources\StructureDefinition-PROOrganizationTICTF.json ==
 INFORMATION: StructureDefinition/PROOrganizationTICTF: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 == fsh-generated\resources\StructureDefinition-RespuestaTICTF.json ==
 == fsh-generated\resources\StructureDefinition-SolicitudTICTF.json ==
+== fsh-generated\resources\StructureDefinition-TICTFComposition.json ==
+ERROR: StructureDefinition/TICTFComposition: StructureDefinition.snapshot.element[11].fixed.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Teleconsultation note' for http://loinc.org#81249-5. Valid display is 'Sistema de codificación de secuencia de referencia genómica predeterminado: Paciente: Punto temporal: Tipo: Nominal:' (es-MX) (for the language(s) 'es')
+ERROR: StructureDefinition/TICTFComposition: StructureDefinition.snapshot.element[59].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '60592-7' in the CodeSystem 'http://loinc.org' version '2.80'
+ERROR: StructureDefinition/TICTFComposition: StructureDefinition.snapshot.element[73].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Teleconsultation note' for http://loinc.org#81249-5. Valid display is 'Sistema de codificación de secuencia de referencia genómica predeterminado: Paciente: Punto temporal: Tipo: Nominal:' (es-MX) (for the language(s) 'es')
+ERROR: StructureDefinition/TICTFComposition: StructureDefinition.snapshot.element[87].fixed.ofType(CodeableConcept).coding[0].code: Unknown code '722421008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/32506021000036107/version/20250731'
+ERROR: StructureDefinition/TICTFComposition: StructureDefinition.differential.element[2].fixed.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Teleconsultation note' for http://loinc.org#81249-5. Valid display is 'Sistema de codificación de secuencia de referencia genómica predeterminado: Paciente: Punto temporal: Tipo: Nominal:' (es-MX) (for the language(s) 'es')
+ERROR: StructureDefinition/TICTFComposition: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '60592-7' in the CodeSystem 'http://loinc.org' version '2.80'
+ERROR: StructureDefinition/TICTFComposition: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Teleconsultation note' for http://loinc.org#81249-5. Valid display is 'Sistema de codificación de secuencia de referencia genómica predeterminado: Paciente: Punto temporal: Tipo: Nominal:' (es-MX) (for the language(s) 'es')
+ERROR: StructureDefinition/TICTFComposition: StructureDefinition.differential.element[17].fixed.ofType(CodeableConcept).coding[0].code: Unknown code '722421008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/32506021000036107/version/20250731'
+INFORMATION: StructureDefinition/TICTFComposition: StructureDefinition.differential.element[6].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition/TICTFComposition: StructureDefinition.snapshot.element[11].fixed.ofType(CodeableConcept): Para el tipo complejo CodeableConcept, considere usar un patrón en lugar de un valor fijo para evitar restringir la instancia más allá de lo imprescindible
+INFORMATION: StructureDefinition/TICTFComposition: StructureDefinition.snapshot.element[40].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition/TICTFComposition: StructureDefinition.snapshot.element[87].fixed.ofType(CodeableConcept): Para el tipo complejo CodeableConcept, considere usar un patrón en lugar de un valor fijo para evitar restringir la instancia más allá de lo imprescindible
+WARNING: StructureDefinition/TICTFComposition: StructureDefinition.snapshot: The slice 'Paciente' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/TICTFComposition: StructureDefinition.snapshot: The slice 'Solicitud' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+WARNING: StructureDefinition/TICTFComposition: StructureDefinition.snapshot: The slice 'Respuesta' on path 'Composition.section' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
+== fsh-generated\resources\StructureDefinition-TICTFDiagRep.json ==
+ERROR: StructureDefinition/TICTFDiagRep: StructureDefinition.snapshot.element[13].fixed.ofType(CodeableConcept).coding[0].code: Unknown code '722421008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/32506021000036107/version/20250731'
+ERROR: StructureDefinition/TICTFDiagRep: StructureDefinition.differential.element[2].fixed.ofType(CodeableConcept).coding[0].code: Unknown code '722421008' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/32506021000036107/version/20250731'
+WARNING: StructureDefinition/TICTFDiagRep: StructureDefinition.snapshot.element[13].fixed.ofType(CodeableConcept): Para el tipo complejo CodeableConcept, considere usar un patrón en lugar de un valor fijo para evitar restringir la instancia más allá de lo imprescindible
+== fsh-generated\resources\StructureDefinition-TICTFDocRta.json ==
 == fsh-generated\resources\StructureDefinition-TICTFObsGral.json ==
 == fsh-generated\resources\StructureDefinition-TICTFObsRespuesta.json ==
 == fsh-generated\resources\StructureDefinition-TICTFObsSolicitud.json ==
 == fsh-generated\resources\StructureDefinition-TICTFPatient.json ==
+WARNING: StructureDefinition/TICTFPatient: StructureDefinition.snapshot.element[23].binding.valueSet: !!La URL Canónica 'http://lacpass.racsel.org/ValueSet/national-identifier-types' no puede resolverse
+WARNING: StructureDefinition/TICTFPatient: StructureDefinition.differential.element[7].binding.valueSet: !!La URL Canónica 'http://lacpass.racsel.org/ValueSet/national-identifier-types' no puede resolverse
+WARNING: StructureDefinition/TICTFPatient: StructureDefinition.differential.element[7].binding: La referencia al ValueSet http://lacpass.racsel.org/ValueSet/national-identifier-types en el elemento Patient.identifier.type no pudo ser resuelta
+WARNING: StructureDefinition/TICTFPatient: StructureDefinition.snapshot.element[14].fixed.ofType(CodeableConcept): Para el tipo complejo CodeableConcept, considere usar un patrón en lugar de un valor fijo para evitar restringir la instancia más allá de lo imprescindible
+WARNING: StructureDefinition/TICTFPatient: StructureDefinition.snapshot.element[23].binding: La referencia al ValueSet http://lacpass.racsel.org/ValueSet/national-identifier-types en el elemento Patient.identifier.type no pudo ser resuelta
 == fsh-generated\resources\StructureDefinition-TICTFPractitionerRole.json ==
 == fsh-generated\resources\StructureDefinition-TICTFServiceRequest.json ==
 == fsh-generated\resources\StructureDefinition-tictf-maintask.json ==
 == fsh-generated\resources\StructureDefinition-tictf-subtask.json ==
 == fsh-generated\resources\Task-TICTFMainTask1.json ==
 == fsh-generated\resources\Task-TICTFMainTask2.json ==
-WARNING: Task/TICTFMainTask2: Task.output[0].type.coding[0]: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/task-output-type' could not be found, so the code cannot be validated
 == fsh-generated\resources\Task-TICTFSubTask1.json ==
-WARNING: Task/TICTFSubTask1: Task.input[0].type.coding[0]: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/task-input-type' could not be found, so the code cannot be validated
-WARNING: Task/TICTFSubTask1: Task.output[0].type.coding[0]: A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/task-output-type' could not be found, so the code cannot be validated
+== fsh-generated\resources\ValueSet-TipoTaskVS.json ==
+WARNING: ValueSet/TipoTaskVS: ValueSet: !!El perfil ShareableValueSet dice que el elemento experimental es obligatorio, pero no está presente. Los conjuntos de valores publicados DEBERIAN conformar al perfil ShareableValueSet

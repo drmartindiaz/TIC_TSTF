@@ -1,6 +1,17 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS",
+      "version" : "0.6.2",
+      "status" : "draft",
+      "name" : "TipoTaskCS",
+      "title" : "TICTF Tipo de respuesta CS",
+      "description" : "CodeSystem para tipo Output Task TICTF",
+      "uses" : {
+      },
+      "ValueSet-TipoTaskVS.html" : "TICTF Tipo de respuesta VS"
+    },
+    {
       "url" : "http://snomed.info/sct",
       "version" : null,
       "status" : "active",
@@ -22,7 +33,7 @@
       "oids" : ["1.0.3166.1"],
       "uses" : {
       },
-      "http://terminology.hl7.org/6.4.0/ValueSet-v3-Country2.html" : "Country2"
+      "http://terminology.hl7.org/6.5.0/ValueSet-v3-Country2.html" : "Country2"
     }
   ]
 }

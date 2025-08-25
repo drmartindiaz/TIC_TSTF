@@ -1,3 +1,12 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [
+    {
+      "url" : "http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS",
+      "version" : "0.6.2",
+      "status" : "draft",
+      "name" : "TipoTaskCS",
+      "title" : "TICTF Tipo de respuesta CS",
+      "description" : "CodeSystem para tipo Output Task TICTF"
+    }
+  ]
 }

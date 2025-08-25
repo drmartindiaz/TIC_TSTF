@@ -72,7 +72,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "RespuestaTICTF.entidadSolicitante.profesionalSolicitante","RespuestaTICTF.entidadSolicitante.profesionalSolicitante","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
-","Profesional que solicitan la TICTF","Profesional que solicitan la TICTF","","","","","","","","","",,,,,"",,,,"RespuestaTICTF.entidadSolicitante.profesionalSolicitante",1,1,"",""
+","Profesional que solicita la TICTF","Profesional que solicita la TICTF","","","","","","","","","",,,,,"",,,,"RespuestaTICTF.entidadSolicitante.profesionalSolicitante",1,1,"",""
 "RespuestaTICTF.entidadSolicitante.institucionSolicitante","RespuestaTICTF.entidadSolicitante.institucionSolicitante","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Institución que solicita la TICTF","Institución que solicita la TICTF","","","","","","","","","",,,,,"",,,,"RespuestaTICTF.entidadSolicitante.institucionSolicitante",1,1,"",""
 "RespuestaTICTF.entidadSolicitante.paisOrigen","RespuestaTICTF.entidadSolicitante.paisOrigen","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
@@ -109,11 +109,11 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "RespuestaTICTF.entidadRespondedora.profesionalRespondedor","RespuestaTICTF.entidadRespondedora.profesionalRespondedor","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
-","Profesional que responden la TICTF","Profesional que responden la TICTF","","","","","","","","","",,,,,"",,,,"RespuestaTICTF.entidadRespondedora.profesionalRespondedor",1,1,"",""
+","Profesional que recibe y responde la TICTF","Profesional que recibe y responde la TICTF","","","","","","","","","",,,,,"",,,,"RespuestaTICTF.entidadRespondedora.profesionalRespondedor",1,1,"",""
 "RespuestaTICTF.entidadRespondedora.institucionRespondedora","RespuestaTICTF.entidadRespondedora.institucionRespondedora","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
-","Institución que responden la TICTF","Institución que responden la TICTF","","","","","","","","","",,,,,"",,,,"RespuestaTICTF.entidadRespondedora.institucionRespondedora",1,1,"",""
-"RespuestaTICTF.entidadRespondedora.paisDestino","RespuestaTICTF.entidadRespondedora.paisDestino","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
-","País que recibe la TITF","País que recibe la TITF","","","","","","","","","",,,,,"",,,,"RespuestaTICTF.entidadRespondedora.paisDestino",1,1,"",""
+","Institución que recibe y responde la TICTF","Institución que recibe y responde la TICTF","","","","","","","","","",,,,,"",,,,"RespuestaTICTF.entidadRespondedora.institucionRespondedora",1,1,"",""
+"RespuestaTICTF.entidadRespondedora.paisReceptor","RespuestaTICTF.entidadRespondedora.paisReceptor","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
+","País que recibe la TITF","País que recibe la TITF","","","","","","","","","",,,,,"",,,,"RespuestaTICTF.entidadRespondedora.paisReceptor",1,1,"",""
 "RespuestaTICTF.enRespuestaASolicitud","RespuestaTICTF.enRespuestaASolicitud","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ServiceRequest]]}
 ","Solicitud original","Solicitud original","","","","","","","","","",,,,,"",,,,"RespuestaTICTF.enRespuestaASolicitud",1,1,"",""
 "RespuestaTICTF.consentimientoInformado","RespuestaTICTF.consentimientoInformado","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Consent]]}

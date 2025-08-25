@@ -1,15 +1,16 @@
 {
   "resourceType" : "ImplementationGuide",
   "id" : "fhir.TIC-TSTF",
+  "language" : "es",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide fhir.TIC-TSTF</b></p><a name=\"fhir.TIC-TSTF\"> </a><a name=\"hcfhir.TIC-TSTF\"> </a><a name=\"fhir.TIC-TSTF-en-US\"> </a><h2>TICTSTF</h2><p>The official URL for this implementation guide is: </p><pre>http://racsel.org/TIC-TSTF/ImplementationGuide/fhir.TIC-TSTF</pre></div>"
+    "div" : "<div xml:lang=\"es\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"es\"><p class=\"res-header-id\"><b>Generated Narrative: GuiaDeImplementacion fhir.TIC-TSTF</b></p><a name=\"fhir.TIC-TSTF\"> </a><a name=\"hcfhir.TIC-TSTF\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: es</p></div><h2>TICTSTF</h2><p>The official URL for this implementation guide is: </p><pre>http://racsel.org/TIC-TSTF/ImplementationGuide/fhir.TIC-TSTF</pre></div>"
   },
   "url" : "http://racsel.org/TIC-TSTF/ImplementationGuide/fhir.TIC-TSTF",
   "version" : "0.6.2",
   "name" : "TICTSTF",
   "status" : "draft",
-  "date" : "2025-06-21T18:29:32-03:00",
+  "date" : "2025-08-25T16:41:11-03:00",
   "publisher" : "RACSEL",
   "contact" : [{
     "name" : "RACSEL",
@@ -36,7 +37,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.4.0"
+    "version" : "6.5.0"
   },
   {
     "id" : "hl7ext",
@@ -326,7 +327,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.7.1"
     },
     {
       "extension" : [{
@@ -606,6 +607,30 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TICTFComposition"
+      },
+      "name" : "Composición de Documento de Teleinterconsulta",
+      "description" : "Una Composition que sirve como índice para el Bundle de Teleinterconsulta.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/TICTFComposition1"
+      },
+      "name" : "Composición del Documento de Teleinterconsulta",
+      "description" : "Composition que organiza el contenido del documento de respuesta de teleinterconsulta",
+      "exampleCanonical" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFComposition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Consent"
       }],
       "reference" : {
@@ -626,6 +651,30 @@
       "name" : "Documento Clínico Adjunto",
       "description" : "Documento clínico proporcionado como entrada en la subtarea.",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TICTFDocRta"
+      },
+      "name" : "Documento de Respuesta de Teleinterconsulta",
+      "description" : "Un Bundle de tipo 'document' que encapsula los recursos de una teleinterconsulta, incluyendo la solicitud, el paciente y la respuesta.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/TICTFDocRta1"
+      },
+      "name" : "Documento de Respuesta de Teleinterconsulta Ejemplo",
+      "description" : "Ejemplo completo de un documento de respuesta que incluye la composición, paciente, solicitud y respuesta de una teleinterconsulta transfronteriza",
+      "exampleCanonical" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDocRta"
     },
     {
       "extension" : [{
@@ -666,6 +715,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/TICTFDiagRep1"
+      },
+      "name" : "Informe Diagnóstico de Respuesta TICTF",
+      "description" : "Informe diagnóstico como respuesta a la solicitud de teleinterconsulta",
+      "exampleCanonical" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDiagRep"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
@@ -684,7 +745,7 @@
         "reference" : "StructureDefinition/SolicitudTICTF"
       },
       "name" : "Modelo Lógico Solicitud TICTF",
-      "description" : "Modelo Lógico para la solicitud de un Tele Interconsulta Transfrrnteriza Asincrónica",
+      "description" : "Modelo Lógico para la solicitud de un Tele Interconsulta Transfronteriza Asincrónica",
       "exampleBoolean" : false
     },
     {
@@ -794,6 +855,18 @@
       "name" : "Profesional Solicitante",
       "description" : "Ejemplo de un profesional de la salud que solicita la interconsulta",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TICTFDiagRep"
+      },
+      "name" : "Respeusta de Teleinterconsulta",
+      "description" : "Diagnostic Report para respeusta de Teleinterconsulta Transfronteriza",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -973,6 +1046,30 @@
       },
       "name" : "TICTF Tarea PRINCIPAL",
       "description" : "Tarea PRINCIPAL en TeleInterconsulta Transfronteriza",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/TipoTaskCS"
+      },
+      "name" : "TICTF Tipo de respuesta CS",
+      "description" : "CodeSystem para tipo Output Task TICTF",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/TipoTaskVS"
+      },
+      "name" : "TICTF Tipo de respuesta VS",
+      "description" : "Set de valores para tipo Output Task TICTF",
       "exampleBoolean" : false
     },
     {

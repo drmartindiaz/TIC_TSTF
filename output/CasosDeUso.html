@@ -30,10 +30,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -130,7 +130,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TICTSTF - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://racsel.org/TIC-TSTF/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TICTSTF - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://racsel.org/TIC-TSTF/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Casos de Uso</h2>
   
 
@@ -146,26 +146,58 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#casos-de-uso" id="markdown-toc-casos-de-uso">Casos de uso</a></li>
+  <li><a href="#actores-y-proceso" id="markdown-toc-actores-y-proceso">Actores y proceso</a></li>
+</ul>
+
 </div>
 <h3 id="casos-de-uso">Casos de uso</h3>
 
-<p>El objetivo principal del presente caso de uso de tele-interconsulta transfronteriza (Tele-Oncología o Tele-APS), es la creación de un sistema de apoyo a la toma de decisiones sobre el oportuno diagnóstico, pronóstico y tratamiento de enfermedades oncológicas u otras, buscando soporte en especialistas de otros países. Al mismo tiempo, se puede involucrar a las familias y/o cuidadores de pacientes en el proceso de toma de decisiones.</p>
+<p>El objetivo principal del caso de uso Tele-interconsulta transfronteriza es la creación de un sistema de apoyo a la toma de decisiones sobre el oportuno diagnóstico, pronóstico y tratamiento de enfermedades oncológicas u otras, buscando soporte en especialistas de otros países. Al mismo tiempo, se puede involucrar a las familias y/o cuidadores de pacientes en el proceso de toma de decisiones.</p>
 
-<h4 id="1-tele-oncología"><strong>1. Tele-Oncología</strong></h4>
+<p>La tele-interconsulta transfronteriza implica la solicitud de una segunda opinión médica —frecuentemente especializada— por parte de un profesional que atiende a un paciente en un país, dirigida a un colega ubicado en otro país. Este modelo puede aplicarse a diversos dominios clínicos como la oncología (Tele-Oncología) o la atención primaria de la salud (Tele-APS).</p>
 
-<p>Este caso de uso contempla el conjunto de servicios de telemedicina y otras intervenciones de telesalud aplicables al ámbito de la oncología. Se centra en la realización de <strong>tele-interconsultas transfronterizas</strong> en las que el profesional consultado es un <strong>especialista en oncología</strong>, o bien un <strong>equipo multidisciplinario especializado</strong> en esta área (por ejemplo, oncología clínica, cirugía oncológica, radioterapia, cuidados paliativos, entre otros). </p>
+<h4 id="tele-oncología">Tele-Oncología</h4>
+
+<p>Tele-Oncología contempla el conjunto de servicios de telemedicina y otras intervenciones de telesalud aplicables al ámbito de la oncología. El caso de uso de Tele-interconsulta transfronteriza aplicada a oncología se centra en la realización de <strong>tele-interconsultas transfronterizas</strong> en las que el profesional consultado es un <strong>especialista en oncología</strong>, o bien un <strong>equipo multidisciplinario especializado</strong> en esta área (por ejemplo, oncología clínica, cirugía oncológica, radioterapia, cuidados paliativos, entre otros). </p>
 
 <p>Estas interconsultas tienen como finalidad principal apoyar al profesional remitente en el <strong>diagnóstico oportuno, estadificación, elección de tratamiento y seguimiento</strong> de pacientes con enfermedades oncológicas, especialmente en contextos donde existen limitaciones de acceso a especialistas o a centros de alta complejidad. Este modelo favorece la equidad en el acceso a la atención oncológica y promueve la continuidad del cuidado a través de redes de colaboración internacional.</p>
 
-<h4 id="2-tele-aps"><strong>2. Tele-APS</strong></h4>
+<h4 id="tele-aps">Tele-APS</h4>
 
-<p>Este caso de uso se refiere a los servicios de telemedicina y otras intervenciones de telesalud en el <strong>ámbito de la atención primaria de la salud (APS)</strong>. En este contexto, el profesional solicitante es un integrante del primer nivel de atención (por ejemplo, médico/a generalista, médico/a de familia, enfermero/a o agente sanitario), quien realiza una <strong>tele-interconsulta</strong> con un profesional o equipo que se desempeña habitualmente en un centro de <strong>segundo nivel de atención o de mayor complejidad</strong>. </p>
+<p>Tele-APS refiere a los servicios de telemedicina y otras intervenciones de telesalud en el <strong>ámbito de la atención primaria de la salud (APS)</strong>. En el caso de uso de Tele-interconsulta transfronteriza aplicada a APS, el profesional solicitante es un integrante del primer nivel de atención (por ejemplo, médico/a generalista, médico/a de familia, enfermero/a o agente sanitario), quien realiza una <strong>tele-interconsulta transfronteriza</strong> con un profesional o equipo que se desempeña habitualmente en un centro de <strong>segundo nivel de atención o de mayor complejidad</strong>. </p>
 
 <p>Las tele-interconsultas en APS pueden abordar una amplia gama de condiciones clínicas —desde enfermedades crónicas hasta síntomas agudos complejos— y tienen por objetivo <strong>fortalecer la capacidad resolutiva del primer nivel</strong>, mejorar la coordinación de la atención y reducir derivaciones innecesarias. </p>
 
 <p>Asimismo, permiten desarrollar procesos de atención compartida y facilitar la toma de decisiones clínicas en contextos rurales, remotos o de difícil acceso.</p>
+
+<h3 id="actores-y-proceso">Actores y proceso</h3>
+<p>Una Tele-interconsulta transfronteriza puede realizarse de manera <strong>asincrónica</strong> (modelo <em>store and forward</em>) o <strong>sincrónica</strong> (modelo de servicio interactivo). 
+Esta guía aborda la <strong>Tele-interconsulta transfronteriza asincrónica</strong> donde intervienen los siguientes actores:</p>
+
+<ul>
+  <li>
+    <p><strong>Profesional remitente</strong> quien genera y envía la solicitud de interconsulta utilizando un <strong>HIS origen</strong></p>
+  </li>
+  <li>
+    <p><strong>Profesional consultado</strong> quien recibe y responde la interconsulta utilizando un <strong>HIS receptor</strong></p>
+  </li>
+</ul>
+
+<p>Debe entenderse por <em>HIS Origen</em> y <em>HIS Receptor</em> los sistemas de información sanitarios que intervienen en las operaciones de teleinterconsulta trasnfronteriza.
+En este esquema simple no incluimos un eventual sistema coordinador de teleinterconsutlas transfronterizas que podría actuar como mediador o ehub de las operaciones.</p>
+
+<p>El proceso de interacción entre sistemas se inicia cuando el HIS origen envía la solicitud de Tele-interconsulta transfronteriza y finaliza cuando el HIS receptor devuelve la respuesta a la interconsulta. Se contempla también el rechazo de la solicitud si la interconsulta no puede realizarse, y la posibilidad de comunicación adicional si el profesional consultado necesita más información para elaborar la respuesta.<br />
+Para la trazabilidad administrativa del flujo de trabajo se propone utilizar tareas (recurso Task). Una tarea principal en respuesta a la solicitud de Tele-interconsulta, y subtareas opcionales para el pedido y envío de información adicional.</p>
+
+<p><br /></p>
+<div align="center">
+  <img style="border: 1px solid; color: black;" src="TICTFproc.png" /> 
+  <p>Diagrama de Proceso TICTF general</p>
+</div>
+<p><br /></p>
 
 
 
@@ -185,7 +217,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://racsel.org/">RACSEL</a>.  Package fhir.TIC-TSTF#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jun 21, 2025 18:29-0300">2025-06-21</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://racsel.org/">RACSEL</a>.  Package fhir.TIC-TSTF#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 25, 2025 16:42-0300">2025-08-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

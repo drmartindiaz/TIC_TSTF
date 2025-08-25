@@ -15,6 +15,19 @@
       "StructureDefinition-TICTFServiceRequest.html" : "TICTF Solicitud TeleInterconsulta Transfronteriza"
     },
     {
+      "url" : "http://racsel.org/TIC-TSTF/ValueSet/TipoTaskVS",
+      "version" : "0.6.2",
+      "status" : "draft",
+      "name" : "TipoTaskVS",
+      "title" : "TICTF Tipo de respuesta VS",
+      "description" : "Set de valores para tipo Output Task TICTF",
+      "systems" : ["http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS"],
+      "uses" : {
+      },
+      "StructureDefinition-tictf-maintask.html" : "TICTF Tarea PRINCIPAL",
+      "StructureDefinition-tictf-subtask.html" : "TICTF SUBtarea"
+    },
+    {
       "url" : "http://terminology.hl7.org/ValueSet/v3-Country2",
       "version" : "3.0.0",
       "status" : "active",

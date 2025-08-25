@@ -11,6 +11,24 @@
         "title": "TICTF Organización"
       }
     ],
+    "Composition": [
+      {
+        "url": "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFComposition",
+        "title": "Composición de Documento de Teleinterconsulta"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDiagRep",
+        "title": "Respeusta de Teleinterconsulta"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDocRta",
+        "title": "Documento de Respuesta de Teleinterconsulta"
+      }
+    ],
     "Observation": [
       {
         "url": "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFObsGral",
@@ -94,6 +112,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
     ]
   }
 }
