@@ -1,6 +1,6 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "SolicitudTICTF","SolicitudTICTF","","","",0,*,"","","","null {[]} {[]}
-","Modelo Lógico Solicitud TICTF","Modelo Lógico para la solicitud de un Tele Interconsulta Transfrrnteriza Asincrónica","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Modelo Lógico Solicitud TICTF","Modelo Lógico para la solicitud de un Tele Interconsulta Transfronteriza Asincrónica","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "SolicitudTICTF.identificador","SolicitudTICTF.identificador","","","",1,1,"","","","Identifier {[]} {[]}
 ","Identificador unico de la solicitud","Identificador unico de la solicitud","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.identificador",1,1,"",""
 "SolicitudTICTF.estado","SolicitudTICTF.estado","","","",1,1,"","","","CodeableConcept {[]} {[]}
@@ -72,13 +72,13 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "SolicitudTICTF.entidadSolicitante.profesionalSolicitante","SolicitudTICTF.entidadSolicitante.profesionalSolicitante","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
-","Profesional que solicitan la TICTF","Profesional que solicitan la TICTF","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.entidadSolicitante.profesionalSolicitante",1,1,"",""
+","Profesional que solicita la TICTF","Profesional que solicita la TICTF","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.entidadSolicitante.profesionalSolicitante",1,1,"",""
 "SolicitudTICTF.entidadSolicitante.institucionSolicitante","SolicitudTICTF.entidadSolicitante.institucionSolicitante","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Institución que solicita la TICTF","Institución que solicita la TICTF","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.entidadSolicitante.institucionSolicitante",1,1,"",""
 "SolicitudTICTF.entidadSolicitante.paisOrigen","SolicitudTICTF.entidadSolicitante.paisOrigen","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
 ","País que origina la TICTF","País que origina la TICTF","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.entidadSolicitante.paisOrigen",1,1,"",""
 "SolicitudTICTF.entidadSolicitada","SolicitudTICTF.entidadSolicitada","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole]]}
-","Entidad Solicitsada","Entidad Solicitsada","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.entidadSolicitada",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Especialidad y destinatario de la solicitud TICTF","Especialidad y destinatario de la solicitud TICTF","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.entidadSolicitada",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}"
 "SolicitudTICTF.entidadSolicitada.id","SolicitudTICTF.entidadSolicitada.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -109,11 +109,11 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "SolicitudTICTF.entidadSolicitada.especialidadSolicitada","SolicitudTICTF.entidadSolicitada.especialidadSolicitada","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Especialidades solicitadas","Especialidades solicitadas","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.entidadSolicitada.especialidadSolicitada",1,1,"",""
+","Especialidad solicitada","Especialidad solicitada","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.entidadSolicitada.especialidadSolicitada",1,1,"",""
 "SolicitudTICTF.entidadSolicitada.profesionalSolicitado","SolicitudTICTF.entidadSolicitada.profesionalSolicitado","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
 ","Profesional solicitado opcional","Profesional solicitado opcional","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.entidadSolicitada.profesionalSolicitado",0,1,"",""
 "SolicitudTICTF.entidadSolicitada.institucionSolicitada","SolicitudTICTF.entidadSolicitada.institucionSolicitada","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
-","Institución que solicita la TICTF","Institución que solicita la TICTF","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.entidadSolicitada.institucionSolicitada",0,1,"",""
+","Institución solicitada opcional","Institución solicitada opcional","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.entidadSolicitada.institucionSolicitada",0,1,"",""
 "SolicitudTICTF.razonSolicitud","SolicitudTICTF.razonSolicitud","","","",1,1,"","","","BackboneElement {[]} {[]}
 ","Problema de Salud específico por al cual se pide la TICTF","Problema de Salud específico por al cual se pide la TICTF","","","","","","","","","",,,,,"",,,,"SolicitudTICTF.razonSolicitud",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

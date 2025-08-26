@@ -19,7 +19,7 @@
   fhir:name [ fhir:v "TICTFDiagRep"] ; # 
   fhir:title [ fhir:v "Respeusta de Teleinterconsulta"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-08-17T12:30:07-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-25T12:04:17-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "RACSEL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "RACSEL" ] ;

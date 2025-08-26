@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -16,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Task TICTFMainTask2</b></p><a name=\"TICTFMainTask2\"> </a><a name=\"hcTICTFMainTask2\"> </a><a name=\"TICTFMainTask2-en-US\"> </a><p><b>basedOn</b>: <a href=\"ServiceRequest-TICTFServiceRequest1.html\">ServiceRequest Telemedicine consultation with provider (procedure)</a></p><p><b>status</b>: Completed</p><p><b>intent</b>: order</p><p><b>focus</b>: <a href=\"DiagnosticReport-DiagnosticReport1.html\">Diagnostic Report for '' for '-&gt;Juan Perez  Male, DoB: 1980-05-15'</a></p><p><b>for</b>: <a href=\"Patient-Paciente1.html\">Juan Perez  Male, DoB: 1980-05-15</a></p><p><b>requester</b>: <a href=\"PractitionerRole-TICTFPractitionerRole1.html\">PractitionerRole</a></p><p><b>owner</b>: <a href=\"PractitionerRole-TICTFPractitionerRole2.html\">PractitionerRole</a></p><h3>Outputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/task-output-type documentation}\">documentation</span></td><td><a href=\"Observation-TICTFObsRespuesta1.html\">Observation Consult note</a></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Tarea TICTFMainTask2</b></p><a name=\"TICTFMainTask2\"> </a><a name=\"hcTICTFMainTask2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tictf-maintask.html\">TICTF Tarea PRINCIPAL</a></p></div><p><b>basedOn</b>: <a href=\"ServiceRequest-TICTFServiceRequest1.html\">ServiceRequest Telemedicine consultation with provider (procedure)</a></p><p><b>status</b>: Completed</p><p><b>intent</b>: order</p><p><b>focus</b>: <a href=\"DiagnosticReport-DiagnosticReport1.html\">Diagnostic Report for '' for '-&gt;Juan Domingo Perez  Male, DoB: 1980-05-15 ( Tax ID number)'</a></p><p><b>for</b>: <a href=\"Patient-Paciente1.html\">Juan Domingo Perez  Male, DoB: 1980-05-15 ( Tax ID number)</a></p><p><b>requester</b>: <a href=\"PractitionerRole-TICTFPractitionerRole1.html\">PractitionerRole</a></p><p><b>owner</b>: <a href=\"PractitionerRole-TICTFPractitionerRole2.html\">PractitionerRole</a></p><h3>Outputs</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS Doc}\">Documento</span></td><td><a href=\"Observation-TICTFObsRespuesta1.html\">Observation Consult note</a></td></tr></table></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:basedOn ( [
      fhir:link <http://racsel.org/TIC-TSTF/ServiceRequest/TICTFServiceRequest1> ;
@@ -43,8 +44,8 @@
   fhir:output ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/task-output-type"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "documentation" ]
+         fhir:system [ fhir:v "http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "Doc" ]
        ] )
      ] ;
      fhir:value [

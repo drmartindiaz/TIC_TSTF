@@ -2,14 +2,15 @@
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="fhir.TIC-TSTF"/>
+  <language value="es"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide fhir.TIC-TSTF</b></p><a name="fhir.TIC-TSTF"> </a><a name="hcfhir.TIC-TSTF"> </a><a name="fhir.TIC-TSTF-en-US"> </a><h2>TICTSTF</h2><p>The official URL for this implementation guide is: </p><pre>http://racsel.org/TIC-TSTF/ImplementationGuide/fhir.TIC-TSTF</pre></div>
+    <status value="generated"/><div xml:lang="es" xmlns="http://www.w3.org/1999/xhtml" lang="es"><p class="res-header-id"><b>Generated Narrative: GuiaDeImplementacion fhir.TIC-TSTF</b></p><a name="fhir.TIC-TSTF"> </a><a name="hcfhir.TIC-TSTF"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: es</p></div><h2>TICTSTF</h2><p>The official URL for this implementation guide is: </p><pre>http://racsel.org/TIC-TSTF/ImplementationGuide/fhir.TIC-TSTF</pre></div>
   </text>
   <url value="http://racsel.org/TIC-TSTF/ImplementationGuide/fhir.TIC-TSTF"/>
   <version value="0.6.2"/>
   <name value="TICTSTF"/>
   <status value="draft"/>
-  <date value="2025-06-21T18:29:32-03:00"/>
+  <date value="2025-08-25T12:04:17-03:00"/>
   <publisher value="RACSEL"/>
   <contact>
     <name value="RACSEL"/>
@@ -34,7 +35,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.4.0"/>
+    <version value="6.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -246,7 +247,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.7.1"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -450,6 +451,28 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/TICTFComposition"/>
+      </reference>
+      <name value="Composición de Documento de Teleinterconsulta"/>
+      <description value="Una Composition que sirve como índice para el Bundle de Teleinterconsulta."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/TICTFComposition1"/>
+      </reference>
+      <name value="Composición del Documento de Teleinterconsulta"/>
+      <description value="Composition que organiza el contenido del documento de respuesta de teleinterconsulta"/>
+      <exampleCanonical value="http://racsel.org/TIC-TSTF/StructureDefinition/TICTFComposition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Consent"/>
       </extension>
       <reference>
@@ -469,6 +492,28 @@
       <name value="Documento Clínico Adjunto"/>
       <description value="Documento clínico proporcionado como entrada en la subtarea."/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/TICTFDocRta"/>
+      </reference>
+      <name value="Documento de Respuesta de Teleinterconsulta"/>
+      <description value="Un Bundle de tipo 'document' que encapsula los recursos de una teleinterconsulta, incluyendo la solicitud, el paciente y la respuesta."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/TICTFDocRta1"/>
+      </reference>
+      <name value="Documento de Respuesta de Teleinterconsulta Ejemplo"/>
+      <description value="Ejemplo completo de un documento de respuesta que incluye la composición, paciente, solicitud y respuesta de una teleinterconsulta transfronteriza"/>
+      <exampleCanonical value="http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDocRta"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -505,6 +550,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/TICTFDiagRep1"/>
+      </reference>
+      <name value="Informe Diagnóstico de Respuesta TICTF"/>
+      <description value="Informe diagnóstico como respuesta a la solicitud de teleinterconsulta"/>
+      <exampleCanonical value="http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDiagRep"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
@@ -522,7 +578,7 @@
         <reference value="StructureDefinition/SolicitudTICTF"/>
       </reference>
       <name value="Modelo Lógico Solicitud TICTF"/>
-      <description value="Modelo Lógico para la solicitud de un Tele Interconsulta Transfrrnteriza Asincrónica"/>
+      <description value="Modelo Lógico para la solicitud de un Tele Interconsulta Transfronteriza Asincrónica"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -623,6 +679,17 @@
       <name value="Profesional Solicitante"/>
       <description value="Ejemplo de un profesional de la salud que solicita la interconsulta"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/TICTFDiagRep"/>
+      </reference>
+      <name value="Respeusta de Teleinterconsulta"/>
+      <description value="Diagnostic Report para respeusta de Teleinterconsulta Transfronteriza"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -787,6 +854,28 @@
       </reference>
       <name value="TICTF Tarea PRINCIPAL"/>
       <description value="Tarea PRINCIPAL en TeleInterconsulta Transfronteriza"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/TipoTaskCS"/>
+      </reference>
+      <name value="TICTF Tipo de respuesta CS"/>
+      <description value="CodeSystem para tipo Output Task TICTF"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/TipoTaskVS"/>
+      </reference>
+      <name value="TICTF Tipo de respuesta VS"/>
+      <description value="Set de valores para tipo Output Task TICTF"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

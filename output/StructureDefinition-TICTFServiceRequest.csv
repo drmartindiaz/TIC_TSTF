@@ -74,7 +74,7 @@ groupIdentifier","",0,1,"","","Y","Identifier {[]} {[]}
     <system value=""http://snomed.info/sct""/>
     <code value=""868184008""/>
   </coding>
-</valueCodeableConcept>","","","",,"example","Codes for tests or services that can be carried out by a designated individual, organization or healthcare service.  For laboratory, LOINC is  (preferred)[http://build.fhir.org/terminologies.html#preferred] and a valueset using LOINC Order codes is available [here](http://hl7.org/fhir/R4/valueset-diagnostic-requests.html).","http://hl7.org/fhir/ValueSet/procedure-code","",,,,"ServiceRequest.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+</valueCodeableConcept>","","","",,"example","Codes for tests or services that can be carried out by a designated individual, organization or healthcare service.  For laboratory, LOINC is  (preferred)[http://build.fhir.org/terminologies.html#preferred].","http://hl7.org/fhir/ValueSet/procedure-code","",,,,"ServiceRequest.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.code","PR1-3 / OBR-4  (varies by domain)",".code","FiveWs.what[x]","Procedure.procedureCode"
 "ServiceRequest.orderDetail","ServiceRequest.orderDetail","","detailed instructions
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}

@@ -1,5 +1,12 @@
 [
   {
+    "id" : "TipoTaskCS",
+    "type" : "CodeSystem",
+    "url" : "http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS",
+    "version" : "0.6.2",
+    "name" : "TipoTaskCS"
+  },
+  {
     "id" : "fhir.TIC-TSTF",
     "type" : "ImplementationGuide",
     "url" : "http://racsel.org/TIC-TSTF/ImplementationGuide/fhir.TIC-TSTF",
@@ -26,6 +33,27 @@
     "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/SolicitudTICTF",
     "version" : "0.6.2",
     "name" : "MLSolicitudTICTF"
+  },
+  {
+    "id" : "TICTFComposition",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFComposition",
+    "version" : "0.6.2",
+    "name" : "TICTFComposition"
+  },
+  {
+    "id" : "TICTFDiagRep",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDiagRep",
+    "version" : "0.6.2",
+    "name" : "TICTFDiagRep"
+  },
+  {
+    "id" : "TICTFDocRta",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDocRta",
+    "version" : "0.6.2",
+    "name" : "TICTFDocRta"
   },
   {
     "id" : "TICTFObsGral",
@@ -82,5 +110,12 @@
     "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/tictf-subtask",
     "version" : "0.6.2",
     "name" : "TICTFSubTask"
+  },
+  {
+    "id" : "TipoTaskVS",
+    "type" : "ValueSet",
+    "url" : "http://racsel.org/TIC-TSTF/ValueSet/TipoTaskVS",
+    "version" : "0.6.2",
+    "name" : "TipoTaskVS"
   }
 ]

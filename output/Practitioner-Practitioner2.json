@@ -3,7 +3,7 @@
   "id" : "Practitioner2",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner Practitioner2</b></p><a name=\"Practitioner2\"> </a><a name=\"hcPractitioner2\"> </a><a name=\"Practitioner2-en-US\"> </a><p><b>name</b>: Luis Fernandez </p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practicante / Profesional Practitioner2</b></p><a name=\"Practitioner2\"> </a><a name=\"hcPractitioner2\"> </a><p><b>name</b>: Luis Fernandez </p></div>"
   },
   "name" : [{
     "family" : "Fernandez",

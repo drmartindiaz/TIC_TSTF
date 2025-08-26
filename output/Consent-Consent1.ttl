@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -11,7 +12,7 @@
   fhir:id [ fhir:v "Consent1"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Consent Consent1</b></p><a name=\"Consent1\"> </a><a name=\"hcConsent1\"> </a><a name=\"Consent1-en-US\"> </a><p><b>status</b>: Active</p><p><b>scope</b>: <span title=\"Codes:\">patient-privacy</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 59284-0}\">Consent Document</span></p><p><b>patient</b>: <a href=\"Patient-Paciente1.html\">Juan Perez  Male, DoB: 1980-05-15</a></p><p><b>policyRule</b>: <span title=\"Codes:\">Consentimiento para TICTF</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Consentimiento Consent1</b></p><a name=\"Consent1\"> </a><a name=\"hcConsent1\"> </a><p><b>status</b>: Active</p><p><b>scope</b>: <span title=\"Codes:\">patient-privacy</span></p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 59284-0}\">Consentimiento:{Configuración} :Punto temporal:Tipo:Documento:Patient</span></p><p><b>patient</b>: <a href=\"Patient-Paciente1.html\">Juan Domingo Perez  Male, DoB: 1980-05-15 ( Tax ID number)</a></p><p><b>policyRule</b>: <span title=\"Codes:\">Consentimiento para TICTF</span></p></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:scope [

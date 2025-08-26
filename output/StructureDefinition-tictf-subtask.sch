@@ -15,6 +15,7 @@
       <sch:assert test="count(f:basedOn) &lt;= 1">basedOn: maximum cardinality of 'basedOn' is 1</sch:assert>
       <sch:assert test="count(f:for) &gt;= 1">for: minimum cardinality of 'for' is 1</sch:assert>
       <sch:assert test="count(f:requester) &gt;= 1">requester: minimum cardinality of 'requester' is 1</sch:assert>
+      <sch:assert test="count(f:input) &gt;= 1">input: minimum cardinality of 'input' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

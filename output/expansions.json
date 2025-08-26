@@ -1,8 +1,68 @@
 {
   "resourceType" : "Bundle",
-  "id" : "384af468-98d4-4c5a-85ee-f27e6938c5f5",
+  "id" : "d1005b7d-9188-43f5-b8e6-c89e4500e923",
   "meta" : {
-    "lastUpdated" : "2025-06-21T18:29:32.935-03:00"
+    "lastUpdated" : "2025-08-25T12:04:58.378-03:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://racsel.org/TIC-TSTF/ValueSet/TipoTaskVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-TipoTaskCS.html\">codesystem TICTF Tipo de respuesta CS v0.6.2 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS-Obs\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TipoTaskCS.html#TipoTaskCS-Obs\">Obs</a></td><td>http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS</td><td>Observacion narrativa</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS-Doc\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TipoTaskCS.html#TipoTaskCS-Doc\">Doc</a></td><td>http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS</td><td>Documento</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS-Rep\"> </a>\u00a0\u00a0<a href=\"CodeSystem-TipoTaskCS.html#TipoTaskCS-Rep\">Rep</a></td><td>http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS</td><td>Reporte</td></tr></table></div>"
+      },
+      "url" : "http://racsel.org/TIC-TSTF/ValueSet/TipoTaskVS",
+      "version" : "0.6.2",
+      "name" : "TipoTaskVS",
+      "title" : "TICTF Tipo de respuesta VS",
+      "status" : "draft",
+      "date" : "2025-08-25T12:04:17-03:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "419",
+          "display" : "Latin America and the Caribbean"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:abe9d78f-dc2b-434a-be84-f20e5ecc97a5",
+        "timestamp" : "2025-08-25T12:05:34-03:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS|0.6.2"
+        }],
+        "contains" : [{
+          "system" : "http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS",
+          "code" : "Obs",
+          "display" : "Observacion narrativa"
+        },
+        {
+          "system" : "http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS",
+          "code" : "Doc",
+          "display" : "Documento"
+        },
+        {
+          "system" : "http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS",
+          "code" : "Rep",
+          "display" : "Reporte"
+        }]
+      }
+    }
+  }]
 }

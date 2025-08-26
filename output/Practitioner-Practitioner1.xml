@@ -3,7 +3,7 @@
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="Practitioner1"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner Practitioner1</b></p><a name="Practitioner1"> </a><a name="hcPractitioner1"> </a><a name="Practitioner1-en-US"> </a><p><b>name</b>: Ana Gomez </p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practicante / Profesional Practitioner1</b></p><a name="Practitioner1"> </a><a name="hcPractitioner1"> </a><p><b>name</b>: Ana Gomez </p></div>
   </text>
   <name>
     <family value="Gomez"/>
