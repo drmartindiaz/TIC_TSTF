@@ -1,0 +1,7 @@
+{
+  "version" : "0.6.2",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20251117090437",
+  "name" : "fhir.TIC-TSTF",
+  "jurisdiction" : "http://unstats.un.org/unsd/methods/m49/m49.htm#419"
+}

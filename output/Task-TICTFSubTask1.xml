@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Task xmlns="http://hl7.org/fhir">
+  <id value="TICTFSubTask1"/>
+  <meta>
+    <profile value="http://racsel.org/TIC-TSTF/StructureDefinition/tictf-subtask"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Tarea TICTFSubTask1</b></p><a name="TICTFSubTask1"> </a><a name="hcTICTFSubTask1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-tictf-subtask.html">TICTF SUBtarea</a></p></div><p><b>basedOn</b>: <a href="Task-TICTFMainTask1.html">Task: status = in-progress; intent = order</a></p><p><b>status</b>: Completed</p><p><b>intent</b>: order</p><p><b>focus</b>: <a href="ImagingStudy-ImagingStudy1.html">ImagingStudy: status = available; description = Tomografía computarizada de tórax</a></p><p><b>for</b>: <a href="Patient-Paciente1.html">Juan Domingo Perez  Male, DoB: 1980-05-15 ( Tax ID number)</a></p><p><b>requester</b>: <a href="PractitionerRole-TICTFPractitionerRole1.html">PractitionerRole</a></p><p><b>owner</b>: <a href="PractitionerRole-TICTFPractitionerRole3.html">PractitionerRole</a></p><h3>Inputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS Obs}">Observacion narrativa</span></td><td><a href="DocumentReference-DocumentReference2.html">DocumentReference: status = current; type = </a></td></tr></table><h3>Outputs</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS Rep}">Reporte</span></td><td><a href="Observation-TICTFObsRespuesta1.html">Observation Consult note</a></td></tr></table></div>
+  </text>
+  <basedOn>
+    <reference value="Task/TICTFMainTask1"/>
+  </basedOn>
+  <status value="completed"/>
+  <intent value="order"/>
+  <focus>
+    <reference value="ImagingStudy/ImagingStudy1"/>
+  </focus>
+  <for>
+    <reference value="Patient/Paciente1"/>
+  </for>
+  <requester>
+    <reference value="PractitionerRole/TICTFPractitionerRole1"/>
+  </requester>
+  <owner>
+    <reference value="PractitionerRole/TICTFPractitionerRole3"/>
+  </owner>
+  <input>
+    <type>
+      <coding>
+        <system value="http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS"/>
+        <code value="Obs"/>
+      </coding>
+    </type>
+    <valueReference>
+      <reference value="DocumentReference/DocumentReference2"/>
+    </valueReference>
+  </input>
+  <output>
+    <type>
+      <coding>
+        <system value="http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS"/>
+        <code value="Rep"/>
+      </coding>
+    </type>
+    <valueReference>
+      <reference value="Observation/TICTFObsRespuesta1"/>
+    </valueReference>
+  </output>
+</Task>

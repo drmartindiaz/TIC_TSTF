@@ -1,0 +1,306 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://racsel.org/TIC-TSTF/Bundle/TICTFDocRta1> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TICTFDocRta1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDocRta"^^xsd:anyURI ;
+       fhir:link <http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDocRta>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "http://HIS.PaisDeOrigen.gov/tictf/bundle"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "DOC-TICTF-2024-001" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2024-01-15T10:30:00Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://HIS.PaisDeOrigen.gov/tictf/Composition/TICTFComposition1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://HIS.PaisDeOrigen.gov/tictf/Composition/TICTFComposition1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://HIS.PaisDeOrigen.gov/tictf/Patient/Paciente1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://HIS.PaisDeOrigen.gov/tictf/Patient/Paciente1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://HIS.PaisDeOrigen.gov/tictf/ServiceRequest/TICTFServiceRequest1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://HIS.PaisDeOrigen.gov/tictf/ServiceRequest/TICTFServiceRequest1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://HIS.PaisDeRespuesta.gov/tictf/DiagnosticReport/TICTFDiagRep1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://HIS.PaisDeRespuesta.gov/tictf/DiagnosticReport/TICTFDiagRep1> )
+  ] ) . # 
+
+<http://HIS.PaisDeOrigen.gov/tictf/Composition/TICTFComposition1> a fhir:Composition ;
+  fhir:id [ fhir:v "TICTFComposition1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFComposition"^^xsd:anyURI ;
+       fhir:link <http://racsel.org/TIC-TSTF/StructureDefinition/TICTFComposition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Composition_TICTFComposition1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composición TICTFComposition1</b></p><a name=\"TICTFComposition1\"> </a><a name=\"hcTICTFComposition1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TICTFComposition.html\">Composición de Documento de Teleinterconsulta</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 81249-5}\">Teleconsultation note</span></p><p><b>date</b>: 2024-01-15 10:30:00+0000</p><p><b>author</b>: <a href=\"PractitionerRole-TICTFPractitionerRole2.html\">PractitionerRole</a></p><p><b>title</b>: Informe de Teleinterconsulta Transfronteriza</p><p><b>custodian</b>: <a href=\"Organization-TICTFOrganization2.html\">Organization Hospital Otro</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:81249-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "81249-5" ] ;
+       fhir:display [ fhir:v "Teleconsultation note" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://racsel.org/TIC-TSTF/Patient/Paciente1> ;
+     fhir:reference [ fhir:v "Patient/Paciente1" ]
+  ] ; # 
+  fhir:date [ fhir:v "2024-01-15T10:30:00Z"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <http://racsel.org/TIC-TSTF/PractitionerRole/TICTFPractitionerRole2> ;
+     fhir:reference [ fhir:v "PractitionerRole/TICTFPractitionerRole2" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Informe de Teleinterconsulta Transfronteriza"] ; # 
+  fhir:custodian [
+     fhir:link <http://racsel.org/TIC-TSTF/Organization/TICTFOrganization2> ;
+     fhir:reference [ fhir:v "Organization/TICTFOrganization2" ]
+  ] ; # 
+  fhir:section ( [
+     fhir:title [ fhir:v "Datos del Paciente" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:60592-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "60592-7" ] ;
+         fhir:display [ fhir:v "Patient summary" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Paciente: Juan Domingo Perez, masculino, nacido el 15/05/1980. Identificación nacional: CL/18922652-7</p></div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://racsel.org/TIC-TSTF/Patient/Paciente1> ;
+       fhir:reference [ fhir:v "Patient/Paciente1" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Solicitud de Interconsulta" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:81249-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "81249-5" ] ;
+         fhir:display [ fhir:v "Teleconsultation note" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Solicitud de interconsulta especializada para evaluación de dificultad respiratoria. Especialidad solicitada: Neumología. Solicitante: Dra. Ana Gomez del Hospital Central.</p></div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://racsel.org/TIC-TSTF/ServiceRequest/TICTFServiceRequest1> ;
+       fhir:reference [ fhir:v "ServiceRequest/TICTFServiceRequest1" ]
+     ] )
+  ] [
+     fhir:title [ fhir:v "Respuesta de la Interconsulta" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:722421008 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "722421008" ] ;
+         fhir:display [ fhir:v "Report of teleconsultation (record artifact)" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Respuesta del especialista: Dr. Luis Fernandez. Recomendación: Realizar pruebas complementarias para descartar infección pulmonar. Estado: Evaluación completada.</p></div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://racsel.org/TIC-TSTF/DiagnosticReport/TICTFDiagRep1> ;
+       fhir:reference [ fhir:v "DiagnosticReport/TICTFDiagRep1" ]
+     ] )
+  ] ) . # 
+
+<http://HIS.PaisDeOrigen.gov/tictf/Patient/Paciente1> a fhir:Patient ;
+  fhir:id [ fhir:v "Paciente1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient"^^xsd:anyURI ;
+       fhir:link <http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_Paciente1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Paciente Paciente1</b></p><a name=\"Paciente1\"> </a><a name=\"hcPaciente1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TICTFPatient.html\">TICTFPatient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Juan Domingo Perez  Male, DoB: 1980-05-15 ( Tax ID number)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">Passport number/CL/F12-1234123-2 (use: official, )</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PPN" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:oid.2.16.152"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "CL/F12-1234123-2" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "TAX" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:oid.2.16.152"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "CL/18922652-7" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Perez" ] ;
+     fhir:given ( [ fhir:v "Juan" ] [ fhir:v "Domingo" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1980-05-15"^^xsd:date] . # 
+
+<http://HIS.PaisDeOrigen.gov/tictf/ServiceRequest/TICTFServiceRequest1> a fhir:ServiceRequest ;
+  fhir:id [ fhir:v "TICTFServiceRequest1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFServiceRequest"^^xsd:anyURI ;
+       fhir:link <http://racsel.org/TIC-TSTF/StructureDefinition/TICTFServiceRequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_TICTFServiceRequest1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PeticiónServicio TICTFServiceRequest1</b></p><a name=\"TICTFServiceRequest1\"> </a><a name=\"hcTICTFServiceRequest1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TICTFServiceRequest.html\">TICTF Solicitud TeleInterconsulta Transfronteriza</a></p></div><p><b>identifier</b>: <code>http://HIS.PaisDeOrigen.gov/tictf/servicerequest</code>/PPBxmMR4EC-PBQzXpEBG7 (use: official, )</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 868184008}\">Telemedicine consultation with provider (procedure)</span></p><p><b>orderDetail</b>: <span title=\"Codes:{http://snomed.info/sct 418112009}\">Pulmonary medicine (qualifier value)</span></p><p><b>subject</b>: <a href=\"Patient-Paciente1.html\">Juan Domingo Perez  Male, DoB: 1980-05-15 ( Tax ID number)</a></p><p><b>requester</b>: <a href=\"PractitionerRole-TICTFPractitionerRole1.html\">PractitionerRole</a></p><p><b>performer</b>: <a href=\"PractitionerRole-TICTFPractitionerRole2.html\">PractitionerRole</a></p><p><b>reasonReference</b>: <a href=\"Observation-TICTFObsSolicitud1.html\">Observation pedido de interconsulta.total:hallazgo:punto en el tiempo:^paciente:Narrativo:</a></p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Consent-Consent1.html\">Consent: status = active; scope = patient-privacy; category = Consentimiento:{Configuración} :Punto temporal:Tipo:Documento:Patient; policyRule = </a></li><li><a href=\"DocumentReference-DocumentReference1.html\">DocumentReference: status = current; type = </a></li><li><a href=\"DiagnosticReport-DiagnosticReport1.html\">Diagnostic Report for '' for '-&gt;Juan Domingo Perez  Male, DoB: 1980-05-15 ( Tax ID number)'</a></li><li><a href=\"Observation-TICTFObsGral1.html\">Observation Progress note</a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://HIS.PaisDeOrigen.gov/tictf/servicerequest"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "PPBxmMR4EC-PBQzXpEBG7" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:868184008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "868184008" ]
+     ] )
+  ] ; # 
+  fhir:orderDetail ( [
+     fhir:coding ( [
+       a sct:418112009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "418112009" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://racsel.org/TIC-TSTF/Patient/Paciente1> ;
+     fhir:reference [ fhir:v "Patient/Paciente1" ]
+  ] ; # 
+  fhir:requester [
+     fhir:link <http://racsel.org/TIC-TSTF/PractitionerRole/TICTFPractitionerRole1> ;
+     fhir:reference [ fhir:v "PractitionerRole/TICTFPractitionerRole1" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://racsel.org/TIC-TSTF/PractitionerRole/TICTFPractitionerRole2> ;
+     fhir:reference [ fhir:v "PractitionerRole/TICTFPractitionerRole2" ]
+  ] ) ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://racsel.org/TIC-TSTF/Observation/TICTFObsSolicitud1> ;
+     fhir:reference [ fhir:v "Observation/TICTFObsSolicitud1" ]
+  ] ) ; # 
+  fhir:supportingInfo ( [
+     fhir:link <http://racsel.org/TIC-TSTF/Consent/Consent1> ;
+     fhir:reference [ fhir:v "Consent/Consent1" ]
+  ] [
+     fhir:link <http://racsel.org/TIC-TSTF/DocumentReference/DocumentReference1> ;
+     fhir:reference [ fhir:v "DocumentReference/DocumentReference1" ]
+  ] [
+     fhir:link <http://racsel.org/TIC-TSTF/DiagnosticReport/DiagnosticReport1> ;
+     fhir:reference [ fhir:v "DiagnosticReport/DiagnosticReport1" ]
+  ] [
+     fhir:link <http://racsel.org/TIC-TSTF/Observation/TICTFObsGral1> ;
+     fhir:reference [ fhir:v "Observation/TICTFObsGral1" ]
+  ] ) . # 
+
+<http://HIS.PaisDeRespuesta.gov/tictf/DiagnosticReport/TICTFDiagRep1> a fhir:DiagnosticReport ;
+  fhir:id [ fhir:v "TICTFDiagRep1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDiagRep"^^xsd:anyURI ;
+       fhir:link <http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDiagRep>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DiagnosticReport_TICTFDiagRep1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: InformeDiagnostico TICTFDiagRep1</b></p><a name=\"TICTFDiagRep1\"> </a><a name=\"hcTICTFDiagRep1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TICTFDiagRep.html\">Respeusta de Teleinterconsulta</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 722421008}\">Report of teleconsultation (record artifact)</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 SP}\">Specialist</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Juan Domingo Perez  Male, DoB: 1980-05-15 ( Tax ID number)</td></tr><tr><td>When For</td><td>2024-01-15 10:30:00+0000</td></tr><tr><td>Reported</td><td>2024-01-15 10:30:00+0000</td></tr><tr><td>Performer</td><td> <a href=\"PractitionerRole-TICTFPractitionerRole2.html\">PractitionerRole</a></td></tr><tr><td>Identifier</td><td> <code>http://HIS.PaisDeDestino.gov/tictf/diagnosticreport</code>/DR-TICTF-2024-001</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td></tr><tr><td><a href=\"Observation-TICTFObsRespuesta1.html\"><span title=\"Codes:{http://loinc.org 11488-4}\">Consult note</span></a></td><td>Se recomienda realizar pruebas complementarias para descartar infección pulmonar.</td><td>Registered</td></tr></table><p>Basado en la evaluación clínica y los síntomas descritos, se recomienda realizar las siguientes pruebas complementarias: Radiografía de tórax PA y lateral, Hemograma completo con VSG, PCR. Considerar cultivo de esputo si persiste la sintomatología. Seguimiento en 7 días.</p><p><b>Coded Conclusions:</b></p><ul><li><span title=\"Codes:{http://snomed.info/sct 182840001}\">Drug treatment</span></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://HIS.PaisDeDestino.gov/tictf/diagnosticreport"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "DR-TICTF-2024-001" ]
+  ] ) ; # 
+  fhir:basedOn ( [
+     fhir:link <http://racsel.org/TIC-TSTF/ServiceRequest/TICTFServiceRequest1> ;
+     fhir:reference [ fhir:v "ServiceRequest/TICTFServiceRequest1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0074"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SP" ] ;
+       fhir:display [ fhir:v "Specialist" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:722421008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "722421008" ] ;
+       fhir:display [ fhir:v "Report of teleconsultation (record artifact)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://racsel.org/TIC-TSTF/Patient/Paciente1> ;
+     fhir:reference [ fhir:v "Patient/Paciente1" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2024-01-15T10:30:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:issued [ fhir:v "2024-01-15T10:30:00Z"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <http://racsel.org/TIC-TSTF/PractitionerRole/TICTFPractitionerRole2> ;
+     fhir:reference [ fhir:v "PractitionerRole/TICTFPractitionerRole2" ]
+  ] ) ; # 
+  fhir:resultsInterpreter ( [
+     fhir:link <http://racsel.org/TIC-TSTF/PractitionerRole/TICTFPractitionerRole2> ;
+     fhir:reference [ fhir:v "PractitionerRole/TICTFPractitionerRole2" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:link <http://racsel.org/TIC-TSTF/Observation/TICTFObsRespuesta1> ;
+     fhir:reference [ fhir:v "Observation/TICTFObsRespuesta1" ]
+  ] ) ; # 
+  fhir:imagingStudy ( [
+     fhir:link <http://racsel.org/TIC-TSTF/ImagingStudy/ImagingStudy1> ;
+     fhir:reference [ fhir:v "ImagingStudy/ImagingStudy1" ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "Basado en la evaluación clínica y los síntomas descritos, se recomienda realizar las siguientes pruebas complementarias: Radiografía de tórax PA y lateral, Hemograma completo con VSG, PCR. Considerar cultivo de esputo si persiste la sintomatología. Seguimiento en 7 días."] ; # 
+  fhir:conclusionCode ( [
+     fhir:coding ( [
+       a sct:182840001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "182840001" ] ;
+       fhir:display [ fhir:v "Drug treatment" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

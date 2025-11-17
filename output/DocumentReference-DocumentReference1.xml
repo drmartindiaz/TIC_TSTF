@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="DocumentReference1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ReferenciaDocumento DocumentReference1</b></p><a name="DocumentReference1"> </a><a name="hcDocumentReference1"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:">Resumen Clínico</span></p><p><b>subject</b>: <a href="Patient-Paciente1.html">Juan Domingo Perez  Male, DoB: 1980-05-15 ( Tax ID number)</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td><a href="http://HIS.PaisDeOrigen.gov/tictf/DocumentReference1">http://HIS.PaisDeOrigen.gov/tictf/DocumentReference1</a></td></tr></table></blockquote></div>
+  </text>
+  <status value="current"/>
+  <type>
+    <text value="Resumen Clínico"/>
+  </type>
+  <subject>
+    <reference value="Patient/Paciente1"/>
+  </subject>
+  <content>
+    <attachment>
+      <url value="http://HIS.PaisDeOrigen.gov/tictf/DocumentReference1"/>
+    </attachment>
+  </content>
+</DocumentReference>

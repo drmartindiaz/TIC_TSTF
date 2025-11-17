@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="TipoTaskVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConjuntoValores / ConjuntoDeValores TipoTaskVS</b></p><a name="TipoTaskVS"> </a><a name="hcTipoTaskVS"> </a><ul><li>Include all codes defined in <a href="CodeSystem-TipoTaskCS.html"><code>http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS</code></a></li></ul></div>
+  </text>
+  <url value="http://racsel.org/TIC-TSTF/ValueSet/TipoTaskVS"/>
+  <version value="0.6.2"/>
+  <name value="TipoTaskVS"/>
+  <title value="TICTF Tipo de respuesta VS"/>
+  <status value="draft"/>
+  <date value="2025-11-17T09:04:37-03:00"/>
+  <publisher value="RACSEL"/>
+  <contact>
+    <name value="RACSEL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://racsel.org/"/>
+    </telecom>
+  </contact>
+  <description value="Set de valores para tipo Output Task TICTF"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="419"/>
+      <display value="Latin America and the Caribbean"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS"/>
+    </include>
+  </compose>
+</ValueSet>

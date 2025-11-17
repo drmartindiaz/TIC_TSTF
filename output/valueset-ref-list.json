@@ -1,0 +1,43 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-TICTFServiceRequest.html" : "TICTF Solicitud TeleInterconsulta Transfronteriza"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/iso3166-1-2",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Iso3166-1-2",
+      "title" : "Iso 3166 Part 1: 2 Letter Codes",
+      "description" : "This value set defines the ISO 3166 Part 1 2-letter codes",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "uses" : {
+      },
+      "StructureDefinition-PROOrganizationTICTF.html" : "TICTF Organización"
+    },
+    {
+      "url" : "http://racsel.org/TIC-TSTF/ValueSet/TipoTaskVS",
+      "version" : "0.6.2",
+      "status" : "draft",
+      "name" : "TipoTaskVS",
+      "title" : "TICTF Tipo de respuesta VS",
+      "description" : "Set de valores para tipo Output Task TICTF",
+      "systems" : ["http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS"],
+      "uses" : {
+      },
+      "StructureDefinition-tictf-maintask.html" : "TICTF Tarea PRINCIPAL",
+      "StructureDefinition-tictf-subtask.html" : "TICTF SUBtarea"
+    }
+  ]
+}

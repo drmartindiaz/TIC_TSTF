@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "TipoTaskCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SistemaDeCodigos TipoTaskCS</b></p><a name=\"TipoTaskCS\"> </a><a name=\"hcTipoTaskCS\"> </a><p>This  code system <code>http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Obs<a name=\"TipoTaskCS-Obs\"> </a></td><td>Observacion narrativa</td></tr><tr><td style=\"white-space:nowrap\">Doc<a name=\"TipoTaskCS-Doc\"> </a></td><td>Documento</td></tr><tr><td style=\"white-space:nowrap\">Rep<a name=\"TipoTaskCS-Rep\"> </a></td><td>Reporte</td></tr></table></div>"
+  },
+  "url" : "http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS",
+  "version" : "0.6.2",
+  "name" : "TipoTaskCS",
+  "title" : "TICTF Tipo de respuesta CS",
+  "status" : "draft",
+  "date" : "2025-11-17T09:04:37-03:00",
+  "publisher" : "RACSEL",
+  "contact" : [{
+    "name" : "RACSEL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://racsel.org/"
+    }]
+  }],
+  "description" : "CodeSystem para tipo Output Task TICTF",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "419",
+      "display" : "Latin America and the Caribbean"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "Obs",
+    "display" : "Observacion narrativa"
+  },
+  {
+    "code" : "Doc",
+    "display" : "Documento"
+  },
+  {
+    "code" : "Rep",
+    "display" : "Reporte"
+  }]
+}

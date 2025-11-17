@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="Paciente1"/>
+  <meta>
+    <profile value="http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Paciente Paciente1</b></p><a name="Paciente1"> </a><a name="hcPaciente1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TICTFPatient.html">TICTFPatient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Juan Domingo Perez  Male, DoB: 1980-05-15 ( Tax ID number)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Other Id (see the one above)">Other Id:</td><td colspan="3">Passport number/CL/F12-1234123-2 (use: official, )</td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PPN"/>
+      </coding>
+    </type>
+    <system value="urn:oid.2.16.152"/>
+    <value value="CL/F12-1234123-2"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="TAX"/>
+      </coding>
+    </type>
+    <system value="urn:oid.2.16.152"/>
+    <value value="CL/18922652-7"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Perez"/>
+    <given value="Juan"/>
+    <given value="Domingo"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1980-05-15"/>
+</Patient>

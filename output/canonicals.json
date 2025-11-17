@@ -1,0 +1,121 @@
+[
+  {
+    "id" : "TipoTaskCS",
+    "type" : "CodeSystem",
+    "url" : "http://racsel.org/TIC-TSTF/CodeSystem/TipoTaskCS",
+    "version" : "0.6.2",
+    "name" : "TipoTaskCS"
+  },
+  {
+    "id" : "fhir.TIC-TSTF",
+    "type" : "ImplementationGuide",
+    "url" : "http://racsel.org/TIC-TSTF/ImplementationGuide/fhir.TIC-TSTF",
+    "version" : "0.6.2",
+    "name" : "TICTSTF"
+  },
+  {
+    "id" : "PROOrganizationTICTF",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/PROOrganizationTICTF",
+    "version" : "0.6.2",
+    "name" : "TICTFOrganization"
+  },
+  {
+    "id" : "RespuestaTICTF",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/RespuestaTICTF",
+    "version" : "0.6.2",
+    "name" : "MLRespuestaTICTF"
+  },
+  {
+    "id" : "SolicitudTICTF",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/SolicitudTICTF",
+    "version" : "0.6.2",
+    "name" : "MLSolicitudTICTF"
+  },
+  {
+    "id" : "TICTFComposition",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFComposition",
+    "version" : "0.6.2",
+    "name" : "TICTFComposition"
+  },
+  {
+    "id" : "TICTFDiagRep",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDiagRep",
+    "version" : "0.6.2",
+    "name" : "TICTFDiagRep"
+  },
+  {
+    "id" : "TICTFDocRta",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFDocRta",
+    "version" : "0.6.2",
+    "name" : "TICTFDocRta"
+  },
+  {
+    "id" : "TICTFObsGral",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFObsGral",
+    "version" : "0.6.2",
+    "name" : "TICTFObsGral"
+  },
+  {
+    "id" : "TICTFObsRespuesta",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFObsRespuesta",
+    "version" : "0.6.2",
+    "name" : "TICTFObsRespuesta"
+  },
+  {
+    "id" : "TICTFObsSolicitud",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFObsSolicitud",
+    "version" : "0.6.2",
+    "name" : "TICTFObsSolicitud"
+  },
+  {
+    "id" : "TICTFPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPatient",
+    "version" : "0.6.2",
+    "name" : "TICTFPatient"
+  },
+  {
+    "id" : "TICTFPractitionerRole",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFPractitionerRole",
+    "version" : "0.6.2",
+    "name" : "TICTFPractitionerRole"
+  },
+  {
+    "id" : "TICTFServiceRequest",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/TICTFServiceRequest",
+    "version" : "0.6.2",
+    "name" : "TICTFServiceRquest"
+  },
+  {
+    "id" : "tictf-maintask",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/tictf-maintask",
+    "version" : "0.6.2",
+    "name" : "TICTFMainTask"
+  },
+  {
+    "id" : "tictf-subtask",
+    "type" : "StructureDefinition",
+    "url" : "http://racsel.org/TIC-TSTF/StructureDefinition/tictf-subtask",
+    "version" : "0.6.2",
+    "name" : "TICTFSubTask"
+  },
+  {
+    "id" : "TipoTaskVS",
+    "type" : "ValueSet",
+    "url" : "http://racsel.org/TIC-TSTF/ValueSet/TipoTaskVS",
+    "version" : "0.6.2",
+    "name" : "TipoTaskVS"
+  }
+]
